@@ -29,7 +29,7 @@ const Navbar = () => {
           <Button color="inherit">About</Button>
           <Button color="inherit">Login</Button>
         </Stack>
-        <Stack direction="row" sx={{ marginLeft: "20rem" }}>
+        <Stack direction="row" sx={{ marginLeft: "25rem" }}>
           <Button color="inherit" variant="outlined" size="small">
             Contactme
           </Button>
