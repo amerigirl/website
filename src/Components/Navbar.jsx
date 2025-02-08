@@ -23,13 +23,12 @@ const Navbar = () => {
         >
           Be-Asia McKerracher
         </Typography>
-        <Stack direction="row" spacing={4} sx={{ marginLeft: "20rem" }}>
-          <Button color="inherit">Features</Button>
-          <Button color="inherit">Pricing</Button>
-          <Button color="inherit">About</Button>
-          <Button color="inherit">Login</Button>
+        <Stack direction="row" spacing={4} sx={{ marginLeft: "50rem" }}>
+          <Button color="inherit">Home</Button>
+          <Button color="inherit">Skills</Button>
+          <Button color="inherit">Resume</Button>
         </Stack>
-        <Stack direction="row" sx={{ marginLeft: "25rem" }}>
+        <Stack direction="row" sx={{ marginLeft: "5rem" }}>
           <Button color="inherit" variant="outlined" size="small">
             Contactme
           </Button>
