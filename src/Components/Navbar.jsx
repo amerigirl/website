@@ -19,16 +19,21 @@ const Navbar = () => {
         <Typography
           variant="h6"
           component="div"
-          sx={{ flextGrow: 1, marginLeft: "10px" }}
+          sx={{ flextGrow: 1, marginLeft: "5px" }}
         >
           Be-Asia McKerracher
         </Typography>
-        <Stack direction="row" spacing={4} sx={{ marginLeft: "50rem" }}>
+        <Stack
+          direction="row"
+          spacing={4}
+          sx={{ justifyContent: "center", width: "70%" }}
+        >
           <Button color="inherit">Home</Button>
+          <Button color="inherit">About</Button>
           <Button color="inherit">Skills</Button>
           <Button color="inherit">Resume</Button>
         </Stack>
-        <Stack direction="row" sx={{ marginLeft: "5rem" }}>
+        <Stack direction="row" sx={{ justifyContent: "right" }}>
           <Button color="inherit" variant="outlined" size="small">
             Contactme
           </Button>
