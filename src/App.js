@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "./Components/Navbar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { lightGreen } from "@mui/material/colors";
+import AboutMe from "./Components/AboutMe";
 
 
 const theme = createTheme({
@@ -25,6 +26,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
+      <AboutMe />
     </ThemeProvider>
   );
 }
