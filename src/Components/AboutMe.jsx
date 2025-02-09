@@ -30,7 +30,7 @@ const AboutMe = () => {
           }}
         >
           <Typography variant="h4" component="div">
-            Hello, I'm Be-Asia, a developer based in Seattle, WA'
+            Hello, I'm Be-Asia!
           </Typography>
         </Box>
       </Container>
