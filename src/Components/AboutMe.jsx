@@ -13,6 +13,7 @@ const AboutMe = () => {
         </Typography> */}
       <Container
         maxWidth="md"
+        
         sx={{
           display: "flex",
           justifyContent: "left",
@@ -22,11 +23,11 @@ const AboutMe = () => {
       >
         <Box
           sx={{
-            backgroundColor: "primary.light",
             justifyContent: "center",
             height: "200px",
             width: "450px",
             padding: "15px",
+            borderRadius: "15px",
           }}
         >
           <Typography variant="h4" component="div">
