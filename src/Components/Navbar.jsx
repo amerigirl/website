@@ -11,34 +11,46 @@ import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAlt
 
 const Navbar = () => {
   return (
-    <AppBar sx={{backgroundColor: 'transparent'}}>
-      <Toolbar sx={{height: '4.5rem', padding: '1.9rem'}}> 
-        <Box 
-        component="img"
-        sx={{
-            height: '130px',
-            width: '200px',
+    <AppBar sx={{ backgroundColor: "primary.light", boxShadow: 2 }}>
+      <Toolbar sx={{ height: "1rem" }}>
+        {/* <Box
+          component="img"
+          sx={{
+            height: "110px",
+            width: "210px",
             marginRight: 2,
-            marginLeft: '-15px',
-            
-        }}
-        alt="Logo"
-        src="../../logo.png"
-        />
-       
-      
+            marginLeft: "-15px",
+            borderRadius: "5px",
+          }}
+          alt="Logo"
+          src="../../logo.png"
+        /> */}
+
         <Stack
           direction="row"
           spacing={4}
-          sx={{ justifyContent: "center", width: "90%" }}
+          sx={{ justifyContent: "center", width: "100%" }}
         >
-          <Button color="inherit">Home</Button>
-          <Button color="inherit">About</Button>
-          <Button color="inherit">Skills</Button>
-          <Button color="inherit">Resume</Button>
+          <Button color="inherit" sx={{ fontWeight: "bold" }}>
+            Home
+          </Button>
+          <Button color="inherit" sx={{ fontWeight: "bold" }}>
+            About
+          </Button>
+          <Button color="inherit" sx={{ fontWeight: "bold" }}>
+            Skills
+          </Button>
+          <Button color="inherit" sx={{ fontWeight: "bold" }}>
+            Resume
+          </Button>
         </Stack>
         <Stack direction="row" sx={{ justifyContent: "right" }}>
-          <Button color="inherit" variant="outlined" size="small">
+          <Button
+            color="inherit"
+            variant="outlined"
+            size="small"
+            sx={{ fontWeight: "bold" }}
+          >
             Contactme
           </Button>
         </Stack>
