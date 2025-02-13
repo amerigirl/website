@@ -29,7 +29,10 @@ const AboutMe = () => {
             Hello, I'm Be-Asia!
           </Typography>
         </Box>
-        <Box sx={{
+
+        {aboutImageData.slice(0, 4).map((item, index) => (
+
+            <Box sx={{
           width: 450, 
           height: 450, 
           display: 'grid',
@@ -37,9 +40,21 @@ const AboutMe = () => {
           gap: 2,
           border: '2px solid black',
 
-        }}>
+        }}
+        
+        >
+          <img  
+          
+          src={`${item.img}?w=220&h=220&fit=crop&auto=format`}
+          srcSet={`${item.img} ?w=220&h=220&fit=crop&auto=format&dpr=2 2x`}
+          alt={item.title}
+          loading="lazy"
+          style={{width: '100%', height: '100%', objectFit: 'cover'}}
 
+          />
         </Box>
+        ))}
+      
       </Container>
     </>
   );
