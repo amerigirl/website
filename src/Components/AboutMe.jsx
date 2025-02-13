@@ -1,16 +1,11 @@
 import React from "react";
 import { Typography, Box, Container } from "@mui/material";
+import { aboutImageData } from "../AboutImageData";
+
 
 const AboutMe = () => {
   return (
     <>
-      {/* <Typography
-          variant="h6"
-          component="div"
-          sx={{ flextGrow: 1, marginLeft: "13px", fontStyle: 'italic', paddingTop: '9rem', fontSize: 'medium' }}
-        >
-          Be-Asia McKerracher
-        </Typography> */}
       <Container
         maxWidth="md"
         
@@ -33,6 +28,17 @@ const AboutMe = () => {
           <Typography variant="h4" component="div">
             Hello, I'm Be-Asia!
           </Typography>
+        </Box>
+        <Box sx={{
+          width: 450, 
+          height: 450, 
+          display: 'grid',
+          gridTemplateColumns: 'repeat(2, 1fr)',
+          gap: 2,
+          border: '2px solid black',
+
+        }}>
+
         </Box>
       </Container>
     </>
