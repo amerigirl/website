@@ -11,7 +11,7 @@ const AboutMe = () => {
         
         sx={{
           display: "flex",
-          justifyContent: "left",
+          justifyContent: "space-between",
           alignItems: "center",
           height: "60vh",
         }}
@@ -33,10 +33,9 @@ const AboutMe = () => {
         {aboutImageData.slice(0, 4).map((item, index) => (
 
             <Box sx={{
-          width: 450, 
-          height: 450, 
-          display: 'grid',
-          gridTemplateColumns: 'repeat(2, 1fr)',
+          width: 600, 
+          height: 250, 
+          display: 'flex',
           gap: 2,
           border: '2px solid black',
 

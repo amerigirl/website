@@ -1,21 +1,21 @@
 export const aboutImageData = [
   {
-    img: "../public/initialPic.jpg",
+    img: "../initialPic.jpg",
     title: "PicOfMe",
   },
 
   {
-    img: "../public/cleanMonitor.jpg",
+    img: "../cleanMonitor.jpg",
     title: "AtTheComputer",
   },
 
   {
-    img: "../public/djangoGirls.jpg",
+    img: "../djangoGirls.jpg",
     title: "DjangoGirlsKC",
   },
 
   {
-    img: "../public/meAndGrogu.jpg",
+    img: "../meAndGrogu.jpg",
     title: "MeAndGrogu",
   },
 ];
