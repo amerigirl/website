@@ -24,6 +24,10 @@ const AboutMe = () => {
           <Typography variant="h4" component="div">
             Hello, I'm Be-Asia!
           </Typography>
+        <br></br>
+          <Typography>
+            A developer based in Seattle with 3 years of professional experience  
+          </Typography>
         </Box>
 
         <Box
