@@ -2,13 +2,11 @@ import React from "react";
 import { Typography, Box, Container } from "@mui/material";
 import { aboutImageData } from "../AboutImageData";
 
-
 const AboutMe = () => {
   return (
     <>
       <Container
         maxWidth="md"
-        
         sx={{
           display: "flex",
           justifyContent: "space-between",
@@ -19,10 +17,8 @@ const AboutMe = () => {
         <Box
           sx={{
             justifyContent: "center",
-            height: "200px",
-            width: "450px",
-            padding: "15px",
-            borderRadius: "15px",
+            height: "250px",
+            width: "300px",
           }}
         >
           <Typography variant="h4" component="div">
@@ -30,30 +26,40 @@ const AboutMe = () => {
           </Typography>
         </Box>
 
-        {aboutImageData.slice(0, 4).map((item, index) => (
-
-            <Box sx={{
-          width: 600, 
-          height: 250, 
-          display: 'flex',
-          gap: 2,
-          border: '2px solid black',
-
-        }}
-        
+        <Box
+          sx={{
+            width: 500,
+            height:500,
+            display: "grid",
+            gridTemplateColumns: "repeat(2, 1fr)",
+            gridTemplateRows: "repeat(2, 1fr)",
+            gap: .3,
+            border: '6px solid',
+            borderColor: "primary.main", 
+            padding: .3, 
+            boxSizing: 'border-box'
+          }}
         >
-          <img  
-          
-          src={`${item.img}?w=220&h=220&fit=crop&auto=format`}
-          srcSet={`${item.img} ?w=220&h=220&fit=crop&auto=format&dpr=2 2x`}
-          alt={item.title}
-          loading="lazy"
-          style={{width: '100%', height: '100%', objectFit: 'cover'}}
-
-          />
+          {aboutImageData.slice(0, 4).map((item, index) => (
+            <Box
+              key={item.img}
+              sx={{
+                width: "100%",
+                height: "100%",
+                border: "2px solid white",
+                overflow: "hidden",
+              }}
+            >
+              <img
+                src={`${item.img}?w=220&h=220&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=220&h=220&fit=crop&auto=format&dpr=2 2x`}
+                alt={item.title}
+                loading="lazy"
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            </Box>
+          ))}
         </Box>
-        ))}
-      
       </Container>
     </>
   );

@@ -5,17 +5,17 @@ export const aboutImageData = [
   },
 
   {
-    img: "../cleanMonitor.jpg",
-    title: "AtTheComputer",
+    img: "../seattle.jpg",
+    title: "Seattle",
   },
-
-  {
-    img: "../djangoGirls.jpg",
-    title: "DjangoGirlsKC",
-  },
-
-  {
-    img: "../meAndGrogu.jpg",
+ {
+    img: "../cert.jpg",
     title: "MeAndGrogu",
   },
+  {
+    img: "../mePic.jpg",
+    title: "lets code",
+  },
+
+ 
 ];
