@@ -5,6 +5,8 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import AboutMe from "./Components/AboutMe";
 import SkillsCard from "./Components/CardSection/CardComponent";
 import { amber, blue, indigo } from "@mui/material/colors";
+import CardComponent from "./Components/CardSection/CardComponent";
+import { Box } from "@mui/material";
 
 const theme = createTheme({
   palette: {
@@ -15,8 +17,8 @@ const theme = createTheme({
       main: amber[200],
     },
     tertiary: {
-      main: blue[50]
-    }
+      main: blue[50],
+    },
   },
   components: {
     MuiButton: {
@@ -30,13 +32,28 @@ const theme = createTheme({
 });
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Navbar />
-      <AboutMe />
-      <SkillsCard />
-    </ThemeProvider>
+    <Box>
+      <ThemeProvider theme={theme}>
+        <Navbar />
+        <AboutMe />
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-evenly",
+            alignItems: "stretch",
+            flexWrap: "wrap",
+            width: "100%",
+            padding: "16px",
+          }}
+        >
+          <CardComponent />
+          <CardComponent />
+          <CardComponent />
+        </Box>
+      </ThemeProvider>
+    </Box>
   );
 }
 
 export default App;
-

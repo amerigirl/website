@@ -11,10 +11,11 @@ import { Box } from "@mui/material";
 const CardSection = () => {
   return (
     <>
-      <Box  >
+      <Box
+   
+      >
         <CardComponent />
-        <CardComponent />
-        <CardComponent />
+
       </Box>
     </>
   );
