@@ -11,8 +11,6 @@ const scrabbleLetterProps = {
   fontWeight: "bold",
 };
 
-
-
 const AboutCardComponent = () => {
   return (
     <Box sx={{ display: "flex" }}>
@@ -20,16 +18,23 @@ const AboutCardComponent = () => {
         <CardContent
           sx={{
             display: "flex",
-            gap: "7px",
+            gap: "4.5rem",
           }}
         >
           <ScrabblePiece letter="A" {...scrabbleLetterProps} />
-          <ScrabblePiece letter="B" {...scrabbleLetterProps} />
           <ScrabblePiece letter="O" {...scrabbleLetterProps} />
-          <ScrabblePiece letter="U" {...scrabbleLetterProps} />
           <ScrabblePiece letter="T" {...scrabbleLetterProps} />
         </CardContent>
-        
+
+        <CardContent sx={{ 
+          display: "flex", 
+          gap: '4.5rem',
+          marginLeft: '4rem',
+          marginTop: '-4rem'
+          }}>
+          <ScrabblePiece letter="B" {...scrabbleLetterProps} />
+          <ScrabblePiece letter="U" {...scrabbleLetterProps} />
+        </CardContent>
       </CardComponent>
     </Box>
   );
