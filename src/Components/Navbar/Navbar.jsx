@@ -2,6 +2,7 @@ import { AppBar, Toolbar, Stack, Typography, Box } from "@mui/material";
 import React from "react";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
+import NavbarName from "./NavbarName";
 
 // Define a reusable StyledButton
 const StyledButton = styled(Button)(({ theme }) => ({
@@ -20,9 +21,7 @@ const Navbar = () => {
       sx={{ backgroundColor: "transparent", boxShadow: "none" }}
     >
       <Toolbar sx={{ height: "4rem" }}>
-        <Box sx={{flexGrow: 1}}>
-          <Typography sx={{ color: "black", whiteSpace: 'nowrap', fontWeight: '550', fontSize: '17px'}}>Be-Asia McKerracher</Typography>
-        </Box>
+      <NavbarName/>
         <Stack
           direction="row"
           spacing={6}

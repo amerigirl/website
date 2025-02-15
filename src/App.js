@@ -1,12 +1,12 @@
 import "./App.css";
 import React from "react";
-import Navbar from "./Components/Navbar";
+import Navbar from "./Components/Navbar/Navbar.jsx";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import AboutMe from "./Components/AboutMe";
-import SkillsCard from "./Components/CardSection/CardComponent";
-import { amber, blue, indigo } from "@mui/material/colors";
+import { amber, blue } from "@mui/material/colors";
 import CardComponent from "./Components/CardSection/CardComponent";
 import { Box } from "@mui/material";
+import SkillsComponent from "./Components/SkillsComponent";
 
 const theme = createTheme({
   palette: {
@@ -47,7 +47,7 @@ function App() {
             padding: "16px",
           }}
         >
-          <CardComponent />
+          <SkillsComponent />
           <CardComponent />
           <CardComponent />
         </Box>
