@@ -1,15 +1,14 @@
 import React from "react";
 import ScrabblePiece from "./ScrabblePiece";
 import { Container, styled, CardContent, Card } from "@mui/material";
-import theme from '../../App.js'
-import { grey } from "@mui/material/colors";
+import { blueGrey } from "@mui/material/colors";
 
 
-const StyledCard = styled(Card)(({ theme }) => ({
+const StyledCard = styled(Card)(({}) => ({
 backgroundColor: 'white',
 transition: 'background-color .03s ease' ,
 "&:hover": {
-  backgroundColor: grey[100]
+  backgroundColor: blueGrey[50]
 }
 }))
 
