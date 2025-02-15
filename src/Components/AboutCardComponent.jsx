@@ -6,8 +6,8 @@ import ScrabblePiece from "./ScrabblePiece";
 const scrabbleLetterProps = {
   height: "50px",
   width: "50px",
-  padding: "1rem",
-  fontSize: "15px",
+  padding: ".7rem",
+  fontSize: "20px",
   fontWeight: "bold",
 };
 
@@ -26,12 +26,14 @@ const AboutCardComponent = () => {
           <ScrabblePiece letter="T" {...scrabbleLetterProps} />
         </CardContent>
 
-        <CardContent sx={{ 
-          display: "flex", 
-          gap: '4.5rem',
-          marginLeft: '4rem',
-          marginTop: '-4rem'
-          }}>
+        <CardContent
+          sx={{
+            display: "flex",
+            gap: "4.5rem",
+            marginLeft: "4rem",
+            marginTop: "-4rem",
+          }}
+        >
           <ScrabblePiece letter="B" {...scrabbleLetterProps} />
           <ScrabblePiece letter="U" {...scrabbleLetterProps} />
         </CardContent>
