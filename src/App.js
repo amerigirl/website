@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "./Components/Navbar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import AboutMe from "./Components/AboutMe";
-import SkillsCard from "./Components/Files/SkillsCard";
+import SkillsCard from "./Components/CardSection/CardComponent";
 import { amber } from "@mui/material/colors";
 
 const theme = createTheme({

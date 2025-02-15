@@ -1,18 +1,14 @@
 import React from "react";
-import ScrabblePiece from "../../Components/ScrabblePiece";
+import ScrabblePiece from "./ScrabblePiece";
 import { Container, Card, CardContent, Box } from "@mui/material";
 
-const SkillsCard = () => {
+const CardComponent = () => {
   return (
     <div>
       <Container>
         <Card
           variant="outlined"
-          sx={{
-            height: "40vh",
-            width: "25vw",
-            marginBottom: "10rem",
-          }}
+          
         >
           <CardContent>
             <ScrabblePiece />
@@ -23,4 +19,4 @@ const SkillsCard = () => {
   );
 };
 
-export default SkillsCard;
+export default CardComponent;
