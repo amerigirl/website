@@ -12,18 +12,17 @@ const ScrabblePiece = () => {
 
     <Box
       sx={{
-        height: "60px",
-        width: "60px",
+        height: "50px",
+        width: "50px",
         backgroundColor: "secondary.main",
         border: "2px solid black",
-        boxShadow: "0,0,0,.3",
       }}
     >
       <Typography
         sx={{
           textAlign: "center",
-          padding: ".7rem",
-          fontSize: "1.6rem",
+          padding: ".6rem",
+          fontSize: "1.3rem",
         }}
       >
         S
