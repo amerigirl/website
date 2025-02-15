@@ -1,4 +1,4 @@
-import "./App.css";
+
 import React from "react";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -21,15 +21,7 @@ const theme = createTheme({
       main: blue[50],
     },
   },
-  components: {
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          borderRadius: "10px", // Adjust this value as needed
-        },
-      },
-    },
-  },
+  
 });
 function App() {
   return (

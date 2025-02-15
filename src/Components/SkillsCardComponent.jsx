@@ -4,8 +4,8 @@ import { Box, CardContent } from "@mui/material";
 import ScrabblePiece from "../Components/ScrabblePiece";
 
 const scrabbleLetterProps = {
-  height: "50px",
-  width: "50px",
+  height: "45px",
+  width: "45px",
   padding: ".7rem",
   fontSize: "20px",
   fontWeight: "bold",
@@ -16,8 +16,8 @@ const SkillsCardComponent = () => {
       <CardComponent>
         <CardContent
           sx={{
-            display: "flex",
-            gap: "4rem",
+            display:"flex",
+            gap: "3.5rem",
           }}
         >
           <ScrabblePiece letter="S" {...scrabbleLetterProps} />
@@ -28,8 +28,8 @@ const SkillsCardComponent = () => {
         <CardContent
           sx={{
             display: "flex",
-            gap: "4rem",
-            marginLeft: "3.7rem",
+            gap: "3.5rem",
+            marginLeft: "3.3rem",
             marginTop: "-4rem",
           }}
         >

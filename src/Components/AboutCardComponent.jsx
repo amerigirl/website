@@ -4,8 +4,8 @@ import CardComponent from "./CardSection/CardComponent";
 import ScrabblePiece from "./ScrabblePiece";
 
 const scrabbleLetterProps = {
-  height: "50px",
-  width: "50px",
+  height: "45px",
+  width: "45px",
   padding: ".7rem",
   fontSize: "20px",
   fontWeight: "bold",
@@ -18,7 +18,7 @@ const AboutCardComponent = () => {
         <CardContent
           sx={{
             display: "flex",
-            gap: "4.5rem",
+            gap: "3.6rem",
           }}
         >
           <ScrabblePiece letter="A" {...scrabbleLetterProps} />
@@ -29,8 +29,8 @@ const AboutCardComponent = () => {
         <CardContent
           sx={{
             display: "flex",
-            gap: "4.5rem",
-            marginLeft: "4rem",
+            gap: "3.6rem",
+            marginLeft: "3.35rem",
             marginTop: "-4rem",
           }}
         >
