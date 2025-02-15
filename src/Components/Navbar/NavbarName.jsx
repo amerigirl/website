@@ -2,101 +2,45 @@ import React from "react";
 import { Typography, Box } from "@mui/material";
 import ScrabblePiece from "../CardSection/ScrabblePiece";
 
+const navbarLetterProps = {
+  color: "black",
+  whiteSpace: "nowrap",
+  fontWeight: "550",
+  fontSize: "18px",
+  paddingTop: "4px",
+  paddingLeft: "1.5px",
+  paddingRight: "3px",
+};
+
+const scrabblePieceProps = {
+  height: "25px",
+  width: "25px",
+  padding: ".20rem",
+  fontSize: "15px",
+  fontWeight: "bold",
+};
+
 const NavbarName = () => {
   return (
     <Box
       sx={{
         flexGrow: 1,
         display: "flex",
-        direction: "row",
-        paddingTop: '5px'
+        flexDirection: "row",
+        paddingTop: "5px",
+        alignItems: "center",
       }}
     >
-      <ScrabblePiece
-        letter="B"
-        height="25px"
-        width="25px"
-        padding=".20rem"
-        fontSize="15x"
-        fontWeight="bold"
-      />
-
-      <Typography
-        sx={{
-          color: "black",
-          whiteSpace: "nowrap",
-          fontWeight: "550",
-          fontSize: "18px",
-          paddingTop: "4px",
-          paddingLeft: "1.5px",
-          paddingRight: "3px",
-        }}
-      >
-        e-
-      </Typography>
-      <ScrabblePiece
-        letter="A"
-        height="25px"
-        width="25px"
-        padding=".20rem"
-        fontSize="15x"
-        fontWeight="bold"
-      />
-      <Typography
-        sx={{
-          color: "black",
-          whiteSpace: "nowrap",
-          fontWeight: "550",
-          fontSize: "18px",
-          paddingTop: "4px",
-          paddingLeft: "1.5px",
-          paddingRight: "23px",
-        }}
-      >
+      <ScrabblePiece letter="B" {...scrabblePieceProps} />
+      <Typography sx={navbarLetterProps}>e-</Typography>
+      <ScrabblePiece letter="A" {...scrabblePieceProps} />
+      <Typography sx={{ ...navbarLetterProps, paddingRight: "23px" }}>
         sia
       </Typography>
-      <ScrabblePiece
-        letter="M"
-        height="25px"
-        width="25px"
-        padding=".20rem"
-        fontSize="15x"
-        fontWeight="bold"
-      />
-      <Typography
-        sx={{
-          color: "black",
-          whiteSpace: "nowrap",
-          fontWeight: "550",
-          fontSize: "18px",
-          paddingTop: "4px",
-          paddingLeft: "1.5px",
-          paddingRight: "3px",
-        }}
-      >
-        c
-      </Typography>
-      <ScrabblePiece
-        letter="K"
-        height="25px"
-        width="25px"
-        padding=".20rem"
-        fontSize="15x"
-        fontWeight="bold"
-      />
-      <Typography
-        sx={{
-          color: "black",
-          whiteSpace: "nowrap",
-          fontWeight: "550",
-          fontSize: "18px",
-          paddingTop: "4px",
-          paddingLeft: "1.5px",
-          paddingRight: "3px",
-        }}
-      >
-        erracher
-      </Typography>
+      <ScrabblePiece letter="M" {...scrabblePieceProps} />
+      <Typography sx={navbarLetterProps}>c</Typography>
+      <ScrabblePiece letter="K" {...scrabblePieceProps} />
+      <Typography sx={navbarLetterProps}>erracher</Typography>
     </Box>
   );
 };
