@@ -2,9 +2,8 @@ import "./App.css";
 import React from "react";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import AboutMe from "./Components/AboutMe";
+import LandingSection from "./Components/LandingSection.jsx";
 import { amber, blue } from "@mui/material/colors";
-import CardComponent from "./Components/CardSection/CardComponent";
 import { Box } from "@mui/material";
 import SkillsCardComponent from "./Components/SkillsCardComponent.jsx";
 import AboutCardComponent from "./Components/AboutCardComponent.jsx";
@@ -37,20 +36,21 @@ function App() {
     <Box>
       <ThemeProvider theme={theme}>
         <Navbar />
-        <AboutMe />
+        <LandingSection />
         <Box
           sx={{
             display: "flex",
             flexDirection: "row",
-            justifyContent: "space-evenly",
-            alignItems: "stretch",
+            justifyContent: "center",
+            alignItems: 'center',
+            marginTop: "15px",
             flexWrap: "wrap",
             width: "100%",
-            padding: "16px",
           }}
         >
-          <SkillsCardComponent />
           <AboutCardComponent />
+          <SkillsCardComponent />
+
           <ProjectsCardComponent />
         </Box>
       </ThemeProvider>

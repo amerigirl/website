@@ -11,7 +11,7 @@ const StyledCard = styled(Card)(({}) => ({
   },
 }));
 
-const CardComponent = () => {
+const CardComponent = ({ children }) => {
   return (
     <div>
       <Container>
@@ -21,11 +21,11 @@ const CardComponent = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            height: "40vh",
+            height: "38vh",
             width: "20vw",
-            marginBottom: "15rem",
-            marginTop: "2rem",
+            marginBottom: "20rem",
             borderRadius: "30px",
+            border: "1px solid black"
           }}
         >
           <CardContent
@@ -34,7 +34,7 @@ const CardComponent = () => {
               alignItems: "center",
             }}
           >
-            <ScrabblePiece />
+            {children}
           </CardContent>
         </StyledCard>
       </Container>

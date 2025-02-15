@@ -2,7 +2,7 @@ import React from "react";
 import { Typography, Box, Container } from "@mui/material";
 import { aboutImageData } from "../AboutImageData";
 
-const AboutMe = () => {
+const LandingSection = () => {
   return (
     <>
       <Container
@@ -13,7 +13,8 @@ const AboutMe = () => {
           justifyContent: 'center',
           gap: '6rem',
           height: "60vh",
-          marginTop: '10rem', 
+          marginTop: '11rem', 
+          marginBottom: '2rem'
         }}
       >
         <Box
@@ -78,4 +79,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default LandingSection;
