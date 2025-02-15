@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "./Components/Navbar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import AboutMe from "./Components/AboutMe";
+import SkillsCard from "./Components/Files/SkillsCard";
 
 const theme = createTheme({
   palette: {
@@ -25,6 +26,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Navbar />
       <AboutMe />
+      <SkillsCard />
     </ThemeProvider>
   );
 }

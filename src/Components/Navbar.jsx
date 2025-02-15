@@ -21,7 +21,7 @@ const Navbar = () => {
     >
       <Toolbar sx={{ height: "4rem" }}>
         <Box sx={{flexGrow: 1}}>
-          <Typography sx={{ color: "black", whiteSpace: 'nowrap', fontWeight: 'bold', fontSize: '17px'}}>Be-Asia McKerracher</Typography>
+          <Typography sx={{ color: "black", whiteSpace: 'nowrap', fontWeight: '550', fontSize: '17px'}}>Be-Asia McKerracher</Typography>
         </Box>
         <Stack
           direction="row"
@@ -29,7 +29,7 @@ const Navbar = () => {
           sx={{ justifyContent: { xs: "center", md: "flex-end" }, marginRight: {md: "2rem"}}}
         >
           {/* Use StyledButton for all buttons */}
-          <StyledButton>Home</StyledButton>
+          <StyledButton href="#home">Home</StyledButton>
           <StyledButton>About</StyledButton>
           <StyledButton>Skills</StyledButton>
           <StyledButton>Resume</StyledButton>
