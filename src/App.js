@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import AboutMe from "./Components/AboutMe";
 import SkillsCard from "./Components/CardSection/CardComponent";
-import { amber } from "@mui/material/colors";
+import { amber, blue, indigo } from "@mui/material/colors";
 
 const theme = createTheme({
   palette: {
@@ -14,6 +14,9 @@ const theme = createTheme({
     secondary: {
       main: amber[200],
     },
+    tertiary: {
+      main: blue[50]
+    }
   },
   components: {
     MuiButton: {
@@ -36,3 +39,4 @@ function App() {
 }
 
 export default App;
+

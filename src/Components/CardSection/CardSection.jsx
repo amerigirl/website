@@ -1,6 +1,6 @@
 import React from "react";
 import CardComponent from "./CardComponent";
-import { Box, styled } from "@mui/material";
+import { Box } from "@mui/material";
 
 // const StyledBox = styled(Box)({})({
 //   height: "40vh",
@@ -11,11 +11,7 @@ import { Box, styled } from "@mui/material";
 const CardSection = () => {
   return (
     <>
-      <Box sx={{
-        display: 'flex',
-        gridColumn: 1,
-
-      }} >
+      <Box  >
         <CardComponent />
         <CardComponent />
         <CardComponent />

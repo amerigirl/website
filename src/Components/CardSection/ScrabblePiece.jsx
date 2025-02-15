@@ -22,7 +22,7 @@ const ScrabblePiece = () => {
         sx={{
           textAlign: "center",
           padding: ".6rem",
-          fontSize: "1.3rem",
+          fontSize: "1.3rem"
         }}
       >
         S
