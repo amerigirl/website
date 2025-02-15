@@ -15,11 +15,13 @@ transition: 'background-color .03s ease' ,
 const CardComponent = () => {
   return (
     <div>
-      <Container> 
-
+      <Container>
         <StyledCard
           variant="outlined"
           sx={{
+            display: "flex",
+            justifyContent: "center", // Add this
+            alignItems: "center", // Add this
             height: "40vh",
             width: "25vw",
             marginBottom: "15rem",
@@ -27,7 +29,12 @@ const CardComponent = () => {
             borderRadius: "30px",
           }}
         >
-          <CardContent>
+          <CardContent
+            sx={{
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <ScrabblePiece />
           </CardContent>
         </StyledCard>
