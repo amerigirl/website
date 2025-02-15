@@ -17,21 +17,25 @@ const StyledButton = styled(Button)(({ theme }) => ({
 const Navbar = () => {
   return (
     <AppBar
+      id="home"
       position="static"
       sx={{ backgroundColor: "transparent", boxShadow: "none" }}
     >
       <Toolbar sx={{ height: "4rem" }}>
-      <NavbarName/>
+        <NavbarName />
         <Stack
           direction="row"
           spacing={6}
-          sx={{ justifyContent: { xs: "center", md: "flex-end" }, marginRight: {md: "2rem"}}}
+          sx={{
+            justifyContent: { xs: "center", md: "flex-end" },
+            marginRight: { md: "2rem" },
+          }}
         >
           {/* Use StyledButton for all buttons */}
           <StyledButton href="#home">Home</StyledButton>
-          <StyledButton>About</StyledButton>
-          <StyledButton>Skills</StyledButton>
-          <StyledButton>Projects</StyledButton>
+          <StyledButton href="#about">About</StyledButton>
+          <StyledButton href="#skills">Skills</StyledButton>
+          <StyledButton href="#projects">Projects</StyledButton>
           <StyledButton>Contact</StyledButton>
         </Stack>
       </Toolbar>

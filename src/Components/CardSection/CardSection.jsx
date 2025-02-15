@@ -1,6 +1,6 @@
 import React from "react";
 import CardComponent from "./CardComponent";
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 
 
 
@@ -10,6 +10,7 @@ const CardSection = () => {
       <Box>
         <CardComponent />
       </Box>
+      <Button>Scroll up</Button>
     </>
   );
 };

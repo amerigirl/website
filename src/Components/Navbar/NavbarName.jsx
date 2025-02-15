@@ -13,16 +13,18 @@ const navbarLetterProps = {
 };
 
 const scrabblePieceProps = {
-  height: "25px",
-  width: "25px",
-  padding: ".20rem",
-  fontSize: "15px",
+  height: "33px",
+  width: "35px",
+  fontSize: "18px",
   fontWeight: "bold",
+
 };
+
 
 const NavbarName = () => {
   return (
     <Box
+    
       sx={{
         flexGrow: 1,
         display: "flex",
@@ -31,15 +33,23 @@ const NavbarName = () => {
         alignItems: "center",
       }}
     >
-      <ScrabblePiece letter="B" {...scrabblePieceProps} />
+      <ScrabblePiece letter="B" {...scrabblePieceProps}>
+        3
+      </ScrabblePiece>
       <Typography sx={navbarLetterProps}>e-</Typography>
-      <ScrabblePiece letter="A" {...scrabblePieceProps} />
+      <ScrabblePiece letter="A" {...scrabblePieceProps}>
+        1
+      </ScrabblePiece>
       <Typography sx={{ ...navbarLetterProps, paddingRight: "23px" }}>
         sia
       </Typography>
-      <ScrabblePiece letter="M" {...scrabblePieceProps} />
+      <ScrabblePiece letter="M" {...scrabblePieceProps}>
+        3
+      </ScrabblePiece>
       <Typography sx={navbarLetterProps}>c</Typography>
-      <ScrabblePiece letter="K" {...scrabblePieceProps} />
+      <ScrabblePiece letter="K" {...scrabblePieceProps}>
+        5
+      </ScrabblePiece>
       <Typography sx={navbarLetterProps}>erracher</Typography>
     </Box>
   );

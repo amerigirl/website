@@ -8,6 +8,8 @@ const ScrabblePiece = ({
   fontSize,
   padding,
   fontWeight,
+  children, 
+  numberBox
 }) => {
   return (
     <Box
@@ -16,6 +18,9 @@ const ScrabblePiece = ({
         width,
         backgroundColor: "secondary.main",
         border: "2px solid black",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <Typography
@@ -24,11 +29,25 @@ const ScrabblePiece = ({
           color: "black",
           fontSize,
           padding,
-          fontWeight
+          fontWeight,
+          marginTop: "5px",
         }}
       >
         {letter}
       </Typography>
+      <Box
+        sx={{
+          position: "absolute",
+          bottom: 13.5,
+          marginLeft: "25px",
+          fontSize: "9px",
+          lineHeight: 1,
+          color: "black",
+          ...numberBox
+        }}
+      >
+        {children}
+      </Box>
     </Box>
   );
 };

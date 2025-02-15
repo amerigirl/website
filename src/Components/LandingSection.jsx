@@ -6,12 +6,12 @@ const LandingSection = () => {
   return (
     <>
       <Container
-        maxWidth="lg"
+        maxWidth="xl"
         sx={{
           display: "flex",
           alignItems: "flex-start",
           justifyContent: "center",
-          gap: "3.5rem",
+          gap: "5rem",
           height: "61vh",
           marginTop: "12rem",
           marginBottom: "10rem",
@@ -25,7 +25,6 @@ const LandingSection = () => {
           }}
         >
           <Typography
-            id="home"
             variant="h4"
             component="div"
             sx={{

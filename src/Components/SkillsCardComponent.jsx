@@ -15,6 +15,7 @@ const SkillsCardComponent = () => {
     <Box sx={{ display: "flex" }}>
       <CardComponent>
         <CardContent
+        id="skills"
           sx={{
             display:"flex",
             gap: "3.5rem",

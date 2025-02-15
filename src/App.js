@@ -32,17 +32,14 @@ function App() {
         <Box
           sx={{
             display: "flex",
-            flexDirection: "row",
             justifyContent: "center",
             alignItems: 'center',
-            marginTop: "15px",
             flexWrap: "wrap",
             width: "100%",
           }}
         >
           <AboutCardComponent />
           <SkillsCardComponent />
-
           <ProjectsCardComponent />
         </Box>
       </ThemeProvider>

@@ -27,6 +27,7 @@ const ProjectsCardComponent = () => {
         </CardContent>
 
         <CardContent
+          id="projects"
           sx={{
             display: "flex",
             gap: "3.3rem",

@@ -1,5 +1,4 @@
 import React from "react";
-import ScrabblePiece from "../ScrabblePiece";
 import { Container, styled, CardContent, Card } from "@mui/material";
 import { blueGrey } from "@mui/material/colors";
 
@@ -25,7 +24,7 @@ const CardComponent = ({ children }) => {
             width: "22.5vw",
             marginBottom: "20rem",
             borderRadius: "30px",
-            border: "1px solid black"
+            border: "1px solid black",
           }}
         >
           <CardContent
