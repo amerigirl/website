@@ -31,7 +31,7 @@ const Navbar = () => {
           <StyledButton href="#home">Home</StyledButton>
           <StyledButton>About</StyledButton>
           <StyledButton>Skills</StyledButton>
-          <StyledButton>Resume</StyledButton>
+          <StyledButton>Projects</StyledButton>
           <StyledButton>Contact</StyledButton>
         </Stack>
       </Toolbar>

@@ -1,10 +1,10 @@
 import React from 'react'
 import CardComponent from './CardSection/CardComponent'
 
-const SkillsComponent = () => {
+const AboutCardComponent = () => {
   return (
-   <CardComponent/>
+  <CardComponent/>
   )
 }
 
-export default SkillsComponent
+export default AboutCardComponent

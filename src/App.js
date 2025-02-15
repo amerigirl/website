@@ -6,7 +6,9 @@ import AboutMe from "./Components/AboutMe";
 import { amber, blue } from "@mui/material/colors";
 import CardComponent from "./Components/CardSection/CardComponent";
 import { Box } from "@mui/material";
-import SkillsComponent from "./Components/SkillsComponent";
+import SkillsCardComponent from "./Components/SkillsCardComponent.jsx";
+import AboutCardComponent from "./Components/AboutCardComponent.jsx";
+import ProjectsCardComponent from "./Components/ProjectsCardComponenet.jsx";
 
 const theme = createTheme({
   palette: {
@@ -47,9 +49,9 @@ function App() {
             padding: "16px",
           }}
         >
-          <SkillsComponent />
-          <CardComponent />
-          <CardComponent />
+          <SkillsCardComponent />
+          <AboutCardComponent />
+          <ProjectsCardComponent />
         </Box>
       </ThemeProvider>
     </Box>

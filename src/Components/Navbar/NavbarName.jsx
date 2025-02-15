@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Box } from "@mui/material";
-import ScrabblePiece from "../CardSection/ScrabblePiece";
+import ScrabblePiece from "../ScrabblePiece";
 
 const navbarLetterProps = {
   color: "black",
