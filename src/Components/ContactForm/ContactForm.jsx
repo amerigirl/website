@@ -1,17 +1,15 @@
 import React from "react";
-import { Box, Typography, TextField } from "@mui/material";
+import { Box, Button, Typography, TextField } from "@mui/material";
 
 const ContactForm = () => {
   return (
     <Box
       sx={{
         margin: "3rem 12rem",
-        border: "1px solid black",
         padding: "3rem",
-        borderRadius: "30px",
       }}
     >
-      <Box id="contact" sx={{ textAlign: "center", marginTop:'1rem' }}>
+      <Box id="contact" sx={{ textAlign: "center", marginTop: "1rem" }}>
         <Typography variant="h3">Contact Me</Typography>
         <Typography variant="h6" sx={{ color: "primary.main" }}>
           Let's get in touch!
@@ -33,11 +31,10 @@ const ContactForm = () => {
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
             gap: "1rem",
-            marginTop:"2rem"
+            marginTop: "2rem",
           }}
-        >
-        </Box>
-                  <TextField label="Name *" variant="outlined" fullWidth />
+        ></Box>
+        <TextField label="Name *" variant="outlined" fullWidth />
 
         <TextField label="Email *" variant="outlined" fullWidth />
 
@@ -49,6 +46,12 @@ const ContactForm = () => {
           fullWidth
         />
       </Box>
+      <Button
+        variant="outlined"
+        sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+      >
+        Submit
+      </Button>
     </Box>
   );
 };
