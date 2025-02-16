@@ -12,34 +12,137 @@ const scrabbleLetterProps = {
 };
 const SkillsCardComponent = () => {
   return (
-    <Box sx={{ display: "flex" }}>
-      <CardComponent>
-        <CardContent
+    <CardComponent>
+      <CardContent
         id="skills"
-          sx={{
-            display:"flex",
-            gap: "3.5rem",
-          }}
-        >
-          <ScrabblePiece letter="S" {...scrabbleLetterProps} />
-          <ScrabblePiece letter="I" {...scrabbleLetterProps} />
-          <ScrabblePiece letter="L" {...scrabbleLetterProps} />
-        </CardContent>
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "flex-start",
+          gap: ".3rem",
+          padding: "1rem",
+        }}
+      >
+        <Box>
+          <Box>
+            <ScrabblePiece
+              letter="S"
+              {...scrabbleLetterProps}
+              numberBox={
+                <Box
+                  sx={{
+                    position: "absolute",
+                    right: 5,
+                    bottom: 3,
+                    fontSize: "9px",
+                    color: "black",
+                  }}
+                >
+                  1
+                </Box>
+              }
+            />
+          </Box>
+        </Box>
 
-        <CardContent
-          sx={{
-            display: "flex",
-            gap: "3.5rem",
-            marginLeft: "3.3rem",
-            marginTop: "-4rem",
-          }}
-        >
-          <ScrabblePiece letter="K" {...scrabbleLetterProps} />
-          <ScrabblePiece letter="L" {...scrabbleLetterProps} />
-          <ScrabblePiece letter="S" {...scrabbleLetterProps} />
-        </CardContent>
-      </CardComponent>
-    </Box>
+        <Box sx={{ marginTop: "1.3rem" }}>
+          <ScrabblePiece
+            letter="K"
+            {...scrabbleLetterProps}
+            numberBox={
+              <Box
+                sx={{
+                  position: "absolute",
+                  right: 5,
+                  bottom: 3,
+                  fontSize: "9px",
+                  color: "black",
+                }}
+              >
+                5
+              </Box>
+            }
+          />
+        </Box>
+        <Box>
+          <ScrabblePiece
+            letter="I"
+            {...scrabbleLetterProps}
+            numberBox={
+              <Box
+                sx={{
+                  position: "absolute",
+                  right: 5,
+                  bottom: 3,
+                  fontSize: "9px",
+                  color: "black",
+                }}
+              >
+                1
+              </Box>
+            }
+          />
+        </Box>
+
+        <Box sx={{ marginTop: "1.3rem" }}>
+          <ScrabblePiece
+            letter="L"
+            {...scrabbleLetterProps}
+            numberBox={
+              <Box
+                sx={{
+                  position: "absolute",
+                  right: 5,
+                  bottom: 3,
+                  fontSize: "9px",
+                  color: "black",
+                }}
+              >
+                1
+              </Box>
+            }
+          />
+        </Box>
+        <Box>
+          <ScrabblePiece
+            letter="L"
+            {...scrabbleLetterProps}
+            numberBox={
+              <Box
+                sx={{
+                  position: "absolute",
+                  right: 5,
+                  bottom: 3,
+                  fontSize: "9px",
+                  color: "black",
+                }}
+              >
+                1
+              </Box>
+            }
+          />
+        </Box>
+        <Box sx={{ marginTop: "1.3rem" }}>
+          <ScrabblePiece
+            letter="S"
+            {...scrabbleLetterProps}
+            numberBox={
+              <Box
+                sx={{
+                  position: "absolute",
+                  right: 5,
+                  bottom: 3,
+                  fontSize: "9px",
+                  color: "black",
+                }}
+              >
+                1
+              </Box>
+            }
+          />
+        </Box>
+      </CardContent>
+    </CardComponent>
   );
 };
 
