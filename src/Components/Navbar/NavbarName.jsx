@@ -13,18 +13,16 @@ const navbarLetterProps = {
 };
 
 const scrabblePieceProps = {
-  height: "33px",
+  height: "35px",
   width: "35px",
-  fontSize: "18px",
+  padding: ".7rem",
+  fontSize: "19px",
   fontWeight: "bold",
-
 };
-
 
 const NavbarName = () => {
   return (
     <Box
-    
       sx={{
         flexGrow: 1,
         display: "flex",
@@ -33,23 +31,97 @@ const NavbarName = () => {
         alignItems: "center",
       }}
     >
-      <ScrabblePiece letter="B" {...scrabblePieceProps}>
-        3
-      </ScrabblePiece>
+      <Box>
+        <ScrabblePiece
+          letter="B"
+          {...scrabblePieceProps}
+          numberBox={
+            <Box
+              sx={{
+                position: "absolute",
+                right: 5,
+                bottom: 3,
+                fontSize: "9px",
+                color: "black",
+              }}
+            >
+              3
+            </Box>
+          }
+        />
+      </Box>
       <Typography sx={navbarLetterProps}>e-</Typography>
-      <ScrabblePiece letter="A" {...scrabblePieceProps}>
-        1
-      </ScrabblePiece>
+      <Box>
+        <ScrabblePiece
+          letter="A"
+          {...scrabblePieceProps}
+          numberBox={
+            <Box
+              sx={{
+                position: "absolute",
+                right: 5,
+                bottom: 3,
+                fontSize: "9px",
+                color: "black",
+              }}
+            >
+              1
+            </Box>
+          }
+        >
+          1
+        </ScrabblePiece>
+      </Box>
+
       <Typography sx={{ ...navbarLetterProps, paddingRight: "23px" }}>
         sia
       </Typography>
-      <ScrabblePiece letter="M" {...scrabblePieceProps}>
-        3
-      </ScrabblePiece>
+
+      <Box>
+        <ScrabblePiece
+          letter="M"
+          {...scrabblePieceProps}
+          numberBox={
+            <Box
+              sx={{
+                position: "absolute",
+                right: 5,
+                bottom: 3,
+                fontSize: "9px",
+                color: "black",
+              }}
+            >
+              3
+            </Box>
+          }
+        >
+          3
+        </ScrabblePiece>
+      </Box>
+
       <Typography sx={navbarLetterProps}>c</Typography>
-      <ScrabblePiece letter="K" {...scrabblePieceProps}>
-        5
-      </ScrabblePiece>
+      <Box>
+        <ScrabblePiece
+          letter="K"
+          {...scrabblePieceProps}
+          numberBox={
+            <Box
+              sx={{
+                position: "absolute",
+                right: 5,
+                bottom: 3,
+                fontSize: "9px",
+                color: "black",
+              }}
+            >
+              3
+            </Box>
+          }
+        >
+          5
+        </ScrabblePiece>
+      </Box>
+
       <Typography sx={navbarLetterProps}>erracher</Typography>
     </Box>
   );
