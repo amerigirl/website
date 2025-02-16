@@ -8,6 +8,7 @@ import { Box } from "@mui/material";
 import SkillsCardComponent from "./Components/CardSection/Cards/SkillsCardComponent.jsx";
 import AboutCardComponent from "./Components/CardSection/Cards/AboutCardComponent.jsx";
 import ProjectsCardComponent from "./Components/CardSection/Cards/ProjectsCardComponent.jsx";
+import ContactForm from "./Components/ContactForm/ContactForm.jsx";
 
 const theme = createTheme({
   palette: {
@@ -33,7 +34,7 @@ function App() {
           sx={{
             display: "flex",
             justifyContent: "center",
-            alignItems: 'center',
+            alignItems: "center",
             flexWrap: "wrap",
             width: "100%",
           }}
@@ -42,6 +43,7 @@ function App() {
           <SkillsCardComponent />
           <ProjectsCardComponent />
         </Box>
+        <ContactForm />
       </ThemeProvider>
     </Box>
   );

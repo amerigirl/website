@@ -36,7 +36,7 @@ const Navbar = () => {
           <StyledButton href="#about">About</StyledButton>
           <StyledButton href="#skills">Skills</StyledButton>
           <StyledButton href="#projects">Projects</StyledButton>
-          <StyledButton>Contact</StyledButton>
+          <StyledButton href="#contact">Contact</StyledButton>
         </Stack>
       </Toolbar>
     </AppBar>

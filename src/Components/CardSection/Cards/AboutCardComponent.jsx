@@ -20,6 +20,7 @@ const AboutCardComponent = () => {
           display: "flex",
           flexDirection: "row",
           alignItems: "flex-start",
+          flexWrap: 'wrap',
           gap: ".3rem",
           padding: "1rem",
         }}
