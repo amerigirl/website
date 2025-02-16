@@ -1,7 +1,7 @@
 import React from "react";
-import CardComponent from "./CardSection/CardComponent";
 import { Box, CardContent } from "@mui/material";
-import ScrabblePiece from "../Components/ScrabblePiece";
+import CardComponent from "../CardComponent";
+import ScrabblePiece from "../../ScrabblePiece";
 
 const scrabbleLetterProps = {
   height: "45px",
@@ -10,11 +10,12 @@ const scrabbleLetterProps = {
   fontSize: "20px",
   fontWeight: "bold",
 };
-const SkillsCardComponent = () => {
+
+const AboutCardComponent = () => {
   return (
     <CardComponent>
       <CardContent
-        id="skills"
+        id="about"
         sx={{
           display: "flex",
           flexDirection: "row",
@@ -26,7 +27,7 @@ const SkillsCardComponent = () => {
         <Box>
           <Box>
             <ScrabblePiece
-              letter="S"
+              letter="A"
               {...scrabbleLetterProps}
               numberBox={
                 <Box
@@ -45,9 +46,9 @@ const SkillsCardComponent = () => {
           </Box>
         </Box>
 
-        <Box sx={{ marginTop: "1.3rem" }}>
+        <Box sx={{marginTop: '1.3rem'}}>
           <ScrabblePiece
-            letter="K"
+            letter="B"
             {...scrabbleLetterProps}
             numberBox={
               <Box
@@ -59,14 +60,14 @@ const SkillsCardComponent = () => {
                   color: "black",
                 }}
               >
-                5
+                3
               </Box>
             }
           />
         </Box>
         <Box>
           <ScrabblePiece
-            letter="I"
+            letter="O"
             {...scrabbleLetterProps}
             numberBox={
               <Box
@@ -84,9 +85,9 @@ const SkillsCardComponent = () => {
           />
         </Box>
 
-        <Box sx={{ marginTop: "1.3rem" }}>
+        <Box sx={{marginTop: '1.3rem'}}>
           <ScrabblePiece
-            letter="L"
+            letter="U"
             {...scrabbleLetterProps}
             numberBox={
               <Box
@@ -102,10 +103,9 @@ const SkillsCardComponent = () => {
               </Box>
             }
           />
-        </Box>
-        <Box>
+          </Box>
           <ScrabblePiece
-            letter="L"
+            letter="T"
             {...scrabbleLetterProps}
             numberBox={
               <Box
@@ -121,29 +121,9 @@ const SkillsCardComponent = () => {
               </Box>
             }
           />
-        </Box>
-        <Box sx={{ marginTop: "1.3rem" }}>
-          <ScrabblePiece
-            letter="S"
-            {...scrabbleLetterProps}
-            numberBox={
-              <Box
-                sx={{
-                  position: "absolute",
-                  right: 5,
-                  bottom: 3,
-                  fontSize: "9px",
-                  color: "black",
-                }}
-              >
-                1
-              </Box>
-            }
-          />
-        </Box>
+       
       </CardContent>
     </CardComponent>
   );
 };
-
-export default SkillsCardComponent;
+export default AboutCardComponent;

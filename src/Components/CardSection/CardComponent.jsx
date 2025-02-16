@@ -1,8 +1,9 @@
 import React from "react";
 import { Container, styled, CardContent, Card } from "@mui/material";
 import { blueGrey } from "@mui/material/colors";
+import ScrabblePiece from "../ScrabblePiece";
 
-const StyledCard = styled(Card)(({}) => ({
+const StyledCard = styled(Card)(() => ({
   backgroundColor: "white",
   transition: "background-color .03s ease",
   "&:hover": {

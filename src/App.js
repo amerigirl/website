@@ -5,9 +5,9 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import LandingSection from "./Components/LandingSection.jsx";
 import { amber, blue } from "@mui/material/colors";
 import { Box } from "@mui/material";
-import SkillsCardComponent from "./Components/SkillsCardComponent.jsx";
-import AboutCardComponent from "./Components/AboutCardComponent.jsx";
-import ProjectsCardComponent from "./Components/ProjectsCardComponenet.jsx";
+import SkillsCardComponent from "./Components/CardSection/Cards/SkillsCardComponent.jsx";
+import AboutCardComponent from "./Components/CardSection/Cards/AboutCardComponent.jsx";
+import ProjectsCardComponent from "./Components/CardSection/Cards/ProjectsCardComponent.jsx";
 
 const theme = createTheme({
   palette: {
