@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -9,6 +8,7 @@ import SkillsCardComponent from "./Components/CardSection/Cards/SkillsCardCompon
 import AboutCardComponent from "./Components/CardSection/Cards/AboutCardComponent.jsx";
 import ProjectsCardComponent from "./Components/CardSection/Cards/ProjectsCardComponent.jsx";
 import ContactForm from "./Components/ContactForm/ContactForm.jsx";
+import ScrollUpButton from "./Components/ScrollUpButton.jsx";
 
 const theme = createTheme({
   palette: {
@@ -22,7 +22,6 @@ const theme = createTheme({
       main: blue[50],
     },
   },
-  
 });
 function App() {
   return (
@@ -43,6 +42,7 @@ function App() {
           <SkillsCardComponent />
           <ProjectsCardComponent />
         </Box>
+        <ScrollUpButton />
         <ContactForm />
       </ThemeProvider>
     </Box>

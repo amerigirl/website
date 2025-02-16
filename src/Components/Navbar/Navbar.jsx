@@ -3,6 +3,7 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import NavbarName from "./NavbarName";
+import ScrollUpButton from "../ScrollUpButton";
 
 // Define a reusable StyledButton
 const StyledButton = styled(Button)(({ theme }) => ({
@@ -17,11 +18,10 @@ const StyledButton = styled(Button)(({ theme }) => ({
 const Navbar = () => {
   return (
     <AppBar
-      id="home"
       position="static"
       sx={{ backgroundColor: "transparent", boxShadow: "none" }}
     >
-      <Toolbar sx={{ height: "4rem" }}>
+      <Toolbar sx={{ height: "4rem", maxWidth: "95%" }}>
         <NavbarName />
         <Stack
           direction="row"
@@ -31,7 +31,7 @@ const Navbar = () => {
             marginRight: { md: "2rem" },
           }}
         >
-          {/* Use StyledButton for all buttons */}
+     
           <StyledButton href="#home">Home</StyledButton>
           <StyledButton href="#about">About</StyledButton>
           <StyledButton href="#skills">Skills</StyledButton>
