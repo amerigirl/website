@@ -9,12 +9,12 @@ export const aboutImageData = [
     title: "Seattle",
   },
  {
-    img: "../cert.jpg",
-    title: "MeAndGrogu",
+    img: "../renton.png",
+    title: "Renton Technical College",
   },
   {
     img: "../mePic.jpg",
-    title: "lets code",
+    title: "Be-Asia",
   },
 
  
