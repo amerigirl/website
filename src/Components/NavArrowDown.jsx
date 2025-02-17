@@ -1,9 +1,13 @@
 import React from 'react';
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import SouthIcon from "@mui/icons-material/South";
+import { Box } from '@mui/material';
 
 const NavArrowDown = () => {
   return (
-   <ArrowDownwardIcon/>
+   <Box color='primary.dark'>
+       <SouthIcon />
+
+   </Box>
   )
 }
 
