@@ -1,33 +1,20 @@
 import React from "react";
 import { Box, Button, TextField } from "@mui/material";
-import SectionTitle
- from "../SectionTitle";
+import SectionTitle from "../SectionTitle";
 const ContactForm = () => {
   return (
     <Box>
-         <SectionTitle 
-              title="Contact Me" 
-              subtitle="Let's get in touch!"
-              marginTop="3rem"
-      
-              />
+      <SectionTitle title="Contact Me" subtitle="Let's get in touch!"/>
       <Box
         id="contact"
         sx={{
           display: "grid",
-          gap: "2em",
+          gap: "2rem",
           maxWidth: "500px",
           margin: "0 auto",
         }}
       >
-        <Box
-          sx={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-          }}
-        ></Box>
         <TextField label="Name *" variant="outlined" fullWidth />
-
         <TextField label="Email *" variant="outlined" fullWidth />
 
         <TextField
@@ -43,9 +30,9 @@ const ContactForm = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            width:"20%",
+            width: "20%",
             left: "13rem",
-            marginBottom: "5rem"
+            marginBottom: "5rem",
           }}
         >
           Submit
