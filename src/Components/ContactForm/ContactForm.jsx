@@ -1,9 +1,16 @@
 import React from "react";
 import { Box, Button, TextField } from "@mui/material";
-
+import SectionTitle
+ from "../SectionTitle";
 const ContactForm = () => {
   return (
     <Box>
+         <SectionTitle 
+              title="Contact Me" 
+              subtitle="Let's get in touch!"
+              marginTop="3rem"
+      
+              />
       <Box
         id="contact"
         sx={{

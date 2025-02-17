@@ -9,6 +9,8 @@ import AboutCardComponent from "./Components/CardSection/Cards/AboutCardComponen
 import ProjectsCardComponent from "./Components/CardSection/Cards/ProjectsCardComponent.jsx";
 import ContactForm from "./Components/ContactForm/ContactForm.jsx";
 import SectionTitle from "./Components/SectionTitle.jsx";
+import NavArrowUp from "./Components/NavArrowUp.jsx";
+import NavArrowDown from "./Components/NavArrowDown.jsx";
 
 const theme = createTheme({
   palette: {
@@ -44,16 +46,12 @@ function App() {
             gap: "1rem",
           }}
         >
+          <NavArrowUp />
           <AboutCardComponent />
           <SkillsCardComponent />
           <ProjectsCardComponent />
+          <NavArrowDown/>
         </Box>
-        <SectionTitle 
-        title="Contact Me" 
-        subtitle="Let's get in touch!"
-        marginTop="3rem"
-
-        />
         <ContactForm />
       </ThemeProvider>
     </Box>
