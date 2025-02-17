@@ -43,15 +43,18 @@ function App() {
             alignItems: "center",
             flexWrap: "wrap",
             width: "100%",
-            gap: "1rem",
+            gap: ".5rem",
           }}
         >
-          <NavArrowUp />
           <AboutCardComponent />
           <SkillsCardComponent />
           <ProjectsCardComponent />
-          <NavArrowDown/>
         </Box>
+        {/* <Box display="flex">
+          <NavArrowUp />
+          <NavArrowDown />
+        </Box> */}
+
         <ContactForm />
       </ThemeProvider>
     </Box>
