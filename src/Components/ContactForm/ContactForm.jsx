@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Typography, TextField } from "@mui/material";
+import { Box, Button, TextField } from "@mui/material";
 
 const ContactForm = () => {
   return (
@@ -8,7 +8,7 @@ const ContactForm = () => {
         id="contact"
         sx={{
           display: "grid",
-          gap: "2rem",
+          gap: "2em",
           maxWidth: "500px",
           margin: "0 auto",
         }}
@@ -17,7 +17,6 @@ const ContactForm = () => {
           sx={{
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
-            gap: "1rem",
           }}
         ></Box>
         <TextField label="Name *" variant="outlined" fullWidth />
@@ -31,13 +30,20 @@ const ContactForm = () => {
           rows={6}
           fullWidth
         />
+        <Button
+          variant="contained"
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width:"20%",
+            left: "13rem",
+            marginBottom: "5rem"
+          }}
+        >
+          Submit
+        </Button>
       </Box>
-      <Button
-        variant="outlined"
-        sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
-      >
-        Submit
-      </Button>
     </Box>
   );
 };
