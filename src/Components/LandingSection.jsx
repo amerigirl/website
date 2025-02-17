@@ -1,5 +1,11 @@
 import React from "react";
-import { Typography, Box, Container } from "@mui/material";
+import {
+  Typography,
+  Box,
+  Container,
+  Button,
+} from "@mui/material";
+import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import { aboutImageData } from "../AboutImageData";
 
 const LandingSection = () => {
@@ -28,7 +34,7 @@ const LandingSection = () => {
             variant="h4"
             component="div"
             sx={{
-              marginTop: "3rem",
+              marginTop: "4rem",
               color: "primary.main",
               fontWeight: "bold",
             }}
@@ -47,11 +53,17 @@ const LandingSection = () => {
             spanning front-end and back-end development, I specialize in React,
             JavaScript, and Azure technologies.
           </Typography>
+          <br></br>
+          <Button
+          variant="contained"
+          startIcon={<CloudDownloadIcon/>}
+          > Resume
+          </Button>
         </Box>
 
         <Box
           sx={{
-            width: 500,
+            width: 525,
             height: 550,
             display: "grid",
             gridTemplateColumns: "repeat(2, 1fr)",
@@ -63,7 +75,7 @@ const LandingSection = () => {
             backgroundColor: "primary.light",
           }}
         >
-          {aboutImageData.slice(0, 4).map((item) => (
+          {aboutImageData.map((item) => (
             <Box
               key={item.img}
               sx={{

@@ -24,10 +24,10 @@ const Navbar = () => {
         <NavbarName />
         <Stack
           direction="row"
-          spacing={6}
+          spacing={4}
           sx={{
             justifyContent: { xs: "center", md: "flex-end" },
-            marginRight: { md: "2rem" },
+            marginRight: { md: "2rem", marginTop: "1rem" },
           }}
         >
      
