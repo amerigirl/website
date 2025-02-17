@@ -1,9 +1,8 @@
-import { AppBar, Toolbar, Stack, Typography, Box } from "@mui/material";
+import { AppBar, Toolbar, Stack } from "@mui/material";
 import React from "react";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import NavbarName from "./NavbarName";
-import ScrollUpButton from "../ScrollUpButton";
 
 // Define a reusable StyledButton
 const StyledButton = styled(Button)(({ theme }) => ({

@@ -8,7 +8,6 @@ import SkillsCardComponent from "./Components/CardSection/Cards/SkillsCardCompon
 import AboutCardComponent from "./Components/CardSection/Cards/AboutCardComponent.jsx";
 import ProjectsCardComponent from "./Components/CardSection/Cards/ProjectsCardComponent.jsx";
 import ContactForm from "./Components/ContactForm/ContactForm.jsx";
-import ScrollUpButton from "./Components/ScrollUpButton.jsx";
 
 const theme = createTheme({
   palette: {
@@ -42,7 +41,6 @@ function App() {
           <SkillsCardComponent />
           <ProjectsCardComponent />
         </Box>
-        <ScrollUpButton />
         <ContactForm />
       </ThemeProvider>
     </Box>

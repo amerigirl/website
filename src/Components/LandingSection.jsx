@@ -13,7 +13,7 @@ const LandingSection = () => {
           justifyContent: "center",
           gap: "5rem",
           height: "61vh",
-          marginTop: "12rem",
+          marginTop: "15rem",
           marginBottom: "10rem",
         }}
       >
@@ -51,8 +51,8 @@ const LandingSection = () => {
 
         <Box
           sx={{
-            width: 660,
-            height: 650,
+            width: 500,
+            height: 550,
             display: "grid",
             gridTemplateColumns: "repeat(2, 1fr)",
             gridTemplateRows: "repeat(2, 1fr)",
