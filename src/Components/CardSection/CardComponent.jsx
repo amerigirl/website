@@ -30,9 +30,9 @@ const CardComponent = ({ children }) => {
             height: "33vh",
             width: "20vw",
             marginBottom: "8rem",
-            marginTop: '5rem',
+            marginTop: '3rem',
             borderRadius: "30px",
-            border: "1px solid black",
+            border: "2px solid teal",
           }}
         >
           <CardContent

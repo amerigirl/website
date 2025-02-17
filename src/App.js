@@ -8,8 +8,7 @@ import SkillsCardComponent from "./Components/CardSection/Cards/SkillsCardCompon
 import AboutCardComponent from "./Components/CardSection/Cards/AboutCardComponent.jsx";
 import ProjectsCardComponent from "./Components/CardSection/Cards/ProjectsCardComponent.jsx";
 import ContactForm from "./Components/ContactForm/ContactForm.jsx";
-import CardSectionTitle from "./Components/CardSectionTitle.jsx";
-
+import SectionTitle from "./Components/SectionTitle.jsx";
 
 const theme = createTheme({
   palette: {
@@ -30,7 +29,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <Navbar />
         <LandingSection />
-        <CardSectionTitle/>
+        <SectionTitle/>
         <Box
           sx={{
             display: "flex",

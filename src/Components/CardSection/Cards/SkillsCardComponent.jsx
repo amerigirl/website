@@ -19,7 +19,7 @@ const SkillsCardComponent = () => {
           display: "flex",
           flexDirection: "row",
           alignItems: "flex-start",
-                    gap: ".3rem",
+          gap: ".3rem",
           padding: "1rem",
         }}
       >

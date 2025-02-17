@@ -11,7 +11,7 @@ const ContactForm = () => {
     >
       <Box id="contact" sx={{ textAlign: "center", marginTop: "1rem" }}>
         <Typography variant="h3">Contact Me</Typography>
-        <Typography variant="h6" sx={{ color: "primary.main" }}>
+        <Typography variant="h6" sx={{ color: "primary.dark" }}>
           Let's get in touch!
         </Typography>
       </Box>
