@@ -1,14 +1,26 @@
 import React from "react";
-import {
-  Typography,
-  Box,
-  Container,
-  Button,
-} from "@mui/material";
+import { Typography, Box, Container, Button } from "@mui/material";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import { aboutImageData } from "../AboutImageData";
 
 const LandingSection = () => {
+
+  /**
+   * handles downloading my resume
+   */
+  const handleClick = () => {
+
+    const pdfUrl = `${process.env.PUBLIC_URL}/Be-AsiaMcKerracherResume.pdf`;
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Be-AsiaMcKerracherResume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    console.log("handle clicks");
+  };
+
   return (
     <>
       <Container
@@ -55,9 +67,11 @@ const LandingSection = () => {
           </Typography>
           <br></br>
           <Button
-          variant="contained"
-          startIcon={<CloudDownloadIcon/>}
-          > Resume
+            variant="contained"
+            startIcon={<CloudDownloadIcon />}
+            onClick={handleClick}
+          >
+            Resume
           </Button>
         </Box>
 
