@@ -2,6 +2,8 @@ import React from "react";
 import { Box, CardContent } from "@mui/material";
 import CardComponent from "../CardComponent";
 import ScrabblePiece from "../../ScrabblePiece";
+import { blueGrey } from "@mui/material/colors";
+
 
 const scrabbleLetterProps = {
   height: "45px",
@@ -9,13 +11,14 @@ const scrabbleLetterProps = {
   padding: ".7rem",
   fontSize: "20px",
   fontWeight: "bold",
+ 
 };
 
 const AboutCardComponent = () => {
   return (
-    <CardComponent>
+    <CardComponent  id="about">
       <CardContent
-        id="about"
+       
         sx={{
           display: "flex",
           flexDirection: "row",

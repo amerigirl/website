@@ -10,7 +10,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
   fontSize: "17px",
   color: "black",
   "&:hover": {
-    color: theme.palette.primary.main, // Use primary color on hover
+    color: theme.palette.primary.main, 
   },
 }));
 

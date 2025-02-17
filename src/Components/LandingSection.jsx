@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Box, Container, Button } from "@mui/material";
-import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
+import DownloadIcon from "@mui/icons-material/Download";
 import { aboutImageData } from "../AboutImageData";
 
 const LandingSection = () => {
@@ -31,8 +31,8 @@ const LandingSection = () => {
           justifyContent: "center",
           gap: "5rem",
           height: "61vh",
-          marginTop: "15rem",
-          marginBottom: "6rem",
+          marginTop: "13rem",
+          marginBottom: '12rem'
         }}
       >
         <Box
@@ -68,7 +68,7 @@ const LandingSection = () => {
           <br></br>
           <Button
             variant="contained"
-            startIcon={<CloudDownloadIcon />}
+            startIcon={<DownloadIcon />}
             onClick={handleClick}
           >
             Resume
