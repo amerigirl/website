@@ -29,7 +29,11 @@ function App() {
       <ThemeProvider theme={theme}>
         <Navbar />
         <LandingSection />
-        <SectionTitle/>
+        <SectionTitle
+          title="About Me"
+          subtitle="Please click a card below to learn how my skills can help your team!
+"
+        />
         <Box
           sx={{
             display: "flex",
@@ -44,6 +48,12 @@ function App() {
           <SkillsCardComponent />
           <ProjectsCardComponent />
         </Box>
+        <SectionTitle 
+        title="Contact Me" 
+        subtitle="Let's get in touch!"
+        marginTop="3rem"
+
+        />
         <ContactForm />
       </ThemeProvider>
     </Box>

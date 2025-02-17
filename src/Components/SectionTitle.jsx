@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import MouseSharpIcon from "@mui/icons-material/MouseTwoTone";
 import React from "react";
 
-const SectionTitle = () => {
+const SectionTitle = ({title, subtitle}) => {
   return (
     <>
       <Typography
@@ -14,11 +14,11 @@ const SectionTitle = () => {
           paddingBottom: "1rem",
           color: "primary.main",
           fontSize: "3rem",
-          marginTop: "-2rem",
+          marginTop: "9rem",
           fontWeight: "bold",
         }}
       >
-        About Me
+    {title}
       </Typography>
       <Typography
         variant="h5"
@@ -27,8 +27,7 @@ const SectionTitle = () => {
           textAlign: "center",
           paddingBottom: "4rem",
         }}
-      >
-        Please click a card below to learn how my skills can help your team!
+      >{subtitle}
       </Typography>
     </>
   );
