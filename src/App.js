@@ -52,7 +52,6 @@ function App() {
           <SkillsCardComponent />
           <ProjectsCardComponent />
         </Box>
-        <NavArrowComponent />
         <ContactComponent />
       </ThemeProvider>
     </Box>

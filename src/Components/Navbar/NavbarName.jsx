@@ -52,28 +52,8 @@ const NavbarName = () => {
         />
       </Box>
       <Typography sx={navbarLetterProps}>e-</Typography>
-      <Box>
-        <ScrabblePiece
-          letter="A"
-          {...scrabblePieceProps}
-          numberBox={
-            <Box
-              sx={{
-                position: "absolute",
-                right: 5,
-                bottom: 3,
-                fontSize: "9px",
-                color: "black",
-              }}
-            >
-              1
-            </Box>
-          }
-        ></ScrabblePiece>
-      </Box>
-
-      <Typography sx={{ ...navbarLetterProps, paddingRight: "2rem" }}>
-        sia
+            <Typography sx={{ ...navbarLetterProps, paddingRight: "1rem" }}>
+        Asia
       </Typography>
 
       <Box>
