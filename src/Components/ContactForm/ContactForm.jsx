@@ -6,7 +6,10 @@ import SectionTitle from "../SectionTitle";
 const ContactForm = () => {
   return (
     <Box>
-      <SectionTitle title="Contact Me" subtitle="Let's get in touch!" />
+      <Box sx={{marginTop:"8rem"}}>
+              <SectionTitle title="Contact Me" subtitle="Let's get in touch!" />
+
+      </Box>
       <Box
         id="contact"
         sx={{
@@ -34,7 +37,7 @@ const ContactForm = () => {
             alignItems: "center",
             width: "20%",
             left: "13rem",
-            marginBottom: "5rem",
+            marginBottom: "15rem",
           }}
         >
           Submit

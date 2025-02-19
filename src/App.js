@@ -30,27 +30,29 @@ function App() {
       <ThemeProvider theme={theme}>
         <Navbar />
         <LandingSection />
-        <SectionTitle
-          title="Learn More..."
-          subtitle="Click a card to learn about how my skills can help your team!
-"
-        />
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexWrap: "wrap",
-            width: "100%",
-            gap: ".5rem",
-          }}
-        >
-          <AboutCardComponent />
-          <SkillsCardComponent />
-          <ProjectsCardComponent />
+        <Box sx={{ marginTop: "6rem" }}>
+          <SectionTitle
+           title={"How can I help?"}
+            subtitle="(Click a card to learn more)"
+          />
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexWrap: "wrap",
+              width: "100%",
+              gap: ".5rem",
+            }}
+          >
+            <AboutCardComponent />
+            <SkillsCardComponent />
+            <ProjectsCardComponent />
+          </Box>
         </Box>
+
         <ContactComponent />
-        <Footer/>
+        <Footer />
       </ThemeProvider>
     </Box>
   );

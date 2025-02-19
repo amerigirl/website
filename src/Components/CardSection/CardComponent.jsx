@@ -7,6 +7,7 @@ import {
 
   Box,
 } from "@mui/material";
+  
 
 const StyledCard = styled(Card)(({ theme }) => ({
   backgroundColor: "white",
@@ -20,6 +21,7 @@ const CardComponent = ({ children }) => {
   return (
     <Box>
       <Container>
+        
         <StyledCard
           variant="outlined"
           sx={{
