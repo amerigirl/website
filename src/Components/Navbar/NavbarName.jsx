@@ -13,10 +13,10 @@ const navbarLetterProps = {
 };
 
 const scrabblePieceProps = {
-  height: "35px",
-  width: "35px",
+  height: "31px",
+  width: "31px",
   padding: ".7rem",
-  fontSize: "19px",
+  fontSize: "20px",
   fontWeight: "bold",
 };
 
@@ -64,7 +64,7 @@ const NavbarName = () => {
             <Box
               sx={{
                 position: "absolute",
-                right: 5,
+                right: 3.9,
                 bottom: 3,
                 fontSize: "9px",
                 color: "black",

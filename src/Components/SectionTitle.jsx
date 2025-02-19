@@ -13,7 +13,7 @@ const SectionTitle = ({title, subtitle}) => {
           paddingBottom: "1rem",
           color: "primary.main",
           fontSize: "3rem",
-          marginTop: "9rem",
+          marginTop: "1rem",
           fontWeight: "bold",
         }}
       >
@@ -24,7 +24,7 @@ const SectionTitle = ({title, subtitle}) => {
         component="div"
         sx={{
           textAlign: "center",
-          paddingBottom: "4rem",
+          paddingBottom: "2rem",
         }}
       >{subtitle}
       </Typography>

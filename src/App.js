@@ -7,12 +7,9 @@ import { Box } from "@mui/material";
 import SkillsCardComponent from "./Components/CardSection/Cards/SkillsCardComponent.jsx";
 import AboutCardComponent from "./Components/CardSection/Cards/AboutCardComponent.jsx";
 import ProjectsCardComponent from "./Components/CardSection/Cards/ProjectsCardComponent.jsx";
-import ContactForm from "./Components/ContactForm/ContactForm.jsx";
 import SectionTitle from "./Components/SectionTitle.jsx";
-import NavArrowUp from "./Components/CardSection/NavArrows/NavArrowUp.jsx";
-import NavArrowDown from "./Components/CardSection/NavArrows/NavArrowDown.jsx";
 import ContactComponent from "./Components/ContactForm/ContactComponent.jsx";
-import NavArrowComponent from "./Components/CardSection/NavArrows/NavArrowComponent.jsx";
+import Footer from "./Components/Footer/Footer.jsx";
 
 const theme = createTheme({
   palette: {
@@ -34,7 +31,7 @@ function App() {
         <Navbar />
         <LandingSection />
         <SectionTitle
-          title="About Me"
+          title="Learn More..."
           subtitle="Click a card to learn about how my skills can help your team!
 "
         />
@@ -53,6 +50,7 @@ function App() {
           <ProjectsCardComponent />
         </Box>
         <ContactComponent />
+        <Footer/>
       </ThemeProvider>
     </Box>
   );
