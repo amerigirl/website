@@ -2,13 +2,32 @@ import React from "react";
 import { Box, Button, TextField } from "@mui/material";
 import SectionTitle from "../SectionTitle";
 
-
 const ContactForm = () => {
   return (
     <Box>
-      <Box sx={{marginTop:"8rem"}}>
-              <SectionTitle title="Contact Me" subtitle="Let's get in touch!" />
-
+      <Box sx={{ marginTop: "8rem" }}>
+        <SectionTitle title="Contact Me" subtitle="Let's get in touch!" />
+        <Box display={"flex"} gap={".5rem"}>
+          <Box
+            component="img"
+            sx={{
+              height: 52,
+              width: 52,
+            }}
+            alt="LinkedIn Icon"
+            src="../../LinkedIn.png"
+          />
+          <Box
+            component="img"
+            sx={{
+              height: 38,
+              width: 38,
+              marginTop: 0.7,
+            }}
+            alt="Github Icon"
+            src="../../github.png"
+          />
+        </Box>
       </Box>
       <Box
         id="contact"

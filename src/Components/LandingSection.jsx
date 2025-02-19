@@ -1,15 +1,13 @@
 import React from "react";
-import { Typography, Box, Container, Button } from "@mui/material";
+import { Typography, Box, Container, Button, Image } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
 import { aboutImageData } from "../AboutImageData";
 
 const LandingSection = () => {
-
   /**
    * handles downloading my resume
    */
   const handleClick = () => {
-
     const pdfUrl = `${process.env.PUBLIC_URL}/Be-AsiaMcKerracherResume.pdf`;
     const link = document.createElement("a");
     link.href = pdfUrl;
@@ -65,13 +63,18 @@ const LandingSection = () => {
             JavaScript, and Azure technologies.
           </Typography>
           <br></br>
-          <Button
-            variant="contained"
-            startIcon={<DownloadIcon />}
-            onClick={handleClick}
-          >
-            Resume
-          </Button>
+          <Box display={"flex"} gap={"2.5rem"} marginTop={"1rem"}>
+            <Box>
+              <Button
+                variant="contained"
+                startIcon={<DownloadIcon />}
+                onClick={handleClick}
+              >
+                Resume
+              </Button>
+            </Box>
+           
+          </Box>
         </Box>
 
         <Box

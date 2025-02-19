@@ -4,9 +4,15 @@ import ContactForm from './ContactForm';
 
 const ContactComponent = () => {
   return (
-  <Box>
+    <>
+    <Box>
+      
+    </Box>
+    <Box>
         <ContactForm />
-  </Box>
+  </Box> 
+    </>
+ 
   )
 }
 
