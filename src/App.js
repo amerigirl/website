@@ -11,6 +11,7 @@ import ContactForm from "./Components/ContactForm/ContactForm.jsx";
 import SectionTitle from "./Components/SectionTitle.jsx";
 import NavArrowUp from "./Components/NavArrowUp.jsx";
 import NavArrowDown from "./Components/NavArrowDown.jsx";
+import ContactComponent from "./Components/ContactForm/ContactComponent.jsx";
 
 const theme = createTheme({
   palette: {
@@ -50,11 +51,7 @@ function App() {
           <SkillsCardComponent />
           <ProjectsCardComponent />
         </Box>
-        {/* <Box display="flex">
-          <NavArrowUp />
-          <NavArrowDown />
-        </Box> */}
-
+          <ContactComponent/>
         <ContactForm />
       </ThemeProvider>
     </Box>
