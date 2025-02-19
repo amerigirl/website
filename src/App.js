@@ -9,9 +9,10 @@ import AboutCardComponent from "./Components/CardSection/Cards/AboutCardComponen
 import ProjectsCardComponent from "./Components/CardSection/Cards/ProjectsCardComponent.jsx";
 import ContactForm from "./Components/ContactForm/ContactForm.jsx";
 import SectionTitle from "./Components/SectionTitle.jsx";
-import NavArrowUp from "./Components/NavArrowUp.jsx";
-import NavArrowDown from "./Components/NavArrowDown.jsx";
+import NavArrowUp from "./Components/CardSection/NavArrows/NavArrowUp.jsx";
+import NavArrowDown from "./Components/CardSection/NavArrows/NavArrowDown.jsx";
 import ContactComponent from "./Components/ContactForm/ContactComponent.jsx";
+import NavArrowComponent from "./Components/CardSection/NavArrows/NavArrowComponent.jsx";
 
 const theme = createTheme({
   palette: {
@@ -51,6 +52,7 @@ function App() {
           <SkillsCardComponent />
           <ProjectsCardComponent />
         </Box>
+        <NavArrowComponent/>
           <ContactComponent/>
         <ContactForm />
       </ThemeProvider>
