@@ -28,7 +28,7 @@ const CardComponent = ({ children }) => {
             alignItems: "center",
             height: "33vh",
             width: "20vw",
-            marginBottom: "8rem",
+            marginBottom: "9rem",
             marginTop: "3rem",
             borderRadius: "30px",
             border: "2px solid teal",

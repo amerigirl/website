@@ -35,7 +35,7 @@ function App() {
         <LandingSection />
         <SectionTitle
           title="About Me"
-          subtitle="Please click a card below to learn how my skills can help your team!
+          subtitle="Click a card to learn about how my skills can help your team!
 "
         />
         <Box
@@ -52,9 +52,8 @@ function App() {
           <SkillsCardComponent />
           <ProjectsCardComponent />
         </Box>
-        <NavArrowComponent/>
-          <ContactComponent/>
-        <ContactForm />
+        <NavArrowComponent />
+        <ContactComponent />
       </ThemeProvider>
     </Box>
   );

@@ -1,5 +1,4 @@
 import { Typography } from "@mui/material";
-import MouseSharpIcon from "@mui/icons-material/MouseTwoTone";
 import React from "react";
 
 const SectionTitle = ({title, subtitle}) => {

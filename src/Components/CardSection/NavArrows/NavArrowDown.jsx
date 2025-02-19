@@ -1,11 +1,18 @@
 import React from 'react';
-import ArrowDownwardRoundedIcon from "@mui/icons-material/ArrowDownwardRounded";import { Box } from '@mui/material';
+import { Box, styled } from "@mui/material";
+import ArrowDownwardRoundedIcon from "@mui/icons-material/ArrowDownwardRounded";
 
+const StyledBox = styled(Box)(({ theme }) => ({
+  color: "primary.dark",
+  "&:hover": {
+    color: theme.palette.primary.light,
+  },
+}));
 const NavArrowDown = () => {
   return (
-    <Box color="primary.light" display="flex">
+    <StyledBox color="primary.dark" display="flex">
       <ArrowDownwardRoundedIcon style={{fontSize: 55}} />
-    </Box>
+    </StyledBox>
   );
 }
 

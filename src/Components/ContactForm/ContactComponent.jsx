@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { Box } from '@mui/material';
+import ContactForm from './ContactForm';
 
 const ContactComponent = () => {
   return (
-    <div>
-      contact component works
-      
-    </div>
+  <Box>
+        <ContactForm />
+  </Box>
   )
 }
 

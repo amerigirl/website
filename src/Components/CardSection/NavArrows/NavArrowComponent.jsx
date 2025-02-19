@@ -5,7 +5,7 @@ import NavArrowDown from "./NavArrowDown";
 
 const NavArrowComponent = () => {
   return (
-    <Box display="flex" justifyContent="space-between" marginTop={"-21rem"} marginBottom={"30rem"}>
+    <Box display="flex" justifyContent="space-between" marginTop={"-24rem"} marginBottom={"34rem"}>
       <Box marginLeft={"5rem"}>
         <NavArrowUp />
       </Box>
