@@ -1,32 +1,38 @@
-import React from 'react';
-import { Box } from '@mui/material';
-
+import React from "react";
+import { Box } from "@mui/material";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 const SocialMediaContact = () => {
   return (
-    <Box display={"flex"} 
-    >
-      <Box
-        component="img"
-        sx={{
-          height: 52,
-          width: 52,
-        }}
-        alt="LinkedIn Icon"
-        src="../../LinkedIn.png"
-      />
-      <Box
-        component="img"
-        sx={{
-          height: 38,
-          width: 38,
-          marginTop: 0.7,
-        }}
-        alt="Github Icon"
-        src="../../github.png"
-      />
+    <Box display={"grid"} gap={"4rem"}>
+
+      <Box>
+        <Box
+          component="img"
+          sx={{
+            height: 45,
+            width: 45,
+          }}
+          alt="LinkedIn Icon"
+          src="../../LinkedIn.png"
+        />
+        <Box
+          component="img"
+          sx={{
+            height: 45,
+            width: 45,
+
+          }}
+          alt="Github Icon"
+          src="../../github.png"
+        />
+      </Box>
+
+      <Box>
+        <EmailOutlinedIcon />
+      </Box>
     </Box>
   );
-}
+};
 
-export default SocialMediaContact
+export default SocialMediaContact;

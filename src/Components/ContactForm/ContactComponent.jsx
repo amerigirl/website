@@ -2,19 +2,26 @@ import React from "react";
 import { Box } from "@mui/material";
 import ContactForm from "./ContactForm";
 import SectionTitle from "../SectionTitle";
-import SocialMediaContact from "./SocialMediaContact";
+import ContactMeDetails from "./ContactMeDetails";
+
 const ContactComponent = () => {
   return (
-    <>
+    <Box sx={{ 
+      display: "flex", 
+      justifyContent: "space-evenly",
+      marginLeft: "3rem"
+      
+      }}>
       <Box>
-        <SectionTitle title="Contact Me" subtitle="Let's get in touch!" />
-        <Box sx={{display:"flex" }}>
-                  <SocialMediaContact />
+        <ContactMeDetails />
+      </Box>
 
-        </Box>
+      <Box sx={{width:"35%"}}>
+        <SectionTitle title="Contact Me" subtitle="Let's get in touch!" />
+        <Box sx={{ display: "flex" }}></Box>
         <ContactForm />
       </Box>
-    </>
+    </Box>
   );
 };
 

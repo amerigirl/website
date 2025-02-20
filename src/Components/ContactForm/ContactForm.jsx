@@ -11,7 +11,7 @@ const ContactForm = () => {
         sx={{
           display: "grid",
           gap: "2rem",
-          maxWidth: "500px",
+          maxWidth: "900px",
           margin: "0 auto",
         }}
       >
