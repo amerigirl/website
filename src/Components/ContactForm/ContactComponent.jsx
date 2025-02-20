@@ -6,18 +6,20 @@ import ContactMeDetails from "./ContactMeDetails";
 
 const ContactComponent = () => {
   return (
-    <Box sx={{ 
-      display: "flex", 
-      justifyContent: "space-evenly",
-      marginLeft: "3rem"
-      
-      }}>
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "space-evenly",
+        marginLeft: "3rem",
+        marginTop: "10rem",
+      }}
+    >
       <Box>
         <ContactMeDetails />
       </Box>
 
-      <Box sx={{width:"35%"}}>
-        <SectionTitle title="Contact Me" subtitle="Let's get in touch!" />
+      <Box sx={{ width: "35%" }}>
+        <SectionTitle title="Contact Me" subtitle="Let's chat!" />
         <Box sx={{ display: "flex" }}></Box>
         <ContactForm />
       </Box>
