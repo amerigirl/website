@@ -27,10 +27,10 @@ const LandingSection = () => {
           display: "flex",
           alignItems: "flex-start",
           justifyContent: "center",
-          gap: "5rem",
+          gap: "7rem",
           height: "61vh",
           marginTop: "13rem",
-          marginBottom: "-2.5rem"
+          marginBottom: "12.5rem",
         }}
       >
         <Box
@@ -44,37 +44,38 @@ const LandingSection = () => {
             variant="h4"
             component="div"
             sx={{
-              marginTop: "4rem",
               color: "primary.main",
               fontWeight: "bold",
+              fontSize: "3rem",
+              marginTop:"3rem",
             }}
           >
             Hi, I'm Be-Asia!
           </Typography>
           <br></br>
           <Typography sx={{ fontSize: "20px" }}>
-            Dedicated to fostering a supportive ecosystem for tech
-            professionals, I leverage my unique journey from educator to
-            software engineer to bridge knowledge gaps in the industry. As a
-            dynamic full-stack developer, I harness JavaScript, C#, React, and
-            .NET to craft efficient and innovative solutions. My projects have
-            significantly boosted operational efficiency through optimized CRUD
-            operations, RESTful APIs, and streamlined workflows. With expertise
-            spanning front-end and back-end development, I specialize in React,
-            JavaScript, and Azure technologies.
+            As a dynamic full-stack developer with a strong focus on front-end
+            technologies, I harness JavaScript, React, TypeScript, and Node.js
+            to craft efficient and innovative solutions. My projects have
+            significantly enhanced user experiences and operational efficiency
+            through responsive interfaces, optimized component structures, and
+            seamless integration with back-end services. While proficient in
+            full-stack development, I specialize in creating robust and
+            interactive front-end applications using React and JavaScript. My
+            expertise extends to implementing RESTful APIs, managing state with
+            Redux, and ensuring smooth data flow between client and server.
+            <br></br>
+            <br></br>
           </Typography>
           <br></br>
-          <Box display={"flex"} gap={"2.5rem"} marginTop={"1rem"}>
-            <Box>
-              <Button
-                variant="contained"
-                startIcon={<DownloadIcon />}
-                onClick={handleClick}
-              >
-                Resume
-              </Button>
-            </Box>
-           
+          <Box>
+            <Button
+              variant="contained"
+              startIcon={<DownloadIcon />}
+              onClick={handleClick}
+            >
+              Resume
+            </Button>
           </Box>
         </Box>
 
@@ -90,6 +91,7 @@ const LandingSection = () => {
             borderColor: "primary.light",
             boxSizing: "border-box",
             backgroundColor: "primary.light",
+            marginTop: "3rem",
           }}
         >
           {aboutImageData.map((item) => (
