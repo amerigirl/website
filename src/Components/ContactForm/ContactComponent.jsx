@@ -7,7 +7,9 @@ import ContactMeDetails from "./ContactMeDetails";
 const ContactComponent = () => {
   return (
     <>
-    <SectionTitle title={"Contact Me"}subtitle={"Let's chat!"} />
+      <Box marginRight={"5rem"}>
+        <SectionTitle title={"Contact Me"} subtitle={"Let's chat!"} />
+      </Box>
       <Box
         sx={{
           display: "flex",

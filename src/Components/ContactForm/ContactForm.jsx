@@ -5,7 +5,6 @@ import SectionTitle from "../SectionTitle";
 const ContactForm = () => {
   return (
     <>
- 
       <Box
         id="contact"
         sx={{
@@ -15,16 +14,18 @@ const ContactForm = () => {
           margin: "0 auto",
         }}
       >
-        <TextField label="Name *" variant="outlined" fullWidth />
-        <TextField label="Email *" variant="outlined" fullWidth />
+          <TextField label="Name *" variant="outlined" fullWidth />
+          <TextField label="Email *" variant="outlined" fullWidth />
 
-        <TextField
-          label="Message..."
-          variant="outlined"
-          multiline
-          rows={6}
-          fullWidth
-        />
+          <TextField
+            label="Message..."
+            variant="outlined"
+            multiline
+            rows={6}
+            fullWidth
+          />
+
+
         <Button
           variant="contained"
           sx={{
