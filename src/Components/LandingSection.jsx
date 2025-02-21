@@ -30,6 +30,7 @@ const LandingSection = () => {
           gap: "5rem",
           height: "61vh",
           marginTop: "13rem",
+          marginBottom: "-2.5rem"
         }}
       >
         <Box
