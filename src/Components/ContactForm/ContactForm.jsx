@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Button, TextField } from "@mui/material";
-import SectionTitle from "../SectionTitle";
 
 const ContactForm = () => {
   return (
@@ -34,7 +33,6 @@ const ContactForm = () => {
             alignItems: "center",
             width: "20%",
             left: "13rem",
-            marginBottom: "15rem",
           }}
         >
           Submit

@@ -10,7 +10,7 @@ import {
   
 
 const StyledCard = styled(Card)(({ theme }) => ({
-  backgroundColor: "white",
+  backgroundColor: theme.palette.tertiary.main,
   transition: "background-color .03s ease",
   "&:hover": {
     backgroundColor: theme.palette.primary.main,
@@ -30,8 +30,8 @@ const CardComponent = ({ children }) => {
             alignItems: "center",
             height: "33vh",
             width: "20vw",
-            marginBottom: "9rem",
-            marginTop: "3rem",
+            marginBottom: "6rem",
+            marginTop: "2rem",
             borderRadius: "30px",
             border: "2px solid teal",
           }}

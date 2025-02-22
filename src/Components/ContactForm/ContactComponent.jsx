@@ -7,7 +7,7 @@ import ContactMeDetails from "./ContactMeDetails";
 const ContactComponent = () => {
   return (
     <>
-      <Box marginRight={"5rem"}>
+      <Box marginRight={"5rem"} marginTop={"17rem"}>
         <SectionTitle title={"Contact Me"} subtitle={"Let's chat!"} />
       </Box>
       <Box
@@ -16,6 +16,7 @@ const ContactComponent = () => {
           justifyContent: "space-evenly",
           marginLeft: "3rem",
           marginTop: "3rem",
+          marginBottom: "10rem"
         }}
       >
         <Box>

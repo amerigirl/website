@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import LandingSection from "./Components/LandingSection.jsx";
-import { amber, blue } from "@mui/material/colors";
+import { amber, teal } from "@mui/material/colors";
 import { Box } from "@mui/material";
 import SkillsCardComponent from "./Components/CardSection/Cards/SkillsCardComponent.jsx";
 import AboutCardComponent from "./Components/CardSection/Cards/AboutCardComponent.jsx";
@@ -20,7 +20,7 @@ const theme = createTheme({
       main: amber[200],
     },
     tertiary: {
-      main: blue[50],
+      main: teal[50],
     },
   },
 });
