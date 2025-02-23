@@ -7,10 +7,12 @@ import LandingSection from "./LandingSection";
 import ContactComponent from "./ContactForm/ContactComponent";
 import SectionTitle from "./SectionTitle";
 import theme from "../theme";
+import Navbar from "./Navbar/Navbar";
 
 function HomeLayout() {
   return (
     <ThemeProvider theme={theme}>
+      <Navbar />
       <LandingSection />
       <SectionTitle
         title={"How can I help?"}
