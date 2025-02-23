@@ -8,57 +8,71 @@ import ProjectsCardComponent from "./Components/CardSection/Cards/ProjectsCardCo
 import SectionTitle from "./Components/SectionTitle.jsx";
 import ContactComponent from "./Components/ContactForm/ContactComponent.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
-import {createBrowserRouter, RouterProvider} from 'react-router-dom'
-import Root from "./Components/Root.jsx";
 
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-  path: "/",
-  element: <Root />,
-children: [
-      { index: true, element: <LandingSection /> },
-      { path: "about", element: <AboutCardComponent /> },
-      { path: "skills", element: <SkillsCardComponent /> },
-      { path: "projects", element: <ProjectsCardComponent /> },
-      { path: "contact", element: <ContactComponent /> },
-  ]
-}
-])
-function App() {
-  return (
-    <RouterProvider router={router} />
-    
-    // <Box>
-    //   <ThemeProvider theme={theme}>
-    //     <Navbar />
-    //     <LandingSection />
-    //     <Box sx={{ marginTop: "6rem" }}>
-    //       <SectionTitle
-    //        title={"How can I help?"}
-    //         subtitle="(Click a card to learn more)"
-    //       />
-    //       <Box
-    //         sx={{
-    //           display: "flex",
-    //           justifyContent: "center",
-    //           alignItems: "center",
-    //           flexWrap: "wrap",
-    //           width: "100%",
-    //           gap: ".5rem",
-    //         }}
-    //       >
-    //         <AboutCardComponent />
-    //         <SkillsCardComponent />
-    //         <ProjectsCardComponent />
-    //       </Box>
-    //     </Box>
+    path: "/",
+    element: <LandingSection />,
+    // children: [
+    //       { index: true, element:  },
+    //     { path: "about", element: <AboutCardComponent /> },
+    //     { path: "skills", element: <SkillsCardComponent /> },
+    //     { path: "projects", element: <ProjectsCardComponent /> },
+    //     { path: "contact", element: <ContactComponent /> },
+    // ]
+  },
+]);
 
-    //     <ContactComponent />
-    //     <Footer />
-    //   </ThemeProvider>
-    // </Box>
-  )
+function App() {
+  return <RouterProvider router={router} />;
 }
 
 export default App;
+
+
+
+// export default App;
+// <Box>
+//   <ThemeProvider theme={theme}>
+//     <Navbar />
+//     <LandingSection />
+//     <Box sx={{ marginTop: "6rem" }}>
+//       <SectionTitle
+//        title={"How can I help?"}
+//         subtitle="(Click a card to learn more)"
+//       />
+//       <Box
+//         sx={{
+//           display: "flex",
+//           justifyContent: "center",
+//           alignItems: "center",
+//           flexWrap: "wrap",
+//           width: "100%",
+//           gap: ".5rem",
+//         }}
+//       >
+//         <AboutCardComponent />
+//         <SkillsCardComponent />
+//         <ProjectsCardComponent />
+//       </Box>
+//     </Box>
+
+//     <ContactComponent />
+//     <Footer />
+//   </ThemeProvider>
+// </Box>
+
+//       <Box>
+//     <ThemeProvider theme={theme}>
+//       <Navbar />
+//       <Box sx={{ marginTop: "6rem" }}>
+//         <Outlet />
+//       </Box>
+//       <Footer />
+//     </ThemeProvider>
+//   </Box>
+// );
+// }
