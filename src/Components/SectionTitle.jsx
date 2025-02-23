@@ -7,7 +7,6 @@ const SectionTitle = ({title, subtitle}) => {
       <Typography
         variant="h3"
         component="div"
-        id="about"
         sx={{
           textAlign: "center",
           paddingBottom: "1rem",

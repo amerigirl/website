@@ -16,7 +16,7 @@ const scrabbleLetterProps = {
 
 const AboutCardComponent = () => {
   return (
-    <CardComponent  >
+    <CardComponent>
       <CardContent 
        
         sx={{
