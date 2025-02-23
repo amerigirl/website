@@ -16,10 +16,10 @@ const ContactComponent = () => {
           justifyContent: "space-evenly",
           marginLeft: "3rem",
           marginTop: "2rem",
-          marginBottom: "10rem"
+          marginBottom: "10rem",
         }}
       >
-        <Box>
+        <Box >
           <ContactMeDetails />
         </Box>
 
