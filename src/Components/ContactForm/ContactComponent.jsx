@@ -16,7 +16,7 @@ const ContactComponent = () => {
           justifyContent: "space-evenly",
           marginLeft: "3rem",
           marginTop: "3rem",
-          marginBottom: "10rem",
+          marginBottom: "12rem",
         }}
       >
         <Box sx={{marginTop:"1.5rem"}}>

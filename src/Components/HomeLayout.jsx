@@ -8,6 +8,7 @@ import ContactComponent from "./ContactForm/ContactComponent";
 import SectionTitle from "./SectionTitle";
 import theme from "../theme";
 import Navbar from "./Navbar/Navbar";
+import Footer from "./Footer/Footer";
 
 function HomeLayout() {
   return (
@@ -33,6 +34,7 @@ function HomeLayout() {
         <ProjectsCardComponent />
       </Box>
       <ContactComponent />
+      <Footer/>
     </ThemeProvider>
   );
 }
