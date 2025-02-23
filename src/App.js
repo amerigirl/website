@@ -8,31 +8,29 @@ import ProjectsCardComponent from "./Components/CardSection/Cards/ProjectsCardCo
 import SectionTitle from "./Components/SectionTitle.jsx";
 import ContactComponent from "./Components/ContactForm/ContactComponent.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
-
 import ReactDOM from "react-dom/client";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import RootLayout from "./Components/RootLayout.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <LandingSection />,
-    // children: [
-    //       { index: true, element:  },
-    //     { path: "about", element: <AboutCardComponent /> },
-    //     { path: "skills", element: <SkillsCardComponent /> },
-    //     { path: "projects", element: <ProjectsCardComponent /> },
-    //     { path: "contact", element: <ContactComponent /> },
-    // ]
+    element: <RootLayout />,
+    children: [{ index: true, element: <LandingSection /> }],
   },
 ]);
+
+//     { path: "about", element: <AboutCardComponent /> },
+//     { path: "skills", element: <SkillsCardComponent /> },
+//     { path: "projects", element: <ProjectsCardComponent /> },
+//     { path: "contact", element: <ContactComponent /> },
 
 function App() {
   return <RouterProvider router={router} />;
 }
 
 export default App;
-
-
 
 // export default App;
 // <Box>
