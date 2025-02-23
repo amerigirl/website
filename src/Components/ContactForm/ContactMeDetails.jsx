@@ -3,6 +3,7 @@ import { Box, Typography } from "@mui/material";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+import theme from "../../theme";
 
 const SocialMediaContact = () => {
   return (
@@ -10,7 +11,7 @@ const SocialMediaContact = () => {
       <Box display={"grid"} gap={"3rem"}>
         <Box>
           <Box display={"flex"} gap={"2rem"} alignItems={"center"}>
-            <EmailOutlinedIcon style={{ fontSize: 40 }} />
+            <EmailOutlinedIcon sx={{ fontSize: 40, color:"primary.main"}} />
             <Typography variant="h4" component={"div"} fontSize={"2rem"}>
               Email
             </Typography>
@@ -27,8 +28,8 @@ const SocialMediaContact = () => {
         </Box>
 
         <Box>
-          <Box display={"flex"} gap={"2rem"} alignItems={"center"}>
-            <PhoneOutlinedIcon style={{ fontSize: 40 }} />
+          <Box display={"flex"} gap={"2rem"} alignItems={"center"} >
+            <PhoneOutlinedIcon sx={{ fontSize: 40, color:"primary.main"}} />
             <Typography variant="h4" component={"div"} fontSize={"2rem"}>
               Phone
             </Typography>
@@ -48,7 +49,7 @@ const SocialMediaContact = () => {
 
         <Box>
           <Box display={"flex"} gap={"2rem"} alignItems={"center"}>
-            <LocationOnOutlinedIcon style={{ fontSize: 40 }} />
+            <LocationOnOutlinedIcon sx={{ fontSize: 40 , color:"primary.main"}} />
             <Typography variant="h4" component={"div"} fontSize={"2rem"}>
               Location
             </Typography>
