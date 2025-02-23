@@ -19,7 +19,7 @@ const ContactComponent = () => {
           marginBottom: "10rem",
         }}
       >
-        <Box >
+        <Box sx={{marginTop:"1.5rem"}}>
           <ContactMeDetails />
         </Box>
 

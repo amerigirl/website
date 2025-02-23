@@ -1,8 +1,7 @@
 import React from "react";
-import { Box, Button, TextField, styled, slotProps } from "@mui/material";
+import { Box, Button, TextField } from "@mui/material";
 import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined";
 
-const StyledTextField = styled(TextField)(({ theme }) => {});
 const ContactForm = () => {
   return (
     <>
@@ -54,12 +53,12 @@ const ContactForm = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            width: "30%",
+            width: "25%",
             left: "13rem",
-            padding: "1rem",
+            padding: ".8rem",
             gap: ".5rem",
             fontWeight: "bold",
-            fontSize: "1.2rem",
+            fontSize: "1rem",
           }}
         >
           Submit <ArrowCircleRightOutlinedIcon />

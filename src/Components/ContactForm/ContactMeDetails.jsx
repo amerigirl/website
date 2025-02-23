@@ -8,7 +8,7 @@ import theme from "../../theme";
 const SocialMediaContact = () => {
   return (
     <>
-      <Box display={"grid"} gap={"3rem"}>
+      <Box display={"grid"} gap={"2.5rem"}>
         <Box>
           <Box display={"flex"} gap={"2rem"} alignItems={"center"}>
             <EmailOutlinedIcon sx={{ fontSize: 40, color:"primary.main"}} />
