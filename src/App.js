@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import LandingSection from "./Components/LandingSection.jsx";
@@ -10,6 +10,7 @@ import ProjectsCardComponent from "./Components/CardSection/Cards/ProjectsCardCo
 import SectionTitle from "./Components/SectionTitle.jsx";
 import ContactComponent from "./Components/ContactForm/ContactComponent.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 const theme = createTheme({
   palette: {
@@ -24,8 +25,24 @@ const theme = createTheme({
     },
   },
 });
+
+const router = createBrowserRouter([
+  {
+  path: "/",
+  element: <Root />,
+children: [
+      { index: true, element: <LandingSection /> },
+      { path: "about", element: <AboutCardComponent /> },
+      { path: "skills", element: <SkillsCardComponent /> },
+      { path: "projects", element: <ProjectsCardComponent /> },
+      { path: "contact", element: <ContactComponent /> },
+  ]
+}
+])
 function App() {
   return (
+    <RouterProvider router={router} />
+    <
     <Box>
       <ThemeProvider theme={theme}>
         <Navbar />

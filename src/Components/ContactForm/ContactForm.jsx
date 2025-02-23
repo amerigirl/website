@@ -1,6 +1,9 @@
 import React from "react";
-import { Box, Button, TextField } from "@mui/material";
+import { Box, Button, TextField, styled } from "@mui/material";
 
+const StyledTextField = styled(TextField)(({theme}) =>{
+  
+})
 const ContactForm = () => {
   return (
     <>
@@ -13,12 +16,12 @@ const ContactForm = () => {
           margin: "0 auto",
         }}
       >
-          <TextField label="Name *" variant="outlined" fullWidth />
-          <TextField label="Email *" variant="outlined" fullWidth />
+          <TextField label="Name *" variant="filled"   fullWidth  />
+          <TextField label="Email *" variant="filled" fullWidth />
 
           <TextField
             label="Message..."
-            variant="outlined"
+            variant="filled"
             multiline
             rows={6}
             fullWidth
