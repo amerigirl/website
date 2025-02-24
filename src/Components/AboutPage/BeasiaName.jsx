@@ -11,6 +11,8 @@ const BeasiaName = () => {
         justifyContent: "center",
         alignItems: "flex-start",
         marginTop: "12rem",
+
+
       }}
     >
       <Box
@@ -33,8 +35,9 @@ const BeasiaName = () => {
           </Typography>
         ))}
       </Box>
-      <Box>
-        <Box sx={{ display: "flex", maxWidth: "900px", marginTop: "5rem" }}>
+
+      <Box >
+        <Box sx={{ display: "flex", maxWidth: "900px", marginTop: "5rem", gap:"1rem" }}>
           <Box
             sx={{
               float: "left",
@@ -52,26 +55,30 @@ const BeasiaName = () => {
               src="./meAndGrogu.jpg"
               alt="BeAsia and Grogu Doll"
               style={{
-                width: "100%",
+                width: "300px",
                 height: "100%",
                 objectFit: "block",
               }}
             />
           </Box>
           <Box sx={{}}>
-            <Typography sx={{ 
-              textAlign: "justify", 
-              flex: "1 1 300px" , 
-              fontSize:"1.3rem",
-              marginTop:"2rem",
-            }}>
+            <Typography
+              sx={{
+                textAlign: "justify",
+                flex: "1 1 400px",
+                fontSize: "1.3rem",
+                marginTop: "1rem",
+              }}
+            >
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Aspernatur officia nam nemo, quia earum velit consequuntur quaerat
               at adipisci, quo ut! Non cum eveniet, nobis aliquid unde ducimus
               inventore. Explicabo. Lorem ipsum dolor sit, amet consectetur
               adipisicing elit. Aspernatur officia nam nemo, quia earum velit
               consequuntur quaerat at adipisci, quo ut! Non cum eveniet, nobis
-              aliquid unde ducimus inventore. Explicabo.
+              aliquid unde ducimus inventore. Explicabo.Non cum eveniet, nobis
+              aliquid unde ducimus inventore. Explicabo. Lorem ipsum dolor sit,
+              amet consectetur adipisicing elit. Aspernatur officia nam nem.
             </Typography>
           </Box>
         </Box>
