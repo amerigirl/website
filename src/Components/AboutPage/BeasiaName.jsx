@@ -16,14 +16,14 @@ const BeasiaName = () => {
       <Box
         sx={{
           display: "grid",
-          marginRight: "5rem",
+          marginRight: "4rem",
         }}
       >
         {name.split("").map((char, index) => (
           <Typography
             key={index}
             sx={{
-              fontSize: "3.5rem",
+              fontSize: "3.8rem",
               fontFamily: "fantasy",
               color: "primary.light",
               fontStyle: "oblique",

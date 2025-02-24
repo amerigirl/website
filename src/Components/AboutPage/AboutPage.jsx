@@ -8,6 +8,7 @@ const AboutPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
+
       <Box>
         <BeasiaName />
       </Box>
