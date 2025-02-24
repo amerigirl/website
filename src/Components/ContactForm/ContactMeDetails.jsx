@@ -11,7 +11,7 @@ const SocialMediaContact = () => {
       <Box display={"grid"} gap={"2.5rem"}>
         <Box>
           <Box display={"flex"} gap={"2rem"} alignItems={"center"}>
-            <EmailOutlinedIcon sx={{ fontSize: 40, color:"primary.main"}} />
+            <EmailOutlinedIcon sx={{ fontSize: 40, color: "primary.main" }} />
             <Typography variant="h4" component={"div"} fontSize={"2rem"}>
               Email
             </Typography>
@@ -28,8 +28,8 @@ const SocialMediaContact = () => {
         </Box>
 
         <Box>
-          <Box display={"flex"} gap={"2rem"} alignItems={"center"} >
-            <PhoneOutlinedIcon sx={{ fontSize: 40, color:"primary.main"}} />
+          <Box display={"flex"} gap={"2rem"} alignItems={"center"}>
+            <PhoneOutlinedIcon sx={{ fontSize: 40, color: "primary.main" }} />
             <Typography variant="h4" component={"div"} fontSize={"2rem"}>
               Phone
             </Typography>
@@ -49,7 +49,9 @@ const SocialMediaContact = () => {
 
         <Box>
           <Box display={"flex"} gap={"2rem"} alignItems={"center"}>
-            <LocationOnOutlinedIcon sx={{ fontSize: 40 , color:"primary.main"}} />
+            <LocationOnOutlinedIcon
+              sx={{ fontSize: 40, color: "primary.main" }}
+            />
             <Typography variant="h4" component={"div"} fontSize={"2rem"}>
               Location
             </Typography>
