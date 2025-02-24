@@ -30,9 +30,17 @@ const Navbar = () => {
             marginRight: { md: "2rem", marginTop: "1rem" },
           }}
         >
-          <StyledButton href="#home">Home</StyledButton>
-          <StyledButton href="http://localhost:3000/aboutPage" sx={{textDecoration:"none"}}>
-           About
+          <StyledButton
+            href="http://localhost:3000"
+            sx={{ textDecoration: "none" }}
+          >
+            Home
+          </StyledButton>
+          <StyledButton
+            href="http://localhost:3000/aboutPage"
+            sx={{ textDecoration: "none" }}
+          >
+            About
           </StyledButton>
           <StyledButton href="#skills">Skills</StyledButton>
           <StyledButton href="#projects">Github</StyledButton>
