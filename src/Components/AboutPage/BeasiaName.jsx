@@ -11,8 +11,6 @@ const BeasiaName = () => {
         justifyContent: "center",
         alignItems: "flex-start",
         marginTop: "12rem",
-
-
       }}
     >
       <Box
@@ -25,10 +23,11 @@ const BeasiaName = () => {
           <Typography
             key={index}
             sx={{
-              fontSize: "3.8rem",
+              fontSize: "4rem",
               fontFamily: "fantasy",
               color: "primary.light",
-              fontStyle: "oblique",
+              fontStyle: "italic",
+              fontWeight: "bold",
             }}
           >
             {char}
@@ -36,8 +35,8 @@ const BeasiaName = () => {
         ))}
       </Box>
 
-      <Box >
-        <Box sx={{ display: "flex", maxWidth: "900px", marginTop: "5rem", gap:"1rem" }}>
+      <Box sx={{ display:"flex",maxWidth: "900px", marginTop: "5rem" }}>
+        <Box sx={{ display: "flex", gap: "2rem" }}>
           <Box
             sx={{
               float: "left",
@@ -46,8 +45,8 @@ const BeasiaName = () => {
               border: "1px solid black",
               borderRadius: "30px",
               overflow: "hidden",
-              width: "250px",
-              height: "auto",
+              width: "350px",
+              height: "350px",
               flexShrink: 0,
             }}
           >
@@ -55,32 +54,32 @@ const BeasiaName = () => {
               src="./meAndGrogu.jpg"
               alt="BeAsia and Grogu Doll"
               style={{
-                width: "300px",
+                width: "350px",
                 height: "100%",
-                objectFit: "block",
+                objectFit: "cover",
               }}
             />
           </Box>
-          <Box sx={{}}>
-            <Typography
-              sx={{
-                textAlign: "justify",
-                flex: "1 1 400px",
-                fontSize: "1.3rem",
-                marginTop: "1rem",
-              }}
-            >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Aspernatur officia nam nemo, quia earum velit consequuntur quaerat
-              at adipisci, quo ut! Non cum eveniet, nobis aliquid unde ducimus
-              inventore. Explicabo. Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit. Aspernatur officia nam nemo, quia earum velit
-              consequuntur quaerat at adipisci, quo ut! Non cum eveniet, nobis
-              aliquid unde ducimus inventore. Explicabo.Non cum eveniet, nobis
-              aliquid unde ducimus inventore. Explicabo. Lorem ipsum dolor sit,
-              amet consectetur adipisicing elit. Aspernatur officia nam nem.
-            </Typography>
-          </Box>
+        </Box>
+
+        <Box>
+          <Typography
+            sx={{
+              textAlign: "justify",
+              fontSize: "1.3rem",
+              textIndent: "3rem",
+            }}
+          >
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
+            officia nam nemo, quia earum velit consequuntur quaerat at adipisci,
+            quo ut! Non cum eveniet, nobis aliquid unde ducimus inventore.
+            Explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Aspernatur officia nam nemo, quia earum velit consequuntur quaerat
+            at adipisci, quo ut! Non cum eveniet, nobis aliquid unde ducimus
+            inventore. Explicabo.Non cum eveniet, nobis aliquid unde ducimus
+            inventore. Explicabo. Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Aspernatur officia nam nem.
+          </Typography>
         </Box>
       </Box>
     </Box>
