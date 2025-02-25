@@ -12,8 +12,8 @@ const AboutPage = () => {
       <Navbar />
       <About />
 
-      <Box sx={{ marginTop: "19rem" }}>
-        <SectionTitle title={"My Academic Journey"} subtitle={"From start until..."} />
+      <Box sx={{ marginTop: "19rem" , marginBottom:"5rem"}}>
+        <SectionTitle title={"My Academic Journey"} subtitle={"Click to learn more"} />
       </Box>
       <MyAcademicJourney />
     </ThemeProvider>
