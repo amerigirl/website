@@ -22,6 +22,7 @@ const BeasiaName = () => {
         {name.split("").map((char, index) => (
           <Typography
             key={index}
+            component={"span"}
             sx={{
               fontSize: "4rem",
               fontFamily: "fantasy",
@@ -30,17 +31,24 @@ const BeasiaName = () => {
               fontWeight: "bold",
             }}
           >
-            {char}
+            <span
+              style={{
+                color: index < 2 ? "#FF5733" : "#66CC57",
+                WebkitTextStroke: ".3px #000000",
+              }}
+            >
+              {char}
+            </span>
           </Typography>
         ))}
       </Box>
 
-      <Box sx={{ display:"flex",maxWidth: "900px", marginTop: "5rem" }}>
+      <Box sx={{ display: "flex", maxWidth: "900px", marginTop: "7rem" }}>
         <Box sx={{ display: "flex", gap: "2rem" }}>
           <Box
             sx={{
               float: "left",
-              marginRight: "1.5rem",
+              marginRight: "2rem",
               marginBottom: "1rem",
               border: "1px solid black",
               borderRadius: "30px",
