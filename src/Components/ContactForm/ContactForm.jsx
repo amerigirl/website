@@ -4,11 +4,30 @@ import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOu
 import { useState } from "react";
 
 const ContactForm = () => {
-const [message, setMessage] = useState("");
+const [formData, setFormData] = useState({
+  //set all of the form data at once in state to an empty string
+  name: "", 
+  eamil:"",
+  message: ""
+});
 
-const handleOnClick = () => {
-  setMessage(message); 
-  console.log(message);
+
+
+const handleInput = (e) =>{
+  const {name, value} = e.target;
+  
+  setFormData((prevData)=> {
+    return {
+
+      ...prevData, //keep the old state
+      [name]:value 
+
+    }
+  })
+}
+const handleSubmit = (e) => {
+  e.preventDefault();  
+  console.log("Form submitted:", formData);
 }
 
   return (
@@ -23,7 +42,8 @@ const handleOnClick = () => {
         }}
       >
         <TextField
-          label="Name *"
+          name="Name *"
+          value={formData.name}
           variant="filled"
           component={"div"}
           fontSize="2rem"
@@ -34,9 +54,10 @@ const handleOnClick = () => {
           }}
         />
         <TextField
-          label="Email *"
+          name="Email *"
           variant="filled"
           fullWidth
+          value={formData.email}
           slotProps={{
             input: { style: { fontSize: "1.3rem" } },
             inputLabel: { style: { fontSize: "1.3rem" } },
@@ -44,17 +65,18 @@ const handleOnClick = () => {
         />
 
         <TextField
-          label="Message..."
+          name="Message..."
+          label="Message..." //is this necessary now that we have name??
           variant="filled"
           multiline
           rows={6}
+          onChange={(e) => handleInput(e)}
+          value={formData.message}
           fullWidth
-          onClick={handleOnClick}
           slotProps={{
             input: { style: { fontSize: "1.3rem" } },
             inputLabel: { style: { fontSize: "1.3rem" } },
           }}
-
         />
 
         <Button
@@ -70,6 +92,7 @@ const handleOnClick = () => {
             fontWeight: "bold",
             fontSize: "1rem",
           }}
+          onClick={() => handleSubmit()}
         >
           Submit <ArrowCircleRightOutlinedIcon />
         </Button>
