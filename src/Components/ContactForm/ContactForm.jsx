@@ -7,7 +7,7 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     //set all of the form data at once in state to an empty string
     name: "",
-    eamil: "",
+    email: "",
     message: "",
   });
 
@@ -29,6 +29,8 @@ const ContactForm = () => {
   return (
     <>
       <Box
+      component={"form"}
+      onSubmit={handleSubmit}
         id="contact"
         sx={{
           display: "grid",
@@ -38,23 +40,26 @@ const ContactForm = () => {
         }}
       >
         <TextField
-          name="Name *"
+          name="name"
           label="Name *"
           value={formData.name}
           variant="filled"
           component={"div"}
           fontSize="2rem"
           fullWidth
+          onChange={(e) => handleInput(e)}
           slotProps={{
             input: { style: { fontSize: "1.3rem" } },
             inputLabel: { style: { fontSize: "1.3rem" } },
           }}
         />
         <TextField
-          name="Email *"
+          name="email"
+          label="Email *"
           variant="filled"
           fullWidth
           value={formData.email}
+          onChange={(e) => handleInput(e)}
           slotProps={{
             input: { style: { fontSize: "1.3rem" } },
             inputLabel: { style: { fontSize: "1.3rem" } },
@@ -62,7 +67,7 @@ const ContactForm = () => {
         />
 
         <TextField
-          name="Message..."
+          name="message"
           label="Message..." //is this necessary now that we have name??
           variant="filled"
           multiline
@@ -78,6 +83,7 @@ const ContactForm = () => {
 
         <Button
           variant="contained"
+          type="submit"
           sx={{
             display: "flex",
             justifyContent: "center",
@@ -89,7 +95,6 @@ const ContactForm = () => {
             fontWeight: "bold",
             fontSize: "1rem",
           }}
-          onClick={() => handleSubmit()}
         >
           Submit <ArrowCircleRightOutlinedIcon />
         </Button>
