@@ -4,31 +4,27 @@ import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOu
 import { useState } from "react";
 
 const ContactForm = () => {
-const [formData, setFormData] = useState({
-  //set all of the form data at once in state to an empty string
-  name: "", 
-  eamil:"",
-  message: ""
-});
+  const [formData, setFormData] = useState({
+    //set all of the form data at once in state to an empty string
+    name: "",
+    eamil: "",
+    message: "",
+  });
 
+  const handleInput = (e) => {
+    const { name, value } = e.target;
 
-
-const handleInput = (e) =>{
-  const {name, value} = e.target;
-  
-  setFormData((prevData)=> {
-    return {
-
-      ...prevData, //keep the old state
-      [name]:value 
-
-    }
-  })
-}
-const handleSubmit = (e) => {
-  e.preventDefault();  
-  console.log("Form submitted:", formData);
-}
+    setFormData((prevData) => {
+      return {
+        ...prevData, //keep the old state
+        [name]: value,
+      };
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+  };
 
   return (
     <>
@@ -43,6 +39,7 @@ const handleSubmit = (e) => {
       >
         <TextField
           name="Name *"
+          label="Name *"
           value={formData.name}
           variant="filled"
           component={"div"}
