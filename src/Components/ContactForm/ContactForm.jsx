@@ -1,8 +1,16 @@
 import React from "react";
 import { Box, Button, TextField } from "@mui/material";
 import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined";
+import { useState } from "react";
 
 const ContactForm = () => {
+const [message, setMessage] = useState("");
+
+const handleOnClick = () => {
+  setMessage(message); 
+  console.log(message);
+}
+
   return (
     <>
       <Box
@@ -41,10 +49,12 @@ const ContactForm = () => {
           multiline
           rows={6}
           fullWidth
+          onClick={handleOnClick}
           slotProps={{
             input: { style: { fontSize: "1.3rem" } },
             inputLabel: { style: { fontSize: "1.3rem" } },
           }}
+
         />
 
         <Button
