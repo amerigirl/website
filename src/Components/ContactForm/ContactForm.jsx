@@ -21,9 +21,11 @@ const ContactForm = () => {
       };
     });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+    //connects to the backend..
   };
 
   return (
@@ -68,7 +70,7 @@ const ContactForm = () => {
 
         <TextField
           name="message"
-          label="Message..." //is this necessary now that we have name??
+          label="Message..." 
           variant="filled"
           multiline
           rows={6}
