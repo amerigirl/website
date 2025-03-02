@@ -5,6 +5,7 @@ import theme from "../../theme";
 import About from "./About";
 import MyAcademicJourney from "./MyAcademicJourney/MyAcademicJourney";
 import SectionTitle from "../SectionTitle";
+import MouseOutlinedIcon from "@mui/icons-material/MouseOutlined";
 
 const AboutPage = () => {
   return (
@@ -12,8 +13,23 @@ const AboutPage = () => {
       <Navbar />
       <About />
 
-      <Box sx={{ marginTop: "15rem" , marginBottom:"3rem"}}>
-        <SectionTitle title={"My Academic Journey"} subtitle={"Click to learn more"} />
+      <Box sx={{ marginTop: "15rem", marginBottom: "3rem" }}>
+        <SectionTitle
+          title={"My Academic Journey"}
+          subtitle={
+            <>
+              Click below to learn more :)
+              <MouseOutlinedIcon
+                sx={{
+                  fontSize: "2.5rem",
+                  verticalAlign: "middle",
+                  color: "#0dac1b",
+                  paddingLeft: ".5rem",
+                }}
+              />
+            </>
+          }
+        />
       </Box>
       <MyAcademicJourney />
     </ThemeProvider>
