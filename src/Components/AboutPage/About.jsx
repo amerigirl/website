@@ -10,7 +10,7 @@ const BeasiaName = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",
-        marginTop: "12rem",
+        marginTop: "10rem",
       }}
     >
       <Box
@@ -33,8 +33,8 @@ const BeasiaName = () => {
           >
             <span
               style={{
-                color: index < 2 ? "#FF5733" : "#66CC57",
-                WebkitTextStroke: ".3px #000000",
+                color:  "#66CC57",
+                WebkitTextStroke: ".1px #000000",
               }}
             >
               {char}
