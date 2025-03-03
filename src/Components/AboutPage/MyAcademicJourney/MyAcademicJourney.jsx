@@ -6,7 +6,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import Box from "@mui/material/Box";
-import MouseOutlinedIcon from "@mui/icons-material/MouseOutlined";
+
 
 const MyAcademicJourney = () => {
 
