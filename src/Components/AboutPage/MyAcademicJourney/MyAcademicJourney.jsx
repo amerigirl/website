@@ -1,51 +1,69 @@
 import * as React from "react";
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
-import Box from "@mui/material/Box";
+import {
+  Timeline,
+  TimelineItem,
+  TimelineSeparator,
+  TimelineConnector,
+  TimelineDot,
+  TimelineContent,
+} from "@mui/lab";
+import {Box, ThemeProvider, createTheme} from "@mui/material/Box";
+
 
 
 const MyAcademicJourney = () => {
 
   return (
     <>
-        <Timeline position="alternate" sx={{marginBottom: "10rem"}}>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Truman State University</TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined" color="primary" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>LaunchCode</TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined" color="secondary" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Microsoft AZ-900</TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined" />
-        </TimelineSeparator>
-        <TimelineContent>Renton Technical College</TimelineContent>
-      </TimelineItem>
-    </Timeline>
+      <Timeline
+        position="alternate"
+        sx={{
+          marginBottom: "10rem",
+        }}
+      >
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot variant="outlined" />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent sx={{ fontSize: "1.5rem" }}>
+            Truman State University
+          </TimelineContent>
+        </TimelineItem>
 
-    <Box>
-    </Box>
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot variant="outlined" color="primary" />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent sx={{ fontSize: "1.5rem" }}>
+            LaunchCode
+          </TimelineContent>
+        </TimelineItem>
+
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot variant="outlined" color="secondary" />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent sx={{ fontSize: "1.5rem" }}>
+            Microsoft AZ-900
+          </TimelineContent>
+        </TimelineItem>
+
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot variant="outlined" />
+          </TimelineSeparator>
+          <TimelineContent sx={{ fontSize: "1.5rem" }}>
+            Renton Technical College
+          </TimelineContent>
+        </TimelineItem>
+        
+      </Timeline>
+
+      <Box></Box>
     </>
-
   );
 
 };
