@@ -1,4 +1,3 @@
-import * as React from "react";
 import {
   Timeline,
   TimelineItem,
@@ -7,65 +6,59 @@ import {
   TimelineDot,
   TimelineContent,
 } from "@mui/lab";
-import {Box, ThemeProvider, createTheme} from "@mui/material/Box";
-
-
+import { Box, ThemeProvider, createTheme } from "@mui/material";
 
 const MyAcademicJourney = () => {
+  const theme = createTheme({
+    components: {
+      MuiTimelineContent: {
+        styleOverrides: {
+          root: {
+            fontSize: "1.4rem",
+          },
+        },
+      },
+      MuiTimelineDot: {
+        styleOverrides: {
+          root: {
+            width: "12px",
+            height: "12px",
+          },
+        },
+      },
+      MuiTimelineConnector: {
+        styleOverrides: {
+          root: {
+            height: "90px", // Adjust this value to lengthen the connector
+          },
+        },
+      },
+    },
+  });
+
+  const timelineItems = [
+    { content: "Truman State University", color: "grey" },
+    { content: "LaunchCode", color: "primary" },
+    { content: "Microsoft AZ-900", color: "secondary" },
+    { content: "Renton Technical College", color: "grey" },
+  ];
 
   return (
-    <>
-      <Timeline
-        position="alternate"
-        sx={{
-          marginBottom: "10rem",
-        }}
-      >
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot variant="outlined" />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ fontSize: "1.5rem" }}>
-            Truman State University
-          </TimelineContent>
-        </TimelineItem>
-
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot variant="outlined" color="primary" />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ fontSize: "1.5rem" }}>
-            LaunchCode
-          </TimelineContent>
-        </TimelineItem>
-
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot variant="outlined" color="secondary" />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ fontSize: "1.5rem" }}>
-            Microsoft AZ-900
-          </TimelineContent>
-        </TimelineItem>
-
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot variant="outlined" />
-          </TimelineSeparator>
-          <TimelineContent sx={{ fontSize: "1.5rem" }}>
-            Renton Technical College
-          </TimelineContent>
-        </TimelineItem>
-        
+    <ThemeProvider theme={theme}>
+      <Timeline position="alternate" sx={{ marginBottom: "10rem" }}>
+        {timelineItems.map((item, index) => (
+          <TimelineItem key={index}>
+            <TimelineSeparator>
+              <TimelineDot variant="outlined" color={item.color} />
+              {index < timelineItems.length - 1 && <TimelineConnector />}
+            </TimelineSeparator>
+            <TimelineContent>{item.content}</TimelineContent>
+          </TimelineItem>
+        ))}
       </Timeline>
-
       <Box></Box>
-    </>
+    </ThemeProvider>
   );
-
 };
 
 export default MyAcademicJourney;
