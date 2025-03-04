@@ -41,6 +41,7 @@ const LandingSection = () => {
           }}
         >
           <Typography
+           data-testid="welcome"
             variant="h4"
             component="div"
             sx={{
