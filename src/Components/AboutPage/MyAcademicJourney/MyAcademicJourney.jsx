@@ -6,7 +6,8 @@ import {
   TimelineDot,
   TimelineContent,
 } from "@mui/lab";
-import { Box, ThemeProvider, createTheme } from "@mui/material";
+import { ThemeProvider, createTheme } from "@mui/material";
+import React from "react";
 
 const MyAcademicJourney = () => {
   const theme = createTheme({
@@ -37,27 +38,28 @@ const MyAcademicJourney = () => {
   });
 
   const timelineItems = [
-    { content: "Truman State University", color: "grey" },
-    { content: "LaunchCode", color: "primary" },
-    { content: "Microsoft AZ-900", color: "secondary" },
-    { content: "Renton Technical College", color: "grey" },
+    { content: "Truman State University (2009)", color: "grey" },
+    { content: "LaunchCode (2022)", color: "primary" },
+    { content: "Microsoft AZ-900 (2023)", color: "secondary" },
+    { content: "Renton Technical College (2026)", color: "grey" },
   ];
 
   return (
-    <ThemeProvider theme={theme}>
-      <Timeline position="alternate" sx={{ marginBottom: "10rem" }}>
-        {timelineItems.map((item, index) => (
-          <TimelineItem key={index}>
-            <TimelineSeparator>
-              <TimelineDot variant="outlined" color={item.color} />
-              {index < timelineItems.length - 1 && <TimelineConnector />}
-            </TimelineSeparator>
-            <TimelineContent>{item.content}</TimelineContent>
-          </TimelineItem>
-        ))}
-      </Timeline>
-      <Box></Box>
-    </ThemeProvider>
+    <>
+      <ThemeProvider theme={theme}>
+        <Timeline position="alternate" sx={{ marginBottom: "10rem" }}>
+          {timelineItems.map((item, index) => (
+            <TimelineItem key={index}>
+              <TimelineSeparator>
+                <TimelineDot variant="outlined" color={item.color} />
+                {index < timelineItems.length - 1 && <TimelineConnector />}
+              </TimelineSeparator>
+              <TimelineContent>{item.content}</TimelineContent>
+            </TimelineItem>
+          ))}
+        </Timeline>
+      </ThemeProvider>
+    </>
   );
 };
 
