@@ -1,12 +1,31 @@
-import React from 'react'
+import React from "react";
+import { useState, Typography, Box, Modal } from "react";
 
-const BasicModal = () => {
+export default function BasicModal(){
+  const [open, setOpen] = useState(false);
+
+  function toggleModal() {
+    setOpen((open) => !open);
+  }
+
   return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default BasicModal
-
+    <>
+      <button onClick={toggleModal}>Open</button>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            Text in a modal
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          </Typography>
+        </Box>
+      </Modal>
+    </>
+  );
+};
