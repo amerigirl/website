@@ -8,6 +8,7 @@ import {
 } from "@mui/lab";
 import { ThemeProvider, createTheme } from "@mui/material";
 import React from "react";
+import BasicModal from "../../Modal/BasicModal";
 
 const MyAcademicJourney = () => {
   const theme = createTheme({
@@ -30,7 +31,7 @@ const MyAcademicJourney = () => {
       MuiTimelineConnector: {
         styleOverrides: {
           root: {
-            height: "90px", // Adjust this value to lengthen the connector
+            height: "90px",
           },
         },
       },
@@ -43,6 +44,8 @@ const MyAcademicJourney = () => {
     { content: "Microsoft AZ-900 (2023)", color: "secondary" },
     { content: "Renton Technical College (2026)", color: "grey" },
   ];
+
+  //I think i need another set of items here that will pop up in a modal when clicked
 
   return (
     <>
@@ -59,6 +62,7 @@ const MyAcademicJourney = () => {
           ))}
         </Timeline>
       </ThemeProvider>
+      <BasicModal />
     </>
   );
 };
