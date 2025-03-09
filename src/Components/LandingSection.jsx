@@ -51,7 +51,7 @@ const LandingSection = () => {
               marginTop:"3rem",
             }}
           >
-            Hi, I'm Be-Asia!
+            Hi, I&apos;m Be-Asia!
           </Typography>
           <br></br>
           <Typography sx={{ fontSize: "20px" }}>
@@ -71,6 +71,7 @@ const LandingSection = () => {
           <br></br>
           <Box>
             <Button
+              data-testid="resume"
               variant="contained"
               startIcon={<DownloadIcon />}
               onClick={handleClick}

@@ -18,7 +18,7 @@ const AboutPage = () => {
           title={"My Academic Journey"}
           subtitle={
             <>
-              Click below to learn more :)
+              Click the text below to learn more :)
               <MouseOutlinedIcon
                 sx={{
                   fontSize: "2.5rem",

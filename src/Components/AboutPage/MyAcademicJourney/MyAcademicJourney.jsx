@@ -46,7 +46,8 @@ const MyAcademicJourney = () => {
   ];
 
   //I think i need another set of items here that will pop up in a modal when clicked
-
+//also you can add a seattle weather api to our page
+//also you can make your app for class about checking the stars or the planets
   return (
     <>
       <ThemeProvider theme={theme}>
