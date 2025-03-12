@@ -9,8 +9,11 @@ import {
 import { ThemeProvider, createTheme } from "@mui/material";
 import React from "react";
 import BasicModal from "../../Modal/BasicModal";
+import { useState } from "react";
 
 const MyAcademicJourney = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
   const theme = createTheme({
     components: {
       MuiTimelineContent: {
@@ -38,6 +41,11 @@ const MyAcademicJourney = () => {
     },
   });
 
+  const handleModalOpen = () => setModalOpen(true);
+
+  //is this needed if you already have a modal open that can toggle?
+  const handleModalClose = () => setModalOpen(false);
+
   const timelineItems = [
     { content: "Truman State University (2009)", color: "grey" },
     { content: "LaunchCode (2022)", color: "primary" },
@@ -46,8 +54,9 @@ const MyAcademicJourney = () => {
   ];
 
   //I think i need another set of items here that will pop up in a modal when clicked
-//also you can add a seattle weather api to our page
-//also you can make your app for class about checking the stars or the planets
+  //also you can add a seattle weather api to our page
+  //also you can make your app for class about checking the stars or the planets
+
   return (
     <>
       <ThemeProvider theme={theme}>
