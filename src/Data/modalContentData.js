@@ -1,4 +1,4 @@
-export const timelineItems = [
+ const timelineItems = [
   {
     content: "Truman State University (2009)",
     color: "grey",
@@ -27,3 +27,5 @@ export const timelineItems = [
     modalImage: "./rentonTech.jpg",
   },
 ];
+
+module.exports = {timelineItems};
