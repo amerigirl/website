@@ -1,10 +1,9 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import PropTypes from "prop-types";
 
-//this has been converted to a controlled component--REVIEW WHAT THAT MEANS!
 const style = {
   position: "absolute",
   top: "50%",
@@ -17,26 +16,31 @@ const style = {
   p: 4,
 };
 
-export default function BasicModal({open, onClose, item}) {
-
+export default function BasicModal({ open, onClose, item }) {
   return (
-    <div>
-      <Button onClick={open}>Open modal</Button>
-      <Modal
-        open={open}
-        onClose={onClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            {item?.content || "Default Title"}
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            {item?.modalContent || "Default content"}
-          </Typography>
-        </Box>
-      </Modal>
-    </div>
+    <Modal
+      open={open}
+      onClose={onClose}
+      aria-labelledby="modal-modal-title"
+      aria-describedby="modal-modal-description"
+    >
+      <Box sx={style}>
+        <Typography id="modal-modal-title" variant="h6" component="h2">
+          {item?.content || "Default Title"}
+        </Typography>
+        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          {item?.modalContent || "Default content"}
+        </Typography>
+      </Box>
+    </Modal>
   );
 }
+
+BasicModal.propTypes = {
+  open: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+  item: PropTypes.shape({
+    content: PropTypes.string,
+    modalContent: PropTypes.string,
+  }),
+};
