@@ -17,6 +17,7 @@ import Button from "@mui/material/Button";
 const MyAcademicJourney = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [item, setItem] = useState(null)
+
   const theme = createTheme({
     components: {
       MuiTimelineContent: {
@@ -48,11 +49,15 @@ const MyAcademicJourney = () => {
 
   //is this needed if you already have a modal open that can toggle?
  
-  const handleOnClick = (item) => {
-    setItem(item)
-    setModalOpen(true)
-  }
+  const handleModalOpen = (item) => {
+    setItem(item);
+    setModalOpen(true);
+  };
 
+  const handleModalClose = () => {
+    setModalOpen(false);
+    setItem(null);
+  };
 
   //I think i need another set of items here that will pop up in a modal when clicked
   //also you can add a seattle weather api to our page
@@ -69,7 +74,7 @@ const MyAcademicJourney = () => {
                 {index < timelineItems.length - 1 && <TimelineConnector />}
               </TimelineSeparator>
               <TimelineContent>
-                <Button onClick={() => handleOnClick(item)}>
+                <Button onClick={() => handleModalOpen(item)}>
                   {item.content}
                 </Button>
               </TimelineContent>
@@ -77,7 +82,11 @@ const MyAcademicJourney = () => {
           ))}
         </Timeline>
       </ThemeProvider>
-      <BasicModal modalState={modalOpen}/>
+      <BasicModal 
+      open={modalOpen}
+      onClose={handleModalClose}
+      item={setItem}
+      />
     </>
   );
 };
