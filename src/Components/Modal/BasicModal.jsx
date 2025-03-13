@@ -4,6 +4,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 
+//this has been converted to a controlled component--REVIEW WHAT THAT MEANS!
 const style = {
   position: "absolute",
   top: "50%",
@@ -16,10 +17,7 @@ const style = {
   p: 4,
 };
 
-export default function BasicModal() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+export default function BasicModal({open, onClose, selectedItem}) {
 
   return (
     <div>

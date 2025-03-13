@@ -44,11 +44,14 @@ const MyAcademicJourney = () => {
     },
   });
 
-  const handleModalOpen = () => setModalOpen(true);
+
 
   //is this needed if you already have a modal open that can toggle?
-  const handleModalClose = () => setModalOpen(false);
-
+ 
+  const handleOnClick = (item) => {
+    setItem(item)
+    setModalOpen(true)
+  }
 
 
   //I think i need another set of items here that will pop up in a modal when clicked
@@ -66,7 +69,7 @@ const MyAcademicJourney = () => {
                 {index < timelineItems.length - 1 && <TimelineConnector />}
               </TimelineSeparator>
               <TimelineContent>
-                <Button onClick={() => handleModalOpen(item)}>
+                <Button onClick={() => handleOnClick(item)}>
                   {item.content}
                 </Button>
               </TimelineContent>
@@ -74,7 +77,7 @@ const MyAcademicJourney = () => {
           ))}
         </Timeline>
       </ThemeProvider>
-      <BasicModal />
+      <BasicModal modalState={modalOpen}/>
     </>
   );
 };
