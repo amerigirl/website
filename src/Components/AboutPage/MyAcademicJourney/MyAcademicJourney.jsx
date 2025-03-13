@@ -13,17 +13,17 @@ import { useState } from "react";
 import { timelineItems } from "../../../Data/modalContentData";
 import Button from "@mui/material/Button";
 
-
 const MyAcademicJourney = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [item, setItem] = useState(null)
+  const [item, setItem] = useState(null);
 
   const theme = createTheme({
     components: {
       MuiTimelineContent: {
         styleOverrides: {
           root: {
-            fontSize: "1.4rem",
+            fontSize: "2.5rem",
+            marginTop: "-1rem",
           },
         },
       },
@@ -45,10 +45,8 @@ const MyAcademicJourney = () => {
     },
   });
 
-
-
   //is this needed if you already have a modal open that can toggle?
- 
+
   const handleModalOpen = (item) => {
     setItem(item);
     setModalOpen(true);
@@ -76,17 +74,14 @@ const MyAcademicJourney = () => {
               <TimelineContent>
                 <Button onClick={() => handleModalOpen(item)}>
                   {item.content}
+               
                 </Button>
               </TimelineContent>
             </TimelineItem>
           ))}
         </Timeline>
       </ThemeProvider>
-      <BasicModal 
-      open={modalOpen}
-      onClose={handleModalClose}
-      item={setItem}
-      />
+      <BasicModal open={modalOpen} onClose={handleModalClose} item={item} />
     </>
   );
 };

@@ -31,10 +31,20 @@ export default function BasicModal({ open, onClose, item }) {
         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
           {item?.modalContent || "Default content"}
         </Typography>
+<Typography>
+     {item?.modalImage && (
+          <img 
+            src={item.modalImage} 
+            alt={item.content || "Modal image"} 
+            style={{ maxWidth: '100%', height: 'auto', marginTop: '16px' }}
+          />
+     )}
+</Typography>
+
       </Box>
     </Modal>
-  );
-}
+
+)}
 
 BasicModal.propTypes = {
   open: PropTypes.bool.isRequired,
@@ -42,5 +52,6 @@ BasicModal.propTypes = {
   item: PropTypes.shape({
     content: PropTypes.string,
     modalContent: PropTypes.string,
+    modalImage: PropTypes.string,
   }),
 };
