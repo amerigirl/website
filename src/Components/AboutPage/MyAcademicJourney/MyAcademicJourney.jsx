@@ -11,11 +11,12 @@ import React from "react";
 import BasicModal from "../../Modal/BasicModal";
 import { useState } from "react";
 import { timelineItems } from "../../../Data/modalContentData";
+import Button from "@mui/material/Button";
 
 
 const MyAcademicJourney = () => {
   const [modalOpen, setModalOpen] = useState(false);
-
+  const [item, setItem] = useState(null)
   const theme = createTheme({
     components: {
       MuiTimelineContent: {
@@ -64,8 +65,10 @@ const MyAcademicJourney = () => {
                 <TimelineDot variant="outlined" color={item.color} />
                 {index < timelineItems.length - 1 && <TimelineConnector />}
               </TimelineSeparator>
-              <TimelineContent variant="button" onClick={handleModalClose}>
-                {item.content}
+              <TimelineContent>
+                <Button onClick={() => handleModalOpen(item)}>
+                  {item.content}
+                </Button>
               </TimelineContent>
             </TimelineItem>
           ))}
