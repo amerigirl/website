@@ -74,7 +74,6 @@ const MyAcademicJourney = () => {
               <TimelineContent>
                 <Button onClick={() => handleModalOpen(item)}>
                   {item.content}
-               
                 </Button>
               </TimelineContent>
             </TimelineItem>

@@ -14,6 +14,7 @@ const style = {
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
+  borderRadius: "15px",
 };
 
 export default function BasicModal({ open, onClose, item }) {
@@ -31,20 +32,29 @@ export default function BasicModal({ open, onClose, item }) {
         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
           {item?.modalContent || "Default content"}
         </Typography>
-<Typography>
-     {item?.modalImage && (
-          <img 
-            src={item.modalImage} 
-            alt={item.content || "Modal image"} 
-            style={{ maxWidth: '100%', height: 'auto', marginTop: '16px' }}
-          />
-     )}
-</Typography>
-
+        <Typography>
+          {item?.modalImage && (
+            <img
+              src={item.modalImage}
+              alt={item.content || "Modal image"}
+              style={{ maxWidth: "100%", height: "auto", marginTop: "16px" }}
+            />
+          )}
+        </Typography>
+        <Typography>
+          {item?.visitSite && (
+            <a
+              href={item.visitSite}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+             {item?.visitTitle || "Visit Site"}
+            </a>
+          )}
+        </Typography>
       </Box>
     </Modal>
-
-)}
+  );}
 
 BasicModal.propTypes = {
   open: PropTypes.bool.isRequired,
@@ -53,5 +63,7 @@ BasicModal.propTypes = {
     content: PropTypes.string,
     modalContent: PropTypes.string,
     modalImage: PropTypes.string,
+    visitSite: PropTypes.string,
+    visitTitle: PropTypes.string,
   }),
 };
