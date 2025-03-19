@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Container, Button, Image } from "@mui/material";
+import { Typography, Box, Container, Button} from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
 import { aboutImageData } from "../Data/AboutImageData";
 
@@ -41,14 +41,14 @@ const LandingSection = () => {
           }}
         >
           <Typography
-           data-testid="welcome"
+            data-testid="welcome"
             variant="h4"
             component="div"
             sx={{
               color: "primary.main",
               fontWeight: "bold",
               fontSize: "3rem",
-              marginTop:"3rem",
+              marginTop: "3rem",
             }}
           >
             Hi, I&apos;m Be-Asia!

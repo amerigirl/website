@@ -13,7 +13,7 @@ const AboutPage = () => {
       <Navbar />
       <About />
 
-      <Box sx={{ marginTop: "15rem", marginBottom: "8rem" }}>
+      <Box sx={{ marginTop: "17rem", marginBottom: "10rem" }}>
         <SectionTitle
           title={"My Academic Journey"}
           subtitle={

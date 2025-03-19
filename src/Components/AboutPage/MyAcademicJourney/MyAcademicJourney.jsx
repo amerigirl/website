@@ -6,7 +6,7 @@ import {
   TimelineDot,
   TimelineContent,
 } from "@mui/lab";
-import { ThemeProvider, createTheme } from "@mui/material";
+import { ThemeProvider, colors, createTheme } from "@mui/material";
 import React from "react";
 import BasicModal from "../../Modal/BasicModal";
 import { useState } from "react";
@@ -21,10 +21,7 @@ const MyAcademicJourney = () => {
     components: {
       MuiTimelineContent: {
         styleOverrides: {
-          root: {
-            fontSize: "2.5rem",
-            marginTop: "-1rem",
-          },
+          root: {},
         },
       },
       MuiTimelineDot: {
@@ -38,7 +35,15 @@ const MyAcademicJourney = () => {
       MuiTimelineConnector: {
         styleOverrides: {
           root: {
-            height: "90px",
+            height: "10rem",
+          },
+        },
+      },
+      MuiButton: {
+        styleOverrides: {
+          root: {
+            fontSize: "1.5rem",
+            color: "black",
           },
         },
       },
@@ -71,8 +76,8 @@ const MyAcademicJourney = () => {
                 <TimelineDot variant="outlined" color={item.color} />
                 {index < timelineItems.length - 1 && <TimelineConnector />}
               </TimelineSeparator>
-              <TimelineContent>
-                <Button onClick={() => handleModalOpen(item)}>
+              <TimelineContent >
+                <Button color={"primary.main"} onClick={() => handleModalOpen(item)}>
                   {item.content}
                 </Button>
               </TimelineContent>
