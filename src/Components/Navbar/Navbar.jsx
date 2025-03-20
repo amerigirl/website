@@ -10,7 +10,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
   fontSize: "17px",
   color: "black",
   "&:hover": {
-    color: theme.palette.primary.main, 
+    color: theme.palette.primary.main,
   },
 }));
 
@@ -42,7 +42,12 @@ const Navbar = () => {
           >
             About
           </StyledButton>
-          <StyledButton href="#skills">Skills</StyledButton>
+          <StyledButton
+            href="http://localhost:3000/skillsPage"
+            sx={{ textDecoration: "none" }}
+          >
+            Skills
+          </StyledButton>
           <StyledButton href="#projects">Github</StyledButton>
           <StyledButton href="#contact">Contact</StyledButton>
         </Stack>
