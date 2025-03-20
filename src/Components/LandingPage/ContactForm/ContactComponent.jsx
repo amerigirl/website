@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@mui/material";
 import ContactForm from "./ContactForm";
-import SectionTitle from "../SectionTitle";
+import SectionTitle from "../../SectionTitle";
 import ContactMeDetails from "./ContactMeDetails";
 
 const ContactComponent = () => {

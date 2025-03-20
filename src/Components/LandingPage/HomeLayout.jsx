@@ -5,10 +5,10 @@ import SkillsCardComponent from "./CardSection/Cards/SkillsCardComponent";
 import ProjectsCardComponent from "./CardSection/Cards/ProjectsCardComponent";
 import LandingSection from "./LandingSection";
 import ContactComponent from "./ContactForm/ContactComponent";
-import SectionTitle from "./SectionTitle";
-import theme from "../theme";
-import Navbar from "./Navbar/Navbar";
-import Footer from "./Footer/Footer";
+import SectionTitle from "../SectionTitle";
+import theme from "../../theme";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 
 function HomeLayout() {
   return (
@@ -34,7 +34,7 @@ function HomeLayout() {
         <ProjectsCardComponent />
       </Box>
       <ContactComponent />
-      <Footer/>
+      <Footer />
     </ThemeProvider>
   );
 }

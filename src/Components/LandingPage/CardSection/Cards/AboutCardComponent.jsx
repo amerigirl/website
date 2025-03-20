@@ -1,8 +1,7 @@
 import React from "react";
 import { Box, Button, CardContent } from "@mui/material";
 import CardComponent from "../CardComponent";
-import ScrabblePiece from "../../ScrabblePiece";
-import { blueGrey } from "@mui/material/colors";
+import ScrabblePiece from "../../../ScrabblePiece";
 
 
 const scrabbleLetterProps = {

@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
-import theme from "../../theme";
+import theme from "../../../theme";
 
 const SocialMediaContact = () => {
   return (

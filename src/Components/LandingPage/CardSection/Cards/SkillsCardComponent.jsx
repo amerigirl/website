@@ -1,7 +1,7 @@
 import React from "react";
 import CardComponent from "../CardComponent";
-import ScrabblePiece from "../../ScrabblePiece";
 import { Box, CardContent } from "@mui/material";
+import ScrabblePiece from "../../../ScrabblePiece";
 
 const scrabbleLetterProps = {
   height: "45px",
@@ -10,11 +10,11 @@ const scrabbleLetterProps = {
   fontSize: "20px",
   fontWeight: "bold",
 };
-const ProjectsCardComponent = () => {
+const SkillsCardComponent = () => {
   return (
     <CardComponent>
       <CardContent
-        id="projects"
+        id="skills"
         sx={{
           display: "flex",
           flexDirection: "row",
@@ -26,7 +26,7 @@ const ProjectsCardComponent = () => {
         <Box>
           <Box>
             <ScrabblePiece
-              letter="G"
+              letter="S"
               {...scrabbleLetterProps}
               numberBox={
                 <Box
@@ -38,7 +38,7 @@ const ProjectsCardComponent = () => {
                     color: "black",
                   }}
                 >
-                  2
+                  1
                 </Box>
               }
             />
@@ -46,6 +46,25 @@ const ProjectsCardComponent = () => {
         </Box>
 
         <Box sx={{ marginTop: "1.3rem" }}>
+          <ScrabblePiece
+            letter="K"
+            {...scrabbleLetterProps}
+            numberBox={
+              <Box
+                sx={{
+                  position: "absolute",
+                  right: 5,
+                  bottom: 3,
+                  fontSize: "9px",
+                  color: "black",
+                }}
+              >
+                5
+              </Box>
+            }
+          />
+        </Box>
+        <Box>
           <ScrabblePiece
             letter="I"
             {...scrabbleLetterProps}
@@ -64,29 +83,10 @@ const ProjectsCardComponent = () => {
             }
           />
         </Box>
-        <Box>
-          <ScrabblePiece
-            letter="T"
-            {...scrabbleLetterProps}
-            numberBox={
-              <Box
-                sx={{
-                  position: "absolute",
-                  right: 5,
-                  bottom: 3,
-                  fontSize: "9px",
-                  color: "black",
-                }}
-              >
-                1
-              </Box>
-            }
-          />
-        </Box>
 
         <Box sx={{ marginTop: "1.3rem" }}>
           <ScrabblePiece
-            letter="H"
+            letter="L"
             {...scrabbleLetterProps}
             numberBox={
               <Box
@@ -98,14 +98,14 @@ const ProjectsCardComponent = () => {
                   color: "black",
                 }}
               >
-                4
+                1
               </Box>
             }
           />
         </Box>
         <Box>
           <ScrabblePiece
-            letter="U"
+            letter="L"
             {...scrabbleLetterProps}
             numberBox={
               <Box
@@ -124,7 +124,7 @@ const ProjectsCardComponent = () => {
         </Box>
         <Box sx={{ marginTop: "1.3rem" }}>
           <ScrabblePiece
-            letter="B"
+            letter="S"
             {...scrabbleLetterProps}
             numberBox={
               <Box
@@ -136,7 +136,7 @@ const ProjectsCardComponent = () => {
                   color: "black",
                 }}
               >
-                3
+                1
               </Box>
             }
           />
@@ -146,4 +146,4 @@ const ProjectsCardComponent = () => {
   );
 };
 
-export default ProjectsCardComponent;
+export default SkillsCardComponent;

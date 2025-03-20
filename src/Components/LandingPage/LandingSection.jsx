@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Box, Container, Button} from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
-import { aboutImageData } from "../Data/AboutImageData";
+import { aboutImageData } from "../../Data/AboutImageData";
 
 const LandingSection = () => {
   /**
