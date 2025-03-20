@@ -6,14 +6,14 @@ import {
   TimelineDot,
   TimelineContent,
 } from "@mui/lab";
-import { ThemeProvider, colors, createTheme } from "@mui/material";
+import { ThemeProvider, createTheme } from "@mui/material";
 import React from "react";
 import BasicModal from "../../Modal/BasicModal";
 import { useState } from "react";
 import { timelineItems } from "../../../Data/modalContentData";
 import Button from "@mui/material/Button";
 
-const MyAcademicJourney = () => {
+const MyTimeline = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [item, setItem] = useState(null);
 
@@ -76,8 +76,11 @@ const MyAcademicJourney = () => {
                 <TimelineDot variant="outlined" color={item.color} />
                 {index < timelineItems.length - 1 && <TimelineConnector />}
               </TimelineSeparator>
-              <TimelineContent >
-                <Button color={"primary.main"} onClick={() => handleModalOpen(item)}>
+              <TimelineContent>
+                <Button
+                  color={"primary.main"}
+                  onClick={() => handleModalOpen(item)}
+                >
                   {item.content}
                 </Button>
               </TimelineContent>
@@ -90,4 +93,4 @@ const MyAcademicJourney = () => {
   );
 };
 
-export default MyAcademicJourney;
+export default MyTimeline;

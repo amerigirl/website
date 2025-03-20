@@ -3,9 +3,10 @@ import { Box, ThemeProvider, Typography } from "@mui/material";
 import Navbar from "../Navbar/Navbar";
 import theme from "../../theme";
 import About from "./About";
-import MyAcademicJourney from "./MyAcademicJourney/MyAcademicJourney";
+import MyAcademicJourney from "./MyAcademicJourney/Timeline";
 import SectionTitle from "../SectionTitle";
 import MouseOutlinedIcon from "@mui/icons-material/MouseOutlined";
+import CurrentLearning from "./CurrentLearning/CurrentLearning";
 
 const AboutPage = () => {
   return (
@@ -32,6 +33,7 @@ const AboutPage = () => {
         />
       </Box>
       <MyAcademicJourney />
+      <CurrentLearning />
     </ThemeProvider>
   );
 };
