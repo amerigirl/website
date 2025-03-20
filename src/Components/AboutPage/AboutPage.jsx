@@ -33,7 +33,7 @@ const AboutPage = () => {
         />
       </Box>
       <MyAcademicJourney />
-      <CurrentLearning />
+  
     </ThemeProvider>
   );
 };
