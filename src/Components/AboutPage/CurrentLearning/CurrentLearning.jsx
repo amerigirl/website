@@ -4,7 +4,7 @@ import { Box } from "@mui/system";
 
 const CurrentLearning = () => {
   return (
-    <Box sx={{ marginTop: "3rem" }}>
+    <Box sx={{marginTop:"2rem"}}>
       
       <SectionTitle
         title={"Current Learning"}

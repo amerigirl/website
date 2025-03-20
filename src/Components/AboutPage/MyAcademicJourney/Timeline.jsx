@@ -35,7 +35,7 @@ const MyTimeline = () => {
       MuiTimelineConnector: {
         styleOverrides: {
           root: {
-            height: "10rem",
+            height: "9rem",
           },
         },
       },
@@ -69,7 +69,7 @@ const MyTimeline = () => {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Timeline position="alternate" sx={{ marginBottom: "10rem" }}>
+        <Timeline position="alternate" sx={{ marginBottom: "11rem" }}>
           {timelineItems.map((item, index) => (
             <TimelineItem key={index}>
               <TimelineSeparator>
