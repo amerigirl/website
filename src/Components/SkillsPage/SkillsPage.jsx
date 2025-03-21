@@ -1,11 +1,16 @@
-import React from 'react'
+import { ThemeProvider } from "@emotion/react";
+import theme from "../../theme";
+import React from "react";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 
 const SkillsPage = () => {
   return (
-    <div>
-      <strong>The Page Works</strong>
-    </div>
-  )
-}
+    <ThemeProvider theme={theme}>
+      <Navbar />
+   
+    </ThemeProvider>
+  );
+};
 
-export default SkillsPage
+export default SkillsPage;
