@@ -12,7 +12,8 @@ const scrabbleLetterProps = {
 };
 const ProjectsCardComponent = () => {
   return (
-    <CardComponent>
+    <Box>
+          <CardComponent>
       <CardContent
         id="projects"
         sx={{
@@ -143,6 +144,8 @@ const ProjectsCardComponent = () => {
         </Box>
       </CardContent>
     </CardComponent>
+    </Box>
+
   );
 };
 

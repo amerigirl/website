@@ -23,15 +23,19 @@ const SkillsPage = () => {
             src="../../../frontEndWork.jpg"
             alt="frontend work"
             style={{
-              height: "40vh",
-              outline: "3px solid black", 
-              borderRadius: "15px"
+              height: "30vh",
+              outline: "3px solid black",
+              borderRadius: "15px",
             }}
           />
         </Box>
         <Box>
-          <Typography>
-            Most days, you will find me right here at my desk, tinkering with a project, reading technical docs, or reviewing 
+          <Typography
+            sx={{
+              fontSize: "20px",
+            }}
+          >
+            Most days, you will find me right here at my desk, tinkering with a project, reading technical docs, or watching a youtube video about a React. Most days, you will find me right here at my desk, tinkering with a project, reading technical docs, or watching a youtube video about a React.Most days, you will find me right here at my desk, tinkering with a project, reading technical docs, or watching a youtube video about a React.Most days, you will find me right here at my desk, tinkering with a project, reading technical docs, or watching a youtube video about a React.
           </Typography>
         </Box>
       </Container>
