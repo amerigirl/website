@@ -12,7 +12,7 @@ const scrabbleLetterProps = {
 };
 const SkillsCardComponent = () => {
   return (
-    <Box component={Button} href="http//localhost:3000/skillsPage">
+    <Box component={Button} href="http://localhost:3000/skillsPage">
       <CardComponent>
         <CardContent
           id="skills"
