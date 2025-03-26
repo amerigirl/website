@@ -10,10 +10,10 @@ const SkillsPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
-      <Box sx={{marginTop: "10rem"}}>
-              <SectionTitle title={"Skills"} subtitle={"My technical level"} />
-
+      <Box sx={{ marginTop: "10rem" }}>
+        <SectionTitle title={"Skills"} subtitle={"My technical level"} />
       </Box>
+      
     </ThemeProvider>
   );
 };
