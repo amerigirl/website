@@ -8,7 +8,7 @@ const BeasiaName = () => {
   return (
     <>
       <Box sx={{ marginTop: "10rem" }}>
-        <SectionTitle title={"A Bit About Me"} />
+        <SectionTitle title={"A Bit About Me :)"} />
       </Box>
 
       <Box
@@ -49,7 +49,7 @@ const BeasiaName = () => {
           ))} */}
         </Box>
 
-        <Box sx={{ display: "flex", maxWidth: "900px", marginTop: "7rem" }}>
+        <Box sx={{ display: "flex", maxWidth: "900px", marginTop: "3rem" }}>
           <Box sx={{ display: "flex", gap: "2rem" }}>
             <Box
               sx={{
