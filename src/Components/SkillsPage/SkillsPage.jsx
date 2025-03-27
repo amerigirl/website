@@ -13,7 +13,23 @@ const SkillsPage = () => {
       <Box sx={{ marginTop: "10rem" }}>
         <SectionTitle title={"Skills"} subtitle={"My technical level"} />
       </Box>
-      
+
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          height: "35vh",
+          gap: "3rem",
+          backgroundColor: "primary.light",
+          padding: "1rem",
+        }}
+      >
+        <img src="../../../learn.jpg" alt="learning" />
+        <img src="../../../frontEndWork.jpg" alt="frontend Work" />
+        <img src="../../../theModal.jpg" alt="the modal pic" />
+        <img width={370}
+        src="../../../studyPlan.png" alt="studyplan slide" />
+      </Box>
     </ThemeProvider>
   );
 };
