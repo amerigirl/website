@@ -21,14 +21,15 @@ const SkillsPage = () => {
           height: "35vh",
           gap: "3rem",
           backgroundColor: "primary.light",
+          margin: "0 2rem 0 2rem",
           padding: "1rem",
+          
         }}
       >
         <img src="../../../learn.jpg" alt="learning" />
         <img src="../../../frontEndWork.jpg" alt="frontend Work" />
-        <img src="../../../theModal.jpg" alt="the modal pic" />
-        <img width={370}
-        src="../../../studyPlan.png" alt="studyplan slide" />
+                <img width={450} src="../../../studyPlan.png" alt="studyplan slide" />
+<img   src="../../../theModal.jpg" alt="the modal pic" />
       </Box>
     </ThemeProvider>
   );
