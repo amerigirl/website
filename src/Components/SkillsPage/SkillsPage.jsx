@@ -19,17 +19,18 @@ const SkillsPage = () => {
           display: "flex",
           justifyContent: "center",
           height: "35vh",
-          gap: "3rem",
-          backgroundColor: "primary.light",
-          margin: "0 2rem 0 2rem",
+          gap: "1rem",
+          backgroundColor: "rgb(197, 244, 244)",
+          margin: "0 3rem 0 3rem",
           padding: "1rem",
-          
+          outline: "1px solid black",
+          width: "81%",
         }}
       >
         <img src="../../../learn.jpg" alt="learning" />
         <img src="../../../frontEndWork.jpg" alt="frontend Work" />
-                <img width={450} src="../../../studyPlan.png" alt="studyplan slide" />
-<img   src="../../../theModal.jpg" alt="the modal pic" />
+        <img width={400} src="../../../studyPlan.png" alt="studyplan slide" />
+        <img src="../../../theModal.jpg" alt="the modal pic" />
       </Box>
     </ThemeProvider>
   );
