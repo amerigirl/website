@@ -20,7 +20,8 @@ This box is not responsive and needs troubleshooting
         sx={{
           display: "flex",
           justifyContent: "center",
-          height: "35vh",
+          flexWrap: "wrap",
+          height: "auto",
           width: "85%",
           gap: ".5rem",
           backgroundColor: "#d6e3e7",
@@ -28,10 +29,26 @@ This box is not responsive and needs troubleshooting
           padding: ".3rem 0 ",
         }}
       >
-        <img src="../../../learn.jpg" alt="learning" />
-        <img src="../../../frontEndWork.jpg" alt="frontend Work" />
-        <img width={400} src="../../../studyPlan.png" alt="studyplan slide" />
-        <img src="../../../theModal.jpg" alt="the modal pic" />
+        <img
+          style={{ width: "100%", maxWidth: "400px", height: "auto" }}
+          src="../../../learn.jpg"
+          alt="learning"
+        />
+        <img
+          style={{ width: "100%", maxWidth: "400px", height: "auto" }}
+          src="../../../frontEndWork.jpg"
+          alt="frontend Work"
+        />
+        <img
+          style={{ width: "100%", maxWidth: "400px", height: "auto" }}
+          src="../../../studyPlan.png"
+          alt="studyplan slide"
+        />
+        <img
+          style={{ width: "100%", maxWidth: "400px", height: "auto" }}
+          src="../../../theModal.jpg"
+          alt="the modal pic"
+        />
       </Box>
     </ThemeProvider>
   );
