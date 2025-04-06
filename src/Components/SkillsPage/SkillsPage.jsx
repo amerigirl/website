@@ -13,18 +13,19 @@ const SkillsPage = () => {
       <Box sx={{ marginTop: "10rem" }}>
         <SectionTitle title={"Skills"} subtitle={"My technical level"} />
       </Box>
-
+      {/**
+This box is not responsive and needs troubleshooting
+ */}
       <Box
         sx={{
           display: "flex",
           justifyContent: "center",
           height: "35vh",
-          gap: "1rem",
-          backgroundColor: "rgb(197, 244, 244)",
-          margin: "0 3rem 0 3rem",
-          padding: "1rem",
-          outline: "1px solid black",
-          width: "81%",
+          width: "85%",
+          gap: ".5rem",
+          backgroundColor: "#d6e3e7",
+          margin: "2rem 3rem 0 3rem",
+          padding: ".3rem 0 ",
         }}
       >
         <img src="../../../learn.jpg" alt="learning" />
