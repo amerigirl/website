@@ -6,10 +6,6 @@ import Footer from "../Footer/Footer";
 import { Box } from "@mui/material";
 import SectionTitle from "../SectionTitle";
 
-const imageList = [
-  
-];
-
 const SkillsPage = () => {
   return (
     <ThemeProvider theme={theme}>
@@ -23,39 +19,7 @@ const SkillsPage = () => {
           padding: "1rem",
           boxSizing: "border-box", // Include padding in width calculation
         }}
-      >
-        <Box
-          sx={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", // Auto-adjust columns
-            gap: ".5rem",
-            backgroundColor: "#d6e3e7",
-            margin: "2rem 3rem 0 3rem",
-            padding: ".3rem 0 ",
-          }}
-        >
-          <img
-            style={{ width: "100%", maxWidth: "400px", height: "auto" }}
-            src="../../../learn.jpg"
-            alt="learning"
-          />
-          <img
-            style={{ width: "100%", maxWidth: "400px", height: "auto" }}
-            src="../../../frontEndWork.jpg"
-            alt="frontend Work"
-          />
-          <img
-            style={{ width: "100%", maxWidth: "400px", height: "auto" }}
-            src="../../../studyPlan.png"
-            alt="studyplan slide"
-          />
-          <img
-            style={{ width: "100%", maxWidth: "400px", height: "auto" }}
-            src="../../../theModal.jpg"
-            alt="the modal pic"
-          />
-        </Box>
-      </Box>
+      ></Box>
     </ThemeProvider>
   );
 };

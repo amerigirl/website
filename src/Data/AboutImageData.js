@@ -20,4 +20,19 @@ const aboutImageData = [
  
 ];
 
-module.exports = { aboutImageData };
+const imageList = [
+  {
+    src: "../../public/learn.jpg",
+  },
+  {
+    src: "../../../frontEndWork.jpg",
+  },
+  {
+    src: "../../../studyPlan.png",
+  },
+  {
+    src: "../../../theModal.jpg",
+  },
+];
+
+module.exports = { aboutImageData, imageList };
