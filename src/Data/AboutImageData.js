@@ -23,15 +23,20 @@ const aboutImageData = [
 const imageList = [
   {
     src: "../../public/learn.jpg",
+    alt: "learn",
+
   },
   {
     src: "../../../frontEndWork.jpg",
+    alt: "frontEndWork",
   },
   {
     src: "../../../studyPlan.png",
+    alt: "studyPlan",
   },
   {
     src: "../../../theModal.jpg",
+    alt: "theModal",
   },
 ];
 

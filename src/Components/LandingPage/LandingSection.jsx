@@ -108,7 +108,7 @@ const LandingSection = () => {
               <img
                 src={`${item.img}?w=220&h=220&fit=crop&auto=format`}
                 srcSet={`${item.img}?w=220&h=220&fit=crop&auto=format&dpr=2 2x`}
-                alt={item.title}
+                alt={item.alt}
                 loading="lazy"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
