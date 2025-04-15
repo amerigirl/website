@@ -6,6 +6,10 @@ import Footer from "../Footer/Footer";
 import { Box } from "@mui/material";
 import SectionTitle from "../SectionTitle";
 
+const imageList = [
+  
+];
+
 const SkillsPage = () => {
   return (
     <ThemeProvider theme={theme}>
@@ -31,7 +35,7 @@ const SkillsPage = () => {
           }}
         >
           <img
-            style={{ width: "100%", maxWidth: "100%", height: "auto" }}
+            style={{ width: "100%", maxWidth: "400px", height: "auto" }}
             src="../../../learn.jpg"
             alt="learning"
           />
