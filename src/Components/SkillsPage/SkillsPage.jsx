@@ -19,9 +19,10 @@ const SkillsPage = () => {
         sx={{
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "space-between",
+          justifyContent: "center",
+          gap: "1rem",
           padding: "2rem",
-          marginTop: "10rem",
+          marginTop: "8rem",
         }}
       >
         {imageList.map((item) => (
@@ -31,14 +32,20 @@ const SkillsPage = () => {
               width: "25%",
               height: "25%",
               overflow: "hidden",
+          
             }}
           >
             <img
-              src={`${item.src}?w=220&h=220&fit=crop&auto=format`}
-              srcSet={`${item.src}?w=220&h=220&fit=crop&auto=format&dpr=2 2x`}
+              src={item.src}
               alt={item.title}
-              loading="lazy"
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              loading="lazy" //is this needed?
+              style={{
+                width: "85%",
+                height: "85%",
+                objectFit: "cover",
+                borderRadius: "15px",
+                border: "1px solid #000",
+              }}
             />
           </Box>
         ))}
