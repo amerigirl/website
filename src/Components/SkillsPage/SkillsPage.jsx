@@ -7,6 +7,7 @@ import { Box } from "@mui/material";
 import { imageList } from "../../Data/AboutImageData";
 import SectionTitle from "../SectionTitle";
 import Accordion from "./Accordion";
+import Divider from "@mui/material/Divider";
 
 const SkillsPage = () => {
   return (
@@ -22,7 +23,7 @@ const SkillsPage = () => {
           flexWrap: "wrap",
           justifyContent: "center",
           gap: "1rem",
-          padding: "3rem",
+          padding: "2rem",
           marginTop: "3rem",
         }}
       >
@@ -49,7 +50,26 @@ const SkillsPage = () => {
           </Box>
         ))}
       </Box>
-      <Box sx={{ marginTop: "3rem", padding: "0 8rem" }}>
+      <Divider
+        sx={{
+          borderColor: "#000",
+          borderBottomWidth: 1,
+          width: "60%",
+          ml: "18%",
+          mr: "auto",
+        }}
+      />
+      <Box
+        sx={{
+          mt: 5,
+          maxWidth: 800,
+          mx: "auto",
+          backgroundColor: "#f5f5f5", 
+          p: 4, // Padding (theme spacing, 4 = 32px)
+          borderRadius: 3, // Rounded corners (theme spacing, 3 = 24px)
+          boxShadow: 2, 
+        }}
+      >
         <Accordion />
       </Box>
     </ThemeProvider>
