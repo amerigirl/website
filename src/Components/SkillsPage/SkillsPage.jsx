@@ -6,13 +6,14 @@ import Footer from "../Footer/Footer";
 import { Box } from "@mui/material";
 import { imageList } from "../../Data/AboutImageData";
 import SectionTitle from "../SectionTitle";
+import Accordion from "./Accordion";
 
 const SkillsPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
 
-      <Box sx={{ marginTop: "10rem" }}>
+      <Box sx={{ marginTop: "8rem" }}>
         <SectionTitle title={"Skills"} subtitle={"My technical level"} />
       </Box>
       <Box
@@ -21,15 +22,15 @@ const SkillsPage = () => {
           flexWrap: "wrap",
           justifyContent: "center",
           gap: "1rem",
-          padding: "2rem",
-          marginTop: "8rem",
+          padding: "3rem",
+          marginTop: "5rem",
         }}
       >
         {imageList.map((item) => (
           <Box
             key={item.src}
             sx={{
-              width: "25%",
+              width: "20%",
               height: "25%",
               overflow: "hidden",
           
@@ -38,7 +39,6 @@ const SkillsPage = () => {
             <img
               src={item.src}
               alt={item.title}
-              loading="lazy" //is this needed?
               style={{
                 width: "85%",
                 height: "85%",
@@ -50,6 +50,7 @@ const SkillsPage = () => {
           </Box>
         ))}
       </Box>
+      <Accordion/>
     </ThemeProvider>
   );
 };
