@@ -23,17 +23,16 @@ const SkillsPage = () => {
           justifyContent: "center",
           gap: "1rem",
           padding: "3rem",
-          marginTop: "5rem",
+          marginTop: "3rem",
         }}
       >
         {imageList.map((item) => (
           <Box
             key={item.src}
             sx={{
-              width: "20%",
+              width: "23%",
               height: "25%",
               overflow: "hidden",
-          
             }}
           >
             <img
@@ -50,7 +49,9 @@ const SkillsPage = () => {
           </Box>
         ))}
       </Box>
-      <Accordion/>
+      <Box sx={{ marginTop: "3rem", padding: "0 8rem" }}>
+        <Accordion />
+      </Box>
     </ThemeProvider>
   );
 };
