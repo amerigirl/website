@@ -36,7 +36,7 @@ export default function ControlledAccordions() {
       <Accordion
         expanded={panel1}
         onChange={handleChange("panel1")}
-        sx={{ mb: 1 }}
+        sx={{ mb: 1, borderRadius: 4 }}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -58,7 +58,7 @@ export default function ControlledAccordions() {
       <Accordion
         expanded={panel2}
         onChange={handleChange("panel2")}
-        sx={{ mb: 1 }}
+        sx={{ mb: 1 , borderRadius: 4 }}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -81,6 +81,7 @@ export default function ControlledAccordions() {
       <Accordion
         expanded={panel3}
         onChange={handleChange("panel3")}
+        sx={{ mb: 1, borderRadius: 4 }}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

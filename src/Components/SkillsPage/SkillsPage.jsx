@@ -68,10 +68,10 @@ const SkillsPage = () => {
           mb: 6,
           maxWidth: 800,
           mx: "auto",
-          backgroundColor: "#f5f5f5", 
-          p: 4, // Padding (theme spacing, 4 = 32px)
-          borderRadius: 3, // Rounded corners (theme spacing, 3 = 24px)
-          boxShadow: 2, 
+          backgroundColor: "secondary.main", 
+          p: 4, 
+          borderRadius: 4, // Rounded corners
+          boxShadow: 3, 
         }}
       >
         <Accordion />
