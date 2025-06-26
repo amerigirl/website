@@ -10,29 +10,31 @@ export default function ControlledAccordions() {
   const [panel1, setPanel1] = useState(false);
   const [panel2, setPanel2] = useState(false);
   const [panel3, setPanel3] = useState(false);
-  const isExpanded = false;
 
+  
   const handleChange = (panel) => (event, isExpanded) => {
-    if (panel === "panel1" || panel === "panel2") {
-      if (isExpanded) {
-        setPanel1(true);
-        setPanel2(true);
-      }
+    if (panel === "panel1") {
+      if (isExpanded) setPanel1(true);
+      // Prevent closing panel1 by doing nothing if isExpanded is false
+    } else if (panel === "panel2") {
+      if (isExpanded) setPanel2(true);
+      // Prevent closing panel2 by doing nothing if isExpanded is false
     } else if (panel === "panel3") {
       if (isExpanded) {
         setPanel3(true);
+      } else {
+        // If user is closing panel 3, close ALL panels
+        setPanel1(false);
+        setPanel2(false);
+        setPanel3(false);
       }
-    } else {
-      setPanel1(false);
-      setPanel2(false);
-      setPanel3(false);
     }
   };
-
+  
   return (
     <div>
       <Accordion
-        expanded={panel1 === "panel1"}
+        expanded={panel1}
         onChange={handleChange("panel1")}
         sx={{ mb: 1 }}
       >
@@ -56,7 +58,7 @@ export default function ControlledAccordions() {
         </AccordionDetails>
       </Accordion>
       <Accordion
-        expanded={panel2 === "panel2"}
+        expanded={panel2}
         onChange={handleChange("panel2")}
         sx={{ mb: 1 }}
       >
@@ -81,7 +83,7 @@ export default function ControlledAccordions() {
         </AccordionDetails>
       </Accordion>
       <Accordion
-        expanded={panel3 === "panel3"}
+        expanded={panel3}
         onChange={handleChange("panel3")}
       >
         <AccordionSummary
