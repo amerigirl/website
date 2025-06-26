@@ -3,7 +3,7 @@ import theme from "../../theme";
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { imageList } from "../../Data/AboutImageData";
 import SectionTitle from "../SectionTitle";
 import Accordion from "./Accordion";
@@ -59,9 +59,13 @@ const SkillsPage = () => {
           mr: "auto",
         }}
       />
+      <Typography sx={{ textAlign: "center", mt: 8, mb: 10, ml: "18%", mr: "18%" }}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eius adipisci, illum voluptatibus nobis a corporis temporibus culpa, modi aliquam pariatur quisquam itaque labore iusto odio voluptas velit eos consectetur.
+  </Typography>
       <Box
         sx={{
-          mt: 5,
+          mt: 6,
+          mb: 6,
           maxWidth: 800,
           mx: "auto",
           backgroundColor: "#f5f5f5", 

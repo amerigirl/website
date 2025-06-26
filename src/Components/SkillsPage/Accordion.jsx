@@ -46,9 +46,7 @@ export default function ControlledAccordions() {
           <Typography component="span" sx={{ width: "33%", flexShrink: 0 }}>
             Front End Development
           </Typography>
-          <Typography component="span" sx={{ color: "text.secondary" }}>
-            I am an accordion
-          </Typography>
+          
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -70,9 +68,7 @@ export default function ControlledAccordions() {
           <Typography component="span" sx={{ width: "33%", flexShrink: 0 }}>
             Design
           </Typography>
-          <Typography component="span" sx={{ color: "text.secondary" }}>
-            You are currently not an owner
-          </Typography>
+      
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -94,9 +90,7 @@ export default function ControlledAccordions() {
           <Typography component="span" sx={{ width: "33%", flexShrink: 0 }}>
             Middleware and Backend Learning
           </Typography>
-          <Typography component="span" sx={{ color: "text.secondary" }}>
-            Filtering has been entirely disabled for whole web server
-          </Typography>
+         
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
