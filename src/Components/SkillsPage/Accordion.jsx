@@ -14,22 +14,23 @@ export default function ControlledAccordions() {
   
   const handleChange = (panel) => (event, isExpanded) => {
     if (panel === "panel1") {
+      // Only allow opening, prevent closing
       if (isExpanded) setPanel1(true);
-      // Prevent closing panel1 by doing nothing if isExpanded is false
     } else if (panel === "panel2") {
+      // Only allow opening, prevent closing
       if (isExpanded) setPanel2(true);
-      // Prevent closing panel2 by doing nothing if isExpanded is false
     } else if (panel === "panel3") {
       if (isExpanded) {
         setPanel3(true);
       } else {
-        // If user is closing panel 3, close ALL panels
+        // Close all when panel3 closes
         setPanel1(false);
         setPanel2(false);
         setPanel3(false);
       }
     }
   };
+  
   
   return (
     <div>

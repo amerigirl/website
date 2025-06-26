@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomeLayout from "./Components/LandingPage/HomeLayout.jsx";
 import AboutPage from "./Components/AboutPage/AboutPage.jsx";
 import SkillsPage from "./Components/SkillsPage/SkillsPage.jsx";
-
+import GithubLandingPage from "./Components/Github/GithubLandingPage.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -11,6 +11,7 @@ const router = createBrowserRouter([
   },
   { path: "/aboutPage", element: <AboutPage /> },
   { path: "/skillsPage", element: <SkillsPage /> },
+  {path: "/github", element: <GithubLandingPage />}, 
 ]);
 
 function App() {

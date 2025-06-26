@@ -48,7 +48,7 @@ const Navbar = () => {
           >
             Skills
           </StyledButton>
-          <StyledButton href="#projects">Github</StyledButton>
+          <StyledButton id="#projects" href="http://localhost:3000/github">Github</StyledButton>
           <StyledButton href="#contact">Contact</StyledButton>
         </Stack>
       </Toolbar>
