@@ -70,7 +70,7 @@ const SkillsPage = () => {
       <Box
         sx={{
           mt: 6,
-          mb: 6,
+          mb: 10,
           maxWidth: 800,
           mx: "auto",
           backgroundColor: "#AA4A44",
@@ -81,6 +81,7 @@ const SkillsPage = () => {
       >
         <Accordion />
       </Box>
+      <Footer />
     </ThemeProvider>
   );
 };

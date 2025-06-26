@@ -7,6 +7,7 @@ import MyAcademicJourney from "./MyAcademicJourney/Timeline";
 import SectionTitle from "../SectionTitle";
 import MouseOutlinedIcon from "@mui/icons-material/MouseOutlined";
 import CurrentLearning from "./CurrentLearning/CurrentLearning";
+import Footer from "../Footer/Footer";
 
 const AboutPage = () => {
   return (
@@ -34,6 +35,7 @@ const AboutPage = () => {
       </Box>
 
       <MyAcademicJourney />
+      <Footer />
     </ThemeProvider>
   );
 };
