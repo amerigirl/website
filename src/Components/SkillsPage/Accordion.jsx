@@ -36,7 +36,7 @@ export default function ControlledAccordions() {
       <Accordion
         expanded={panel1}
         onChange={handleChange("panel1")}
-        sx={{ mb: 1, borderRadius: 4 }}
+        sx={{ mb: 1 }}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -55,10 +55,11 @@ export default function ControlledAccordions() {
           </Typography>
         </AccordionDetails>
       </Accordion>
+
       <Accordion
         expanded={panel2}
         onChange={handleChange("panel2")}
-        sx={{ mb: 1 , borderRadius: 4 }}
+        sx={{ mb: 1 }}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -78,10 +79,11 @@ export default function ControlledAccordions() {
           </Typography>
         </AccordionDetails>
       </Accordion>
+
       <Accordion
         expanded={panel3}
         onChange={handleChange("panel3")}
-        sx={{ mb: 1, borderRadius: 4 }}
+        sx={{ mb: 1}}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -90,8 +92,7 @@ export default function ControlledAccordions() {
         >
           <Typography component="span" sx={{ width: "33%", flexShrink: 0 }}>
             Middleware and Backend Learning
-          </Typography>
-         
+          </Typography> 
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
