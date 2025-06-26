@@ -59,19 +59,24 @@ const SkillsPage = () => {
           mr: "auto",
         }}
       />
-      <Typography sx={{ textAlign: "center", mt: 8, mb: 10, ml: "18%", mr: "18%" }}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eius adipisci, illum voluptatibus nobis a corporis temporibus culpa, modi aliquam pariatur quisquam itaque labore iusto odio voluptas velit eos consectetur.
-  </Typography>
+      <Typography
+        sx={{ textAlign: "center", mt: 8, mb: 10, ml: "18%", mr: "18%" }}
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eius
+        adipisci, illum voluptatibus nobis a corporis temporibus culpa, modi
+        aliquam pariatur quisquam itaque labore iusto odio voluptas velit eos
+        consectetur.
+      </Typography>
       <Box
         sx={{
           mt: 6,
           mb: 6,
           maxWidth: 800,
           mx: "auto",
-          backgroundColor: "secondary.main", 
-          p: 4, 
-          borderRadius: 4, // Rounded corners
-          boxShadow: 3, 
+          backgroundColor: "#AA4A44",
+          p: 2,
+          borderRadius: 3, // Rounded corners
+          boxShadow: 3,
         }}
       >
         <Accordion />

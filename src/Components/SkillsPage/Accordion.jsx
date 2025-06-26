@@ -43,10 +43,13 @@ export default function ControlledAccordions() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography component="span" sx={{ width: "33%", flexShrink: 0 }}>
+          <Typography
+            variant="h6"
+            component="span"
+            sx={{ flexShrink: 0 }}
+          >
             Front End Development
           </Typography>
-          
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -66,10 +69,13 @@ export default function ControlledAccordions() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography component="span" sx={{ width: "33%", flexShrink: 0 }}>
+          <Typography
+            variant="h6"
+            component="span"
+            sx={{  flexShrink: 0 }}
+          >
             Design
           </Typography>
-      
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -83,16 +89,20 @@ export default function ControlledAccordions() {
       <Accordion
         expanded={panel3}
         onChange={handleChange("panel3")}
-        sx={{ mb: 1}}
+        sx={{ mb: 1 }}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <Typography component="span" sx={{ width: "33%", flexShrink: 0 }}>
+          <Typography
+            variant="h6"
+            component="span"
+            sx={{ flexShrink: 0 }}
+          >
             Middleware and Backend Learning
-          </Typography> 
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
