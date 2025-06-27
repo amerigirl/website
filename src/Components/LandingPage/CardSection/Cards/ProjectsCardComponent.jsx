@@ -1,7 +1,7 @@
 import React from "react";
 import CardComponent from "../CardComponent";
 import ScrabblePiece from "../../../ScrabblePiece";
-import { Box, CardContent } from "@mui/material";
+import { Box, CardContent, Button } from "@mui/material";
 
 const scrabbleLetterProps = {
   height: "45px",
@@ -12,7 +12,7 @@ const scrabbleLetterProps = {
 };
 const ProjectsCardComponent = () => {
   return (
-    <Box>
+    <Box component={Button} href="http://localhost:3000/projects">
           <CardComponent>
       <CardContent
         id="projects"

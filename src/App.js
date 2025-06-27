@@ -11,7 +11,7 @@ const router = createBrowserRouter([
   },
   { path: "/aboutPage", element: <AboutPage /> },
   { path: "/skillsPage", element: <SkillsPage /> },
-  {path: "/github", element: <GithubLandingPage />}, 
+  { path: "/projects", element: <GithubLandingPage /> },
 ]);
 
 function App() {

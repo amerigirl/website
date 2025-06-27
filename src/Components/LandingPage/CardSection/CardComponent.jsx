@@ -29,7 +29,7 @@ const CardComponent = ({ children }) => {
             justifyContent: "center",
             alignItems: "center",
             height: "33vh",
-            width: "20vw",
+            width: "23vw",
             marginBottom: "6rem",
             marginTop: "2rem",
             borderRadius: "30px",

@@ -10,13 +10,13 @@ const GithubLandingPage = () => {
   return (
       <ThemeProvider theme={theme}>
           <Navbar  />
-          <Box sx={{ marginTop: "8rem", textAlign: "center" }}>
-              <Typography>
+          <Box sx={{ marginTop: "8rem", textAlign: "center"}}>
+              <Typography sx={{fontSize: "2.5rem", fontWeight: "bold"}}>
                   Projects and Future Learnings
               </Typography>
           </Box>
-          <Box sx={{mt: 4, textAlign: "center"}}>
-              <img src="./contributions.png"/>
+          <Box sx={{mt: 4, textAlign: "center", p:4}}>
+              <img src="./contributions.png" style={{borderRadius:"16px"}}/>
           </Box>
           <Footer />
     </ThemeProvider>
