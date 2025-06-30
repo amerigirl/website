@@ -17,6 +17,7 @@ const StyledCard = styled(Card)(({ theme }) => ({
   },
 }));
 
+// eslint-disable-next-line react/prop-types
 const CardComponent = ({ children }) => {
   return (
     <Box>
