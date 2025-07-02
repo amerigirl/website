@@ -4,6 +4,7 @@ import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import NavbarName from "./NavbarName";
 import {Link} from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 // Define a reusable StyledButton
 const StyledButton = styled(Button)(({ theme }) => ({
@@ -53,7 +54,12 @@ const Navbar = () => {
           <StyledButton component={Link} to="/projects">
             Projects
           </StyledButton>
-          <StyledButton href="#contact">Contact</StyledButton>
+          <StyledButton
+            component={HashLink}
+            to="/#contact"
+          >
+            Contact
+          </StyledButton>
         </Stack>
       </Toolbar>
     </AppBar>
