@@ -39,8 +39,7 @@ const Footer = () => {
               <Button
                 id="home"
                 color="inherit"
-                component={Link}
-                to="/"
+                onClick={ ()=> window.scrollTo({top: 0, behavior: 'smooth'})}
                 sx={{
                   minWidth: 0,
                   paddingLeft: 0,

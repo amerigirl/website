@@ -7,7 +7,7 @@ const BeasiaName = () => {
 
   return (
     <>
-      <Box sx={{ marginTop: "10rem" }}>
+      <Box  sx={{ marginTop: "10rem" }}>
         <SectionTitle title={"A Bit About Me :)"} />
       </Box>
 
