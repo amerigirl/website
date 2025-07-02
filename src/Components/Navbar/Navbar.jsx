@@ -3,6 +3,7 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import NavbarName from "./NavbarName";
+import {Link} from "react-router-dom";
 
 // Define a reusable StyledButton
 const StyledButton = styled(Button)(({ theme }) => ({
@@ -13,6 +14,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
     color: theme.palette.primary.main,
   },
 }));
+
 
 const Navbar = () => {
   return (
@@ -27,33 +29,36 @@ const Navbar = () => {
           spacing={4}
           sx={{
             justifyContent: { xs: "center", md: "flex-end" },
-            marginRight: { md: "2rem", marginTop: "1rem" },
+            marginRight: { md: "2rem" },
+            marginTop: "1rem",
           }}
         >
-          <StyledButton
-            href="http://localhost:3000"
-            sx={{ textDecoration: "none" }}
-          >
+          <StyledButton component={Link} to="/" sx={{ textDecoration: "none" }}>
             Home
           </StyledButton>
           <StyledButton
-            href="http://localhost:3000/aboutPage"
+            component={Link}
+            to="/aboutPage"
             sx={{ textDecoration: "none" }}
           >
             About
           </StyledButton>
           <StyledButton
-            href="http://localhost:3000/skillsPage"
+            component={Link}
+            to="/skillsPage"
             sx={{ textDecoration: "none" }}
           >
             Skills
           </StyledButton>
-          <StyledButton id="#projects" href="http://localhost:3000/projects">Projects</StyledButton>
+          <StyledButton component={Link} to="/projects">
+            Projects
+          </StyledButton>
           <StyledButton href="#contact">Contact</StyledButton>
         </Stack>
       </Toolbar>
     </AppBar>
   );
 };
+
 
 export default Navbar;

@@ -4,6 +4,7 @@ import HomeLayout from "./Components/LandingPage/HomeLayout.jsx";
 import AboutPage from "./Components/AboutPage/AboutPage.jsx";
 import SkillsPage from "./Components/SkillsPage/SkillsPage.jsx";
 import GithubLandingPage from "./Components/Github/GithubLandingPage.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
