@@ -10,7 +10,9 @@ const GithubLandingPage = () => {
     <ThemeProvider theme={theme}>
       <Navbar />
       <Box sx={{ marginTop: "8rem", textAlign: "center" }}>
-        <Typography sx={{ fontSize: "2.5rem", fontWeight: "bold", color: "primary.main"}}>
+        <Typography
+          sx={{ fontSize: "2.5rem", fontWeight: "bold", color: "primary.main" }}
+        >
           Projects and Future Learnings
         </Typography>
       </Box>
@@ -20,9 +22,9 @@ const GithubLandingPage = () => {
       <Box
         sx={{
           maxWidth: "800px",
-          margin: "0 auto 2rem",
+          margin: "0 auto 4rem",
           textAlign: "center",
-          p: 2,
+          p: 3,
         }}
       >
         <Typography style={{ fontSize: "1.2rem" }}>
@@ -32,7 +34,12 @@ const GithubLandingPage = () => {
           profile is also a few solid, complete jewels that I'd love to share!
         </Typography>
       </Box>
-      <GithubCard />
+          <Box sx={{display: "flex", flexwrap: "wrap", justifyContent: "space-evenly",  p:3}}>
+        <GithubCard />
+        <GithubCard />
+        <GithubCard />
+      </Box>
+
       <Footer />
     </ThemeProvider>
   );
