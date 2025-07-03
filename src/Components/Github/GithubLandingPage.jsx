@@ -3,13 +3,14 @@ import { Box, Typography, ThemeProvider } from "@mui/material";
 import Navbar from "../Navbar/Navbar";
 import theme from "../../theme";
 import Footer from "../Footer/Footer";
+import GithubCard from "./GithubCard";
 
 const GithubLandingPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
       <Box sx={{ marginTop: "8rem", textAlign: "center" }}>
-        <Typography sx={{ fontSize: "2.5rem", fontWeight: "bold" }}>
+        <Typography sx={{ fontSize: "2.5rem", fontWeight: "bold", color: "primary.main"}}>
           Projects and Future Learnings
         </Typography>
       </Box>
@@ -31,7 +32,7 @@ const GithubLandingPage = () => {
           profile is also a few solid, complete jewels that I'd love to share!
         </Typography>
       </Box>
-
+      <GithubCard />
       <Footer />
     </ThemeProvider>
   );
