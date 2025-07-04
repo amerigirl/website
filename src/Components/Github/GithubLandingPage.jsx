@@ -34,7 +34,14 @@ const GithubLandingPage = () => {
           profile is also a few solid, complete jewels that I'd love to share!
         </Typography>
       </Box>
-          <Box sx={{display: "flex", flexwrap: "wrap", justifyContent: "space-evenly",  p:3}}>
+      <Box
+        sx={{
+          display: "flex",
+          flexwrap: "wrap",
+          justifyContent: "space-evenly",
+          p: 3,
+        }}
+      >
         <GithubCard />
         <GithubCard />
         <GithubCard />
