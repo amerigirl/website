@@ -1,19 +1,19 @@
 const GithubData = [
   {
     img: "",
-    title: "",
+    title: "The Treasure Trove",
     description: "",
     link: "",
   },
   {
     img: "",
-    title: "",
+    title: "Traversing The Stars",
     description: "",
     link: "",
   },
   {
     img: "",
-    title: "",
+    title: "Investment Calculator App",
     description: "",
     link: "",
     }
