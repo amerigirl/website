@@ -18,7 +18,11 @@ const GithubLandingPage = () => {
         </Typography>
       </Box>
       <Box sx={{ mt: 4, textAlign: "center", p: 4 }}>
-        <img src="./contributions.png" alt="github calendar" style={{ borderRadius: "16px" }} />
+        <img
+          src="./contributions.png"
+          alt="github calendar"
+          style={{ borderRadius: "16px" }}
+        />
       </Box>
       <Box
         sx={{
@@ -45,9 +49,7 @@ const GithubLandingPage = () => {
       >
         {GithubData.map((data, index) => {
           console.log(data);
-          return (
-      <GithubCard key={index} info={data}/>
-          );
+          return <GithubCard key={index} info={data} />;
         })}
       </Box>
 

@@ -6,22 +6,16 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-
-export default function GithubCard({info}) {
-    return (
-      
+export default function GithubCard({ info }) {
+  return (
     <Card sx={{ maxWidth: 345, marginBottom: 5 }}>
-      <CardMedia
-        sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
-        title="green iguana"
-      />
+      <CardMedia sx={{ height: 140 }} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Project#1
+          {info.title}
         </Typography>
         <Typography variant="body2" sx={{ color: "text.secondary" }}>
-          Project#1 lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          {info.description}
         </Typography>
       </CardContent>
       <CardActions>
