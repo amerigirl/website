@@ -18,3 +18,5 @@ const GithubData = [
     link: "",
   },
 ];
+
+export default GithubData;

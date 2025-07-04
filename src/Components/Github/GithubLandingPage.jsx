@@ -4,6 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import theme from "../../theme";
 import Footer from "../Footer/Footer";
 import GithubCard from "./GithubCard";
+import GithubData from "../../Data/GithubData";
 
 const GithubLandingPage = () => {
   return (
@@ -17,7 +18,7 @@ const GithubLandingPage = () => {
         </Typography>
       </Box>
       <Box sx={{ mt: 4, textAlign: "center", p: 4 }}>
-        <img src="./contributions.png" style={{ borderRadius: "16px" }} />
+        <img src="./contributions.png" alt="github calendar" style={{ borderRadius: "16px" }} />
       </Box>
       <Box
         sx={{
@@ -37,14 +38,17 @@ const GithubLandingPage = () => {
       <Box
         sx={{
           display: "flex",
-          flexwrap: "wrap",
+          flexWrap: "wrap",
           justifyContent: "space-evenly",
           p: 3,
         }}
       >
-        <GithubCard />
-        <GithubCard />
-        <GithubCard />
+        {GithubData.map((data, index) => {
+          console.log(data);
+          return (
+      <GithubCard key={index} info={data}/>
+          );
+        })}
       </Box>
 
       <Footer />
