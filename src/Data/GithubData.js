@@ -1,7 +1,7 @@
 const GithubData = [
   {
-    img: "",
-    title: "The Treasure Trove",
+    img: "../treasureTrove.png",
+    title: "The Treasure Trove!",
     description: "",
     link: "https://github.com/amerigirl/SoftwareAppFinal",
   },
@@ -13,7 +13,7 @@ const GithubData = [
   },
   {
     img: "",
-    title: "Investment Calculator App",
+    title: "Investment Calculator",
     description: "sample description",
     link: "https://github.com/amerigirl/InvestmentCalculatorApp"
   },
