@@ -14,7 +14,7 @@ export default function GithubCard({ info }) {
       <CardMedia sx={{ height: 140 }} />
       <CardContent>
         <Box>
-          <img src={ info.img} alt={info.title} style={{ width: "100%"}} />
+          <img src={info.img} alt={info.title} style={{ width: "100%" }} />
         </Box>
         <Typography gutterBottom variant="h5" component="div">
           {info.title}
@@ -24,7 +24,9 @@ export default function GithubCard({ info }) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Go to Repo</Button>
+        <Button href={info.link} target="_blank" size="small">
+          Go to Repo
+        </Button>
       </CardActions>
     </Card>
   );
