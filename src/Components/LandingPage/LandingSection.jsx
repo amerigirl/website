@@ -7,7 +7,7 @@ const LandingSection = () => {
   /**
    * handles downloading my resume
    */
-  const handleClick = () => {
+  const handleResumeClick = () => {
     const pdfUrl = `${process.env.PUBLIC_URL}/Be-AsiaMcKerracherResume.pdf`;
     const link = document.createElement("a");
     link.href = pdfUrl;
@@ -55,16 +55,28 @@ const LandingSection = () => {
           </Typography>
           <br></br>
           <Typography sx={{ fontSize: "20px" }}>
-            As a dynamic full-stack developer with a strong focus on front-end
-            technologies, I harness JavaScript, React, TypeScript, and Node.js
-            to craft efficient and innovative solutions. My projects have
-            significantly enhanced user experiences and operational efficiency
-            through responsive interfaces, optimized component structures, and
-            seamless integration with back-end services. While proficient in
-            full-stack development, I specialize in creating robust and
-            interactive front-end applications using React and JavaScript. My
-            expertise extends to implementing RESTful APIs, managing state with
-            Redux, and ensuring smooth data flow between client and server.
+            Dynamic Full-Stack Developer & Technical Communicator I specialize
+            in building responsive, interactive front-end applications using
+            JavaScript, React, and TypeScript, while seamlessly integrating
+            robust back-end solutions with Node.js and .NET. My work
+            consistently enhances user experiences and drives operational
+            efficiency through optimized component structures, clean code, and
+            scalable architectures.
+            <br></br>
+            <br></br>
+            With hands-on experience at leading organizations like Microsoft and H&R Block, I have: Deployed
+            critical UI components for data visualization using React and Fluent
+            UI. Upgraded SDKs and implemented Azure Health Checks to boost API
+            reliability. Raised repository test coverage from 40% to 80% by
+            developing comprehensive unit tests. Designed and maintained
+            technical documentation and internal wikis, making complex systems
+            accessible for users and teams. My background in education empowers
+            me to translate technical concepts into clear, user-friendly
+            documentation, facilitate knowledge sharing, and mentor junior
+            developers. I thrive on collaborative problem-solving and am
+            passionate about bridging knowledge gaps in tech. Let’s connect to
+            explore how my blend of development and documentation skills can
+            elevate your next project.
             <br></br>
             <br></br>
           </Typography>
@@ -74,7 +86,7 @@ const LandingSection = () => {
               data-testid="resume"
               variant="contained"
               startIcon={<DownloadIcon />}
-              onClick={handleClick}
+              onClick={handleResumeClick}
             >
               Resume
             </Button>
