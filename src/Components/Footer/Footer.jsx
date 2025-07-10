@@ -40,7 +40,7 @@ const Footer = () => {
               <Button
                 id="home"
                 color="inherit"
-                onClick={ ()=> window.scrollTo({top: 0, behavior: 'smooth'})}
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 sx={{
                   minWidth: 0,
                   paddingLeft: 0,
@@ -54,9 +54,9 @@ const Footer = () => {
           </Box>
         </StyledToolbar>
       </AppBar>
-      <Box>
+      <Box sx={{ color: "white" }}>
         <Typography marginLeft="1.5rem" marginTop="-3rem" fontSize="1rem">
-                &copy; 2025
+          &copy; 2025
         </Typography>
       </Box>
     </Box>
