@@ -29,7 +29,7 @@ const LandingSection = () => {
           justifyContent: "center",
           gap: "7rem",
           height: "61vh",
-          marginTop: "13rem",
+          marginTop: "10rem",
           marginBottom: "12.5rem",
         }}
       >
@@ -54,6 +54,8 @@ const LandingSection = () => {
             Hi, I&apos;m Be-Asia!
           </Typography>
           <br></br>
+          <br></br>
+          <br></br>
           <Typography sx={{ fontSize: "20px" }}>
             A Full-Stack Developer who enjoys building clear and responsive
             front-end applications using React and connecting them to reliable
@@ -64,27 +66,12 @@ const LandingSection = () => {
             issues much smoother for my team.
             <br></br>
             <br></br>I believe good documentation is just as important as good
-            code. My background in education helps me explain technical ideas in
+            code! My background in education helps me explain technical ideas in
             a way that&apos;s easy to understand, whether I&apos;m updating team
             wikis or supporting junior developers. I enjoy working with others
             and am always looking for ways to make technology more accessible.
             <br></br>
             <br></br>
-            I&apos;ve also had the oppportunity to:
-            <ul>
-              <li>
-                Improved code coverage from 40% to 80% by writing comprehensive
-                unit tests using Jest.
-              </li>
-              <li>
-                Created and maintained technical documentation for both team
-                knowledge and troubleshooting purposes.
-              </li>
-              <li>
-                Upgraded SDKs in Web and Function APIs while setting up Azure
-                Health Checks to ensure API efficiency.
-              </li>
-            </ul>
             If you&apos;d like to connect or chat about development and
             documentation, feel free to reach out!
             <br></br>
@@ -115,7 +102,7 @@ const LandingSection = () => {
             borderColor: "primary.light",
             boxSizing: "border-box",
             backgroundColor: "primary.light",
-            marginTop: "3rem",
+            marginTop: "7rem",
           }}
         >
           {aboutImageData.map((item) => (
