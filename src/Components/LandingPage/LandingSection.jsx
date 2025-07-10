@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Container, Button} from "@mui/material";
+import { Typography, Box, Container, Button } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
 import { aboutImageData } from "../../Data/AboutImageData";
 
@@ -55,41 +55,33 @@ const LandingSection = () => {
           </Typography>
           <br></br>
           <Typography sx={{ fontSize: "20px" }}>
-            I'm a Full-Stack Developer who enjoys
-            building clear, responsive front-end applications with JavaScript,
-            React, and TypeScript, and connecting them to reliable back-end
-            systems using Node.js and .NET. At Microsoft, I worked closely with
-            designers to build reusable UI components for data visualization,
-            making sure the final product matched their vision and was easy to
-            use. During my time at H&R Block, I led the design and development
-            of a micro UI that made troubleshooting production issues much
-            smoother for the team. I also have experience upgrading SDKs,
-            setting up Azure Health Checks to keep APIs running smoothly, and
-            writing unit tests to improve code quality.
+            A Full-Stack Developer who enjoys building clear and responsive
+            front-end applications using React and connecting them to reliable
+            back-end systems using the .NET framework. In my last role, I worked
+            closely with designers to build reusable UI components for data
+            visualization. I've also had the pleasure of leading the design and
+            development of a micro UI that made troubleshooting production
+            issues much smoother for my team.
             <br></br>
+            <br></br>I believe good documentation is just as important as good
+            code. My background in education helps me explain technical ideas in
+            a way that's easy to understand, whether I'm updating team wikis or
+            supporting junior developers. I enjoy working with others and am
+            always looking for ways to make technology more accessible.
             <br></br>
-            I believe good
-            documentation is just as important as good code. My background in
-            education helps me explain technical ideas in a way that's easy to
-            understand, whether I'm updating team wikis or supporting junior
-            developers. I enjoy working with others and am always looking for
-            ways to make technology more accessible.
-            <br></br>
-            <br></br>
-            A few highlights from my
-            recent work:
+            <br></br>A few highlights from my recent work:
             <ul>
               <li>
-                Improved code coverage from 40% to 80% by writing
-            comprehensive unit tests.
+                Improved code coverage from 40% to 80% by writing comprehensive
+                unit tests.
               </li>
               <li>
-                  Created and maintained technical
-            documentation that helped the team and end-users understand complex
-            systems.
+                Created and maintained technical documentation that helped the
+                team and end-users understand complex systems.
               </li>
               <li>
-                Built reusable UI components while migrating applications from Angular to React.
+                Upgraded SDKs in web and function APIs while setting up Azure Health
+                Checks to ensure API efficiency.
               </li>
             </ul>
             If you'd like to connect or chat about development and
