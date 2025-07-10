@@ -69,26 +69,44 @@ const SocialMediaContact = () => {
           </Box>
         </Box>
 
-        {/* <Box>
-          <Box
-            component="img"
-            sx={{
-              height: 45,
-              width: 45,
-            }}
-            alt="LinkedIn Icon"
-            src="../../LinkedIn.png"
-          />
-          <Box
-            component="img"
-            sx={{
-              height: 45,
-              width: 45,
-            }}
-            alt="Github Icon"
-            src="../../github.png"
-          />
-        </Box> */}
+        <Box
+          display="flex"
+          gap="2rem"
+          alignItems="center"
+          marginTop="1rem"
+          marginLeft="12rem"
+        >
+          <a
+            href="https://www.linkedin.com/in/be-asia/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Box
+              component="img"
+              sx={{
+                height: 70,
+                width: 70,
+              }}
+              alt="LinkedIn Icon"
+              src="../../linkedInLogo.jpg"
+            />
+          </a>
+          <a
+            href="https://github.com/amerigirl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Box
+              component="img"
+              sx={{
+                height: 45,
+                width: 45,
+              }}
+              alt="Github Icon"
+              src="../../github.png"
+            />
+          </a>
+        </Box>
       </Box>
     </>
   );

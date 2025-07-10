@@ -51,7 +51,7 @@ const LandingSection = () => {
               marginTop: "3rem",
             }}
           >
-            Hi, I&apos;m Be-Asia!
+            Hola, I&apos;m Be-Asia!
           </Typography>
           <br></br>
           <br></br>
