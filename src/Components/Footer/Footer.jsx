@@ -54,6 +54,11 @@ const Footer = () => {
           </Box>
         </StyledToolbar>
       </AppBar>
+      <Box>
+        <Typography marginLeft="1.5rem" marginTop="-3rem" fontSize="1rem">
+                &copy; 2025
+        </Typography>
+      </Box>
     </Box>
   );
 };
