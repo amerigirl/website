@@ -55,28 +55,45 @@ const LandingSection = () => {
           </Typography>
           <br></br>
           <Typography sx={{ fontSize: "20px" }}>
-            Dynamic Full-Stack Developer & Technical Communicator I specialize
-            in building responsive, interactive front-end applications using
-            JavaScript, React, and TypeScript, while seamlessly integrating
-            robust back-end solutions with Node.js and .NET. My work
-            consistently enhances user experiences and drives operational
-            efficiency through optimized component structures, clean code, and
-            scalable architectures.
+            I'm a Full-Stack Developer who enjoys
+            building clear, responsive front-end applications with JavaScript,
+            React, and TypeScript, and connecting them to reliable back-end
+            systems using Node.js and .NET. At Microsoft, I worked closely with
+            designers to build reusable UI components for data visualization,
+            making sure the final product matched their vision and was easy to
+            use. During my time at H&R Block, I led the design and development
+            of a micro UI that made troubleshooting production issues much
+            smoother for the team. I also have experience upgrading SDKs,
+            setting up Azure Health Checks to keep APIs running smoothly, and
+            writing unit tests to improve code quality.
             <br></br>
             <br></br>
-            With hands-on experience at leading organizations like Microsoft and H&R Block, I have: Deployed
-            critical UI components for data visualization using React and Fluent
-            UI. Upgraded SDKs and implemented Azure Health Checks to boost API
-            reliability. Raised repository test coverage from 40% to 80% by
-            developing comprehensive unit tests. Designed and maintained
-            technical documentation and internal wikis, making complex systems
-            accessible for users and teams. My background in education empowers
-            me to translate technical concepts into clear, user-friendly
-            documentation, facilitate knowledge sharing, and mentor junior
-            developers. I thrive on collaborative problem-solving and am
-            passionate about bridging knowledge gaps in tech. Let’s connect to
-            explore how my blend of development and documentation skills can
-            elevate your next project.
+            I believe good
+            documentation is just as important as good code. My background in
+            education helps me explain technical ideas in a way that's easy to
+            understand, whether I'm updating team wikis or supporting junior
+            developers. I enjoy working with others and am always looking for
+            ways to make technology more accessible.
+            <br></br>
+            <br></br>
+            A few highlights from my
+            recent work:
+            <ul>
+              <li>
+                Improved code coverage from 40% to 80% by writing
+            comprehensive unit tests.
+              </li>
+              <li>
+                  Created and maintained technical
+            documentation that helped the team and end-users understand complex
+            systems.
+              </li>
+              <li>
+                Built reusable UI components while migrating applications from Angular to React.
+              </li>
+            </ul>
+            If you'd like to connect or chat about development and
+            documentation, feel free to reach out!
             <br></br>
             <br></br>
           </Typography>
