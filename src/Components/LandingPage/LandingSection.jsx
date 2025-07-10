@@ -37,7 +37,7 @@ const LandingSection = () => {
           sx={{
             justifyContent: "center",
             height: "250px",
-            width: "500px",
+            width: "700px",
           }}
         >
           <Typography
@@ -59,32 +59,33 @@ const LandingSection = () => {
             front-end applications using React and connecting them to reliable
             back-end systems using the .NET framework. In my last role, I worked
             closely with designers to build reusable UI components for data
-            visualization. I've also had the pleasure of leading the design and
-            development of a micro UI that made troubleshooting production
+            visualization. I&apos;ve also had the pleasure of leading the design
+            and development of a micro UI that made troubleshooting production
             issues much smoother for my team.
             <br></br>
             <br></br>I believe good documentation is just as important as good
             code. My background in education helps me explain technical ideas in
-            a way that's easy to understand, whether I'm updating team wikis or
-            supporting junior developers. I enjoy working with others and am
-            always looking for ways to make technology more accessible.
+            a way that&apos;s easy to understand, whether I&apos;m updating team
+            wikis or supporting junior developers. I enjoy working with others
+            and am always looking for ways to make technology more accessible.
             <br></br>
-            <br></br>A few highlights from my recent work:
+            <br></br>
+            I&apos;ve also had the oppportunity to:
             <ul>
               <li>
                 Improved code coverage from 40% to 80% by writing comprehensive
-                unit tests.
+                unit tests using Jest.
               </li>
               <li>
-                Created and maintained technical documentation that helped the
-                team and end-users understand complex systems.
+                Created and maintained technical documentation for both team
+                knowledge and troubleshooting purposes.
               </li>
               <li>
-                Upgraded SDKs in web and function APIs while setting up Azure Health
-                Checks to ensure API efficiency.
+                Upgraded SDKs in Web and Function APIs while setting up Azure
+                Health Checks to ensure API efficiency.
               </li>
             </ul>
-            If you'd like to connect or chat about development and
+            If you&apos;d like to connect or chat about development and
             documentation, feel free to reach out!
             <br></br>
             <br></br>
