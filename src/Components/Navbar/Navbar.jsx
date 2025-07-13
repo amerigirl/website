@@ -1,9 +1,6 @@
 import { AppBar, Toolbar, Stack } from "@mui/material";
 import React from "react";
-import { styled } from "@mui/material/styles";
-import Button from "@mui/material/Button";
 import NavbarName from "./NavbarName";
-import { HashLink } from "react-router-hash-link";
 import StyledButton from "./StyledButton";
 import NavbarButtons from "../../Data/NavBarButtons";
 
@@ -24,17 +21,17 @@ const Navbar = () => {
             marginTop: "1rem",
           }}
         >
-          {NavbarButtons.map((button, index) => { 
-            <StyledButton
-              to={button.link}
-              key={index}
-              component={button.component}
-            >
-              {button.name}
-            </StyledButton>
+          {NavbarButtons.map((button, index) => {
+            return (
+              <StyledButton
+                to={button.link}
+                key={index}
+                component={button.component}
+              >
+                {button.name}
+              </StyledButton>
+            );
           })}
-          
-          
         </Stack>
       </Toolbar>
     </AppBar>
