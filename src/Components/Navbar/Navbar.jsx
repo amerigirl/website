@@ -3,18 +3,9 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import NavbarName from "./NavbarName";
-import {Link} from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import StyledButton from "./StyledButton";
 
-// Define a reusable StyledButton
-const StyledButton = styled(Button)(({ theme }) => ({
-  fontWeight: "bold",
-  fontSize: "17px",
-  color: "black",
-  "&:hover": {
-    color: theme.palette.primary.main,
-  },
-}));
 
 
 const Navbar = () => {
@@ -34,30 +25,19 @@ const Navbar = () => {
             marginTop: "1rem",
           }}
         >
-          <StyledButton component={Link} to="/" sx={{ textDecoration: "none" }}>
+          <StyledButton component={Link} to="/">
             Home
           </StyledButton>
-          <StyledButton
-            component={Link}
-            to="/aboutPage"
-            sx={{ textDecoration: "none" }}
-          >
+          <StyledButton component={Link} to="/aboutPage">
             About
           </StyledButton>
-          <StyledButton
-            component={Link}
-            to="/skillsPage"
-            sx={{ textDecoration: "none" }}
-          >
+          <StyledButton component={Link} to="/skillsPage">
             Skills
           </StyledButton>
           <StyledButton component={Link} to="/projects">
             Projects
           </StyledButton>
-          <StyledButton
-            component={HashLink}
-            to="/#contact"
-          >
+          <StyledButton component={HashLink} to="/#contact">
             Contact
           </StyledButton>
         </Stack>
@@ -65,6 +45,5 @@ const Navbar = () => {
     </AppBar>
   );
 };
-
 
 export default Navbar;
