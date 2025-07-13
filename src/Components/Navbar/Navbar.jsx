@@ -2,7 +2,7 @@ import { AppBar, Toolbar, Stack } from "@mui/material";
 import React from "react";
 import NavbarName from "./NavbarName";
 import StyledButton from "./StyledButton";
-import NavbarButtons from "../../Data/NavBarButtons";
+import NavbarButtonsData from "../../Data/NavBarButtonsData";
 
 const Navbar = () => {
   return (
@@ -21,7 +21,7 @@ const Navbar = () => {
             marginTop: "1rem",
           }}
         >
-          {NavbarButtons.map((button, index) => {
+          {NavbarButtonsData.map((button, index) => {
             return (
               <StyledButton
                 to={button.link}
