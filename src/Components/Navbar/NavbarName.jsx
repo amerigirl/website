@@ -2,6 +2,7 @@ import React from "react";
 import { Typography, Box } from "@mui/material";
 import ScrabblePiece from "../ScrabblePiece";
 
+// defines the properties for the Typography component used in the NavbarName
 const navbarLetterProps = {
   color: "black",
   whiteSpace: "nowrap",
@@ -12,6 +13,7 @@ const navbarLetterProps = {
   paddingRight: "3px",
 };
 
+// defines the properties for the ScrabblePiece component used in the NavbarName
 const scrabblePieceProps = {
   height: "31px",
   width: "31px",
@@ -33,6 +35,7 @@ const NavbarName = () => {
       }}
     >
       <Box>
+        
         <ScrabblePiece
           letter="B"
           {...scrabblePieceProps}
@@ -52,7 +55,7 @@ const NavbarName = () => {
         />
       </Box>
       <Typography sx={navbarLetterProps}>e-</Typography>
-            <Typography sx={{ ...navbarLetterProps, paddingRight: "1rem" }}>
+      <Typography sx={{ ...navbarLetterProps, paddingRight: "1rem" }}>
         Asia
       </Typography>
 
