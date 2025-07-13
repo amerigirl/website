@@ -1,4 +1,4 @@
-navBarButtons = [
+const navBarButtons = [
   {
     name: "Home",
     link: "/",
@@ -25,3 +25,5 @@ navBarButtons = [
     component: HashLink,
   },
 ];
+
+export default navBarButtons;

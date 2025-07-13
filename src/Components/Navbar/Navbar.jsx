@@ -5,8 +5,7 @@ import Button from "@mui/material/Button";
 import NavbarName from "./NavbarName";
 import { HashLink } from "react-router-hash-link";
 import StyledButton from "./StyledButton";
-
-
+import NavbarButtons from "../../Data/NavBarButtons";
 
 const Navbar = () => {
   return (
@@ -25,21 +24,17 @@ const Navbar = () => {
             marginTop: "1rem",
           }}
         >
-          <StyledButton component={Link} to="/">
-            Home
-          </StyledButton>
-          <StyledButton component={Link} to="/aboutPage">
-            About
-          </StyledButton>
-          <StyledButton component={Link} to="/skillsPage">
-            Skills
-          </StyledButton>
-          <StyledButton component={Link} to="/projects">
-            Projects
-          </StyledButton>
-          <StyledButton component={HashLink} to="/#contact">
-            Contact
-          </StyledButton>
+          {NavbarButtons.map((button, index) => { 
+            <StyledButton
+              to={button.link}
+              key={index}
+              component={button.component}
+            >
+              {button.name}
+            </StyledButton>
+          })}
+          
+          
         </Stack>
       </Toolbar>
     </AppBar>

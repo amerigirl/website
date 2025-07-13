@@ -14,10 +14,12 @@ const SButton = styled(Button)(({ theme }) => ({
   },
 }));
 
+// StyledButton component that accepts 'to' and 'children' props
+// and applies the styles defined in SButton
 const StyledButton = ({ to, children, ...rest }) => {
   return (
-    <SButton component={Link} to={props.to}>
-      {props.children}
+    <SButton component={Link} to={to}>
+      {children}
     </SButton>
   );
 };
