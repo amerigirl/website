@@ -60,17 +60,17 @@ const BeasiaName = () => {
                 border: "1px solid black",
                 borderRadius: "30px",
                 overflow: "hidden",
-                width: "200px",
-                height: "200px",
+                width: "400px",
+                height: "400px",
                 flexShrink: 0,
               
               }}
             >
               <img
-                src="./mePic.jpg"
-                alt="BeAsia and Grogu Doll"
+                src="./meAndSpanish.jpg"
+                alt="Me holding a Learn Spanish book"
                 style={{
-                  width: "200px",
+                  width: "400px",
                   height: "100%",
                   objectFit: "cover",
                 }}
