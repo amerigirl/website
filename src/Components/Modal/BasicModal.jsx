@@ -15,6 +15,7 @@ const style = {
   boxShadow: 24,
   p: 4,
   borderRadius: "15px",
+  height: 525
 };
 
 export default function BasicModal({ open, onClose, item }) {
@@ -41,6 +42,7 @@ export default function BasicModal({ open, onClose, item }) {
             />
           )}
         </Typography>
+        <br></br>
         <Typography>
           {item?.visitSite && (
             <a

@@ -32,8 +32,8 @@ const timelineItems = [
     content: "Renton Technical College (2026)",
     color: "grey",
     modalContent:
-      "So excited to be learning and growing (AGAIN) at RTC!  This was the college I went to shortly before transferring to Truman State.  Returning home to the PNW and learning new skills in the tech industry has been amazing!",
-    modalImage: "/rentonTech.webp",
+      "So excited to be learning and growing (AGAIN) at RTC!  This was the college I went to shortly before transferring to Truman State.  Returning home to the Pacific NorthWest to be with family and friends AND learn new skills in the tech industry has been amazing!",
+    modalImage: "/rentonTech1.webp",
     visitSite: "https://www.rtc.edu/",
     visitTitle: "Visit RTC",
   },
