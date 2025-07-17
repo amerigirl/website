@@ -7,8 +7,21 @@ const BeasiaName = () => {
 
   return (
     <>
-      <Box  sx={{ marginTop: "10rem" }}>
-        <SectionTitle title={"A Bit About Me :)"} />
+      <Box
+        sx={{
+          marginTop: "10rem",
+          display: "flex",
+          flexDirection: "start",
+          alignItems: "center",
+          justifyContent: "center",
+          marginBottom: "9rem",
+          marginLeft: "2rem",
+    
+        }}
+      >
+        <SectionTitle title={"A Bit About Me"} />
+          <img src="./spaceNeedle.png" alt="Seatle Skyline with Space Needle" style={{height: "100px", marginTop: "-4rem"}}/>
+      
       </Box>
 
       <Box
@@ -22,33 +35,36 @@ const BeasiaName = () => {
           sx={{
             display: "grid",
             marginRight: "4rem",
-       
+          }}
+        ></Box>
+
+        <Box
+          sx={{
+            display: "flex",
+            maxWidth: "900px",
+            marginTop: "3rem",
+            gap: "2rem",
           }}
         >
-        </Box>
-
-        <Box sx={{ display: "flex", maxWidth: "900px", marginTop: "3rem" , gap: "2rem"}}>
           <Box sx={{ display: "flex", gap: "2rem" }}>
             <Box
               sx={{
                 float: "left",
                 marginRight: "2rem",
                 marginBottom: "1rem",
-                marginTop: "3rem",
                 border: "1px solid black",
                 borderRadius: "30px",
                 overflow: "hidden",
-                width: "400px",
-                height: "400px",
+                width: "250px",
+                height: "350px",
                 flexShrink: 0,
-              
               }}
             >
               <img
                 src="./meAndSpanish.jpg"
                 alt="Me holding a Learn Spanish book"
                 style={{
-                  width: "400px",
+                  width: "250px",
                   height: "100%",
                   objectFit: "cover",
                 }}
@@ -64,15 +80,9 @@ const BeasiaName = () => {
                 textIndent: "3rem",
               }}
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Aspernatur officia nam nemo, quia earum velit consequuntur quaerat
-              at adipisci, quo ut! Non cum eveniet, nobis aliquid unde ducimus
-              inventore. Explicabo. Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit. Aspernatur officia nam nemo, quia earum velit
-              consequuntur quaerat at adipisci, quo ut! Non cum eveniet, nobis
-              aliquid unde ducimus inventore. Explicabo.Non cum eveniet, nobis
-              aliquid unde ducimus inventore. Explicabo. Lorem ipsum dolor sit,
-              amet consectetur adipisicing elit. Aspernatur officia nam nem.
+              Born and raised in Seattle, I have a passion for UX/UI
+              development. I started my career in Education, using technology to
+              engage students and make learning more accessible.
             </Typography>
           </Box>
         </Box>
