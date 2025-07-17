@@ -4,7 +4,7 @@ const timelineItems = [
     content: "Truman State University (2009)",
     color: "grey",
     modalContent:
-      "A great college in the heart of the Midwest! I started my learning journey here, graduating with both a Bachelor of Arts and a Master's of Arts in English. Truman State University is a great place to grow and learn!",
+      "A great college in the heart of the Midwest! I started my learning journey here, graduating with both a Bachelor of Arts and a Master's of Arts in English, where I went on to become a Dual-Credit English Teacher with The University of Missouri Kansas-City. Truman State University is a great place to grow and learn!",
     modalImage: "../TrumanState.jpg",
     visitSite: "https://www.truman.edu/",
     visitTitle: "Visit Truman",

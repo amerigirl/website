@@ -3,7 +3,6 @@ import { Box, Typography } from "@mui/material";
 import SectionTitle from "../SectionTitle";
 
 const About = () => {
-
   return (
     <>
       <Box
@@ -13,7 +12,7 @@ const About = () => {
           flexDirection: "start",
           alignItems: "center",
           justifyContent: "center",
-          marginBottom: "7rem",
+          marginBottom: "3rem",
           marginLeft: "3rem",
         }}
       >
@@ -36,7 +35,7 @@ const About = () => {
         <Box
           sx={{
             display: "flex",
-            maxWidth: "900px",
+            maxWidth: "1000px",
             marginTop: "3rem",
             gap: "2rem",
           }}
@@ -49,8 +48,8 @@ const About = () => {
                 border: "1px solid black",
                 borderRadius: "30px",
                 overflow: "hidden",
-                width: "250px",
-                height: "350px",
+                width: "275px",
+                height: "325px",
                 flexShrink: 0,
               }}
             >
@@ -58,7 +57,7 @@ const About = () => {
                 src="./meAndSpanish.jpg"
                 alt="Me holding a Learn Spanish book"
                 style={{
-                  width: "250px",
+                  width: "275px",
                   height: "100%",
                   objectFit: "cover",
                 }}
@@ -71,18 +70,29 @@ const About = () => {
               sx={{
                 textAlign: "justify",
                 fontSize: "20px",
-                textIndent: "3rem",
+                textIndent: "2rem",
               }}
             >
               Born and raised in Seattle, I have a passion for UX/UI Web Design!
               I began my career in Education, using technology to engage
               students and make learning more accessible.
-
               <br></br>
               <br></br>
-              Outside of building great applications, most weekends, you can find me near water: kayaking (my new hobby!), or just endjoying a walk around the lake.  I also am a lifelong learner and lover of all things Spanish! Professional certifications include Microsoft&apos;s AZ-900 Cloud Computing Fundamentals.  I am currently completing my Bachelors in Applied Science for Application Development. 
-
-
+            </Typography>
+            <Typography
+              sx={{
+                textAlign: "justify",
+                fontSize: "20px",
+                textIndent: "2rem",
+              }}
+            >
+              Outside of building great applications, most weekends, you can
+              find me near water: kayaking (my new hobby!), or just endjoying a
+              walk around the lake. I also am a lifelong learner and lover of
+              all things Spanish! Professional certifications include
+              Microsoft&apos;s AZ-900 Cloud Computing Fundamentals. I am
+              currently completing my Bachelors in Applied Science for
+              Application Development at Renton Technical College.
             </Typography>
           </Box>
         </Box>
