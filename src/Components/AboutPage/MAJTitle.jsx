@@ -13,7 +13,7 @@ const MAJTitle = () => {
       <Navbar />
       <About />
 
-      <Box sx={{ marginTop: "17rem", marginBottom: "10rem" }}>
+      <Box>
         <SectionTitle
           title={"My Academic Journey"}
           subtitle={

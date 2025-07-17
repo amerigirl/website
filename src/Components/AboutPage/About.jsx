@@ -2,8 +2,7 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import SectionTitle from "../SectionTitle";
 
-const BeasiaName = () => {
-  // const name = "BEASIA";
+const About = () => {
 
   return (
     <>
@@ -14,14 +13,16 @@ const BeasiaName = () => {
           flexDirection: "start",
           alignItems: "center",
           justifyContent: "center",
-          marginBottom: "9rem",
-          marginLeft: "2rem",
-    
+          marginBottom: "7rem",
+          marginLeft: "3rem",
         }}
       >
         <SectionTitle title={"A Bit About Me"} />
-          <img src="./spaceNeedle.png" alt="Seatle Skyline with Space Needle" style={{height: "100px", marginTop: "-4rem"}}/>
-      
+        <img
+          src="./spaceNeedle.png"
+          alt="Seatle Skyline with Space Needle"
+          style={{ height: "100px" }}
+        />
       </Box>
 
       <Box
@@ -29,15 +30,9 @@ const BeasiaName = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "flex-start",
+          marginRight: "4rem",
         }}
       >
-        <Box
-          sx={{
-            display: "grid",
-            marginRight: "4rem",
-          }}
-        ></Box>
-
         <Box
           sx={{
             display: "flex",
@@ -51,7 +46,6 @@ const BeasiaName = () => {
               sx={{
                 float: "left",
                 marginRight: "2rem",
-                marginBottom: "1rem",
                 border: "1px solid black",
                 borderRadius: "30px",
                 overflow: "hidden",
@@ -76,13 +70,19 @@ const BeasiaName = () => {
             <Typography
               sx={{
                 textAlign: "justify",
-                fontSize: "1.3rem",
+                fontSize: "20px",
                 textIndent: "3rem",
               }}
             >
-              Born and raised in Seattle, I have a passion for UX/UI
-              development. I started my career in Education, using technology to
-              engage students and make learning more accessible.
+              Born and raised in Seattle, I have a passion for UX/UI Web Design!
+              I began my career in Education, using technology to engage
+              students and make learning more accessible.
+
+              <br></br>
+              <br></br>
+              Outside of building great applications, most weekends, you can find me near water: kayaking (my new hobby!), or just endjoying a walk around the lake.  I also am a lifelong learner and lover of all things Spanish! Professional certifications include Microsoft&apos;s AZ-900 Cloud Computing Fundamentals.  I am currently completing my Bachelors in Applied Science for Application Development. 
+
+
             </Typography>
           </Box>
         </Box>
@@ -91,4 +91,4 @@ const BeasiaName = () => {
   );
 };
 
-export default BeasiaName;
+export default About;
