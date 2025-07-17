@@ -25,28 +25,6 @@ const BeasiaName = () => {
        
           }}
         >
-          {/* {name.split("").map((char, index) => (
-            <Typography
-              key={index}
-              component={"span"}
-              sx={{
-                fontSize: "2.5rem",
-                fontFamily: "fantasy",
-                color: "primary.light",
-                fontStyle: "italic",
-                fontWeight: "bold",
-              }}
-            >
-              <span
-                style={{
-                  color: "#66CC57",
-                  WebkitTextStroke: ".1px #000000",
-                }}
-              >
-                {char}
-              </span>
-            </Typography>
-          ))} */}
         </Box>
 
         <Box sx={{ display: "flex", maxWidth: "900px", marginTop: "3rem" , gap: "2rem"}}>
