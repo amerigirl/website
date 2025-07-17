@@ -13,7 +13,7 @@ const aboutImageData = [
     title: "Renton Technical College",
   },
   {
-    img: "../mePic.jpg",
+    img: "../meAndGrogu.jpg",
     title: "Be-Asia",
   },
 

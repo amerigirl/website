@@ -44,7 +44,7 @@ const Footer = () => {
                 sx={{
                   minWidth: 0,
                   paddingLeft: 0,
-                  paddingRight: 0,
+                  paddingRight: 1,
                   justifyContent: "center",
                 }}
               >

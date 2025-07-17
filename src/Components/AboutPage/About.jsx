@@ -49,26 +49,28 @@ const BeasiaName = () => {
           ))} */}
         </Box>
 
-        <Box sx={{ display: "flex", maxWidth: "900px", marginTop: "3rem" }}>
+        <Box sx={{ display: "flex", maxWidth: "900px", marginTop: "3rem" , gap: "2rem"}}>
           <Box sx={{ display: "flex", gap: "2rem" }}>
             <Box
               sx={{
                 float: "left",
                 marginRight: "2rem",
                 marginBottom: "1rem",
+                marginTop: "3rem",
                 border: "1px solid black",
                 borderRadius: "30px",
                 overflow: "hidden",
-                width: "350px",
-                height: "350px",
+                width: "200px",
+                height: "200px",
                 flexShrink: 0,
+              
               }}
             >
               <img
-                src="./meAndGrogu.jpg"
+                src="./mePic.jpg"
                 alt="BeAsia and Grogu Doll"
                 style={{
-                  width: "350px",
+                  width: "200px",
                   height: "100%",
                   objectFit: "cover",
                 }}

@@ -66,7 +66,7 @@ const LandingSection = () => {
             issues much smoother for my team.
             <br></br>
             <br></br>Good documentation is just as important as good
-            code! My background in education helps me explain technical ideas in
+            code! My background in Education helps me explain technical ideas in
             a way that&apos;s easy to understand, whether I&apos;m updating team
             wikis or supporting junior developers. I enjoy working with others
             and am always looking for ways to make technology more accessible.
