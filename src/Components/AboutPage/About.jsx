@@ -1,6 +1,8 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import SectionTitle from "../SectionTitle";
+import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -96,6 +98,28 @@ const About = () => {
             </Typography>
           </Box>
         </Box>
+      </Box>
+      <Box
+        component={HashLink}
+        to={"/#contact"}
+        sx={{
+          textDecoration: "none",
+        }}
+      >
+        <Button
+          variant="contained"
+          sx={{
+            marginTop: "1.5rem",
+            alignItems: "center",
+            display: "flex",
+            marginLeft: "auto",
+            marginRight: "auto",
+            right: "7%",
+            padding: ".5rem",
+          }}
+        >
+          Contact
+        </Button>
       </Box>
     </>
   );
