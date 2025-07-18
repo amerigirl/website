@@ -24,7 +24,7 @@ const navBarButtons = [
   },
   {
     name: "Contact",
-    link: "#contact",
+    link: "/#contact",
     component: HashLink,
   },
 ];
