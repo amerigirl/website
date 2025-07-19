@@ -83,7 +83,7 @@ const SkillsPage = () => {
           maxWidth: 900,
           mx: "auto",
           backgroundColor: "primary.light",
-          p: 1,
+          p: .5,
           borderRadius: 2, // Rounded corners
           boxShadow: 3,
         }}

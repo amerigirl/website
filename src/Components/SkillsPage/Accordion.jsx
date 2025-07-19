@@ -32,12 +32,11 @@ export default function ControlledAccordions() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Box sx={{ display: "flex" }}>
+          <Box sx={{ display: "flex", gap: "1rem" }}>
             <Box
               sx={{
                 display: "flex",
-                height: "100px",
-                width: "100px",
+                height: "55px",
               }}
             >
               <img src="./angular.webp" alt="sample image" />
@@ -45,11 +44,14 @@ export default function ControlledAccordions() {
             <Typography>
               As I junior engineer, I created UI components and aesthetically
               pleasing user expreiences in Angular. I have spent the last year
-              maturing my skills in React. I have a strong understanding of
-              JavaScript, HTML, and CSS, and I am comfortable building
-              responsive and accessible web applications. I enjoy creating
-              user-friendly interfaces and optimizing performance.
+              maturing my skills in React.
+              <br></br>
+              <br></br>I have a strong understanding of JavaScript, HTML, and
+              CSS, and I am comfortable building responsive and accessible web
+              applications. I enjoy creating user-friendly interfaces and
+              optimizing performance.
             </Typography>
+            <Typography></Typography>
           </Box>
         </AccordionDetails>
       </Accordion>
