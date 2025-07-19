@@ -19,7 +19,7 @@ export default function ControlledAccordions() {
     <div>
       <Accordion
         expanded={expanded === "panel1"}
-        onChange={handleChange("panel1")}
+        onChange={handleChange("panel1")} //so this becomes dynamic? onchange={handleChange{SkillsData.panel}}
         sx={{ mb: 1 }}
       >
         <AccordionSummary
