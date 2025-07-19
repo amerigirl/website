@@ -14,7 +14,7 @@ const SkillsPage = () => {
     <ThemeProvider theme={theme}>
       <Navbar />
 
-      <Box sx={{ marginTop: "8rem" }}>
+      <Box sx={{ marginTop: "6rem" }}>
         <SectionTitle title={"Skills"} subtitle={"My technical level"} />
       </Box>
       <Box
@@ -24,7 +24,7 @@ const SkillsPage = () => {
           justifyContent: "center",
           gap: "1rem",
           padding: "2rem",
-          marginTop: "3rem",
+          marginTop: "2rem",
         }}
       >
         {imageList.map((item) => (
@@ -50,7 +50,7 @@ const SkillsPage = () => {
           </Box>
         ))}
       </Box>
-      <Divider
+      {/* <Divider
         sx={{
           borderColor: "#000",
           borderBottomWidth: 1,
@@ -58,14 +58,22 @@ const SkillsPage = () => {
           ml: "18%",
           mr: "auto",
         }}
-      />
+      /> */}
       <Typography
-        sx={{ textAlign: "center", mt: 8, mb: 10, ml: "18%", mr: "18%" }}
+        sx={{
+          textAlign: "center",
+          mt: 6,
+          mb: 12,
+          ml: "18%",
+          mr: "19%",
+          fontSize: "20px",
+        }}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eius
-        adipisci, illum voluptatibus nobis a corporis temporibus culpa, modi
-        aliquam pariatur quisquam itaque labore iusto odio voluptas velit eos
-        consectetur.
+        Once you get to know me, you&apos;ll see a couple of trends. First, I
+        like to learn. It&apos;s the only way to grow as an engineer—and a
+        person. Second, I like to help others grow and learn as well☺️.
+        Here&apos;s a snapshot of my current skill level and the technologies I
+        work with.
       </Typography>
       <Box
         sx={{
