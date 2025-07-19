@@ -61,7 +61,7 @@ const SkillsPage = () => {
       /> */}
       <Typography
         sx={{
-          textAlign: "center",
+          textAlign: "left",
           mt: 6,
           mb: 12,
           ml: "18%",
@@ -71,9 +71,10 @@ const SkillsPage = () => {
       >
         Once you get to know me, you&apos;ll see a couple of trends. First, I
         like to learn. It&apos;s the only way to grow as an engineer—and a
-        person. Second, I like to help others grow and learn as well☺️.
-        Here&apos;s a snapshot of my current skill level and the technologies I
-        work with.
+        person. Second, I like to help others grow and learn as well. We have to
+        grow and learn together to solve the big challenges that we face.
+        Here&apos;s a snapshot of my current skill level and the technologies
+        I&apos;ve had the privledge to learn. 
       </Typography>
       <Box
         sx={{
