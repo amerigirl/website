@@ -15,7 +15,7 @@ const GithubData = [
     img: "",
     title: "Investment Calculator",
     description: "sample description",
-    link: "https://github.com/amerigirl/InvestmentCalculatorApp"
+    link: "https://github.com/amerigirl/InvestmentCalculatorApp",
   },
 ];
 

@@ -1,4 +1,3 @@
-
 const TimelineItems = [
   {
     content: "Truman State University (2009)",
