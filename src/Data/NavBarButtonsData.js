@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-const navBarButtons = [
+const NavBarButtons = [
   {
     name: "Home",
     link: "/",
@@ -29,4 +29,4 @@ const navBarButtons = [
   },
 ];
 
-export default navBarButtons;
+export default NavBarButtons;

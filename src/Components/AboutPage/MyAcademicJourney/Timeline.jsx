@@ -10,7 +10,7 @@ import { ThemeProvider, createTheme } from "@mui/material";
 import React from "react";
 import BasicModal from "../../Modal/BasicModal";
 import { useState } from "react";
-import { timelineItems } from "../../../Data/modalContentData";
+import { TimelineItems } from "../../../Data/ModalContentData";
 import Button from "@mui/material/Button";
 
 const MyTimeline = () => {
@@ -70,11 +70,11 @@ const MyTimeline = () => {
     <>
       <ThemeProvider theme={theme}>
         <Timeline position="alternate" sx={{ marginBottom: "11rem" }}>
-          {timelineItems.map((item, index) => (
+          {TimelineItems.map((item, index) => (
             <TimelineItem key={index}>
               <TimelineSeparator>
                 <TimelineDot variant="outlined" color={item.color} />
-                {index < timelineItems.length - 1 && <TimelineConnector />}
+                {index < TimelineItems.length - 1 && <TimelineConnector />}
               </TimelineSeparator>
               <TimelineContent>
                 <Button

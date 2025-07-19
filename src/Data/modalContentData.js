@@ -1,5 +1,5 @@
 
-const timelineItems = [
+const TimelineItems = [
   {
     content: "Truman State University (2009)",
     color: "grey",
@@ -39,4 +39,4 @@ const timelineItems = [
   },
 ];
 
-module.exports = { timelineItems };
+module.exports = { TimelineItems };
