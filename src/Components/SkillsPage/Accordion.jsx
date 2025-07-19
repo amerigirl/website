@@ -42,16 +42,25 @@ export default function ControlledAccordions() {
               <img src="./angular.webp" alt="sample image" />
             </Box>
             <Typography>
-              As I junior engineer, I created UI components and aesthetically
-              pleasing user expreiences in Angular. I have spent the last year
-              maturing my skills in React.
+              As I junior engineer, I created UI components and facilitated
+              great user experiences using Angular, JavaScript, and Node.js. A
+              great introduction to creating component-based applications!
               <br></br>
-              <br></br>I have a strong understanding of JavaScript, HTML, and
-              CSS, and I am comfortable building responsive and accessible web
-              applications. I enjoy creating user-friendly interfaces and
-              optimizing performance.
+              <br></br>
             </Typography>
-            <Typography></Typography>
+          </Box>
+
+          <Box
+            sx={{
+              display: "flex",
+              height: "55px",
+              gap: "1rem",
+            }}
+          >
+            <img src="./react.webp" alt="second" />
+            <Typography>
+              For the past year, I&apos;ve worked to migrate legacy applications from Angular to React using the FluentUI component library, creating dynamic frontend user experiences for enterprise-level applications.
+            </Typography>
           </Box>
         </AccordionDetails>
       </Accordion>
@@ -72,9 +81,7 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            I started my career using Figma to design UI Donec placerat, lectus
-            sed mattis semper, neque lectus feugiat lectus, varius pulvinar diam
-            eros in elit. Pellentesque convallis laoreet laoreet.
+            This past year, I&apos;ve used React to create dynamic 
           </Typography>
         </AccordionDetails>
       </Accordion>
