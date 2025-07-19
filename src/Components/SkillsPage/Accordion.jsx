@@ -4,20 +4,17 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { useState } from "react";
+import Box from "@mui/material/Box";
 
+import { useState } from "react";
 
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = useState(false);
 
-  
   const handleChange = (panel) => (event, isExpanded) => {
- 
-      setExpanded(isExpanded ? panel : false);
-    };
+    setExpanded(isExpanded ? panel : false);
+  };
 
-  
-  
   return (
     <div>
       <Accordion
@@ -30,19 +27,30 @@ export default function ControlledAccordions() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography
-            variant="h6"
-            component="span"
-            sx={{ flexShrink: 0 }}
-          >
+          <Typography variant="h6" component="span" sx={{ flexShrink: 0 }}>
             Front End Development
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-            Aliquam eget maximus est, id dignissim quam.
-          </Typography>
+          <Box sx={{ display: "flex" }}>
+            <Box
+              sx={{
+                display: "flex",
+                height: "100px",
+                width: "100px",
+              }}
+            >
+              <img src="./angular.webp" alt="sample image" />
+            </Box>
+            <Typography>
+              As I junior engineer, I created UI components and aesthetically
+              pleasing user expreiences in Angular. I have spent the last year
+              maturing my skills in React. I have a strong understanding of
+              JavaScript, HTML, and CSS, and I am comfortable building
+              responsive and accessible web applications. I enjoy creating
+              user-friendly interfaces and optimizing performance.
+            </Typography>
+          </Box>
         </AccordionDetails>
       </Accordion>
 
@@ -56,19 +64,15 @@ export default function ControlledAccordions() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography
-            variant="h6"
-            component="span"
-            sx={{  flexShrink: 0 }}
-          >
+          <Typography variant="h6" component="span" sx={{ flexShrink: 0 }}>
             Design
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Donec placerat, lectus sed mattis semper, neque lectus feugiat
-            lectus, varius pulvinar diam eros in elit. Pellentesque convallis
-            laoreet laoreet.
+            I started my career using Figma to design UI Donec placerat, lectus
+            sed mattis semper, neque lectus feugiat lectus, varius pulvinar diam
+            eros in elit. Pellentesque convallis laoreet laoreet.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -83,11 +87,7 @@ export default function ControlledAccordions() {
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <Typography
-            variant="h6"
-            component="span"
-            sx={{ flexShrink: 0 }}
-          >
+          <Typography variant="h6" component="span" sx={{ flexShrink: 0 }}>
             Middleware and Backend Learning
           </Typography>
         </AccordionSummary>
