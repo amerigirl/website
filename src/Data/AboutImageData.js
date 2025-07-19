@@ -1,4 +1,4 @@
-const aboutImageData = [
+const AboutImageData = [
   {
     img: "../initialPic.jpg",
     title: "PicOfMe",
@@ -36,4 +36,4 @@ const imageList = [
   },
 ];
 
-module.exports = { aboutImageData, imageList };
+module.exports = { AboutImageData, imageList };

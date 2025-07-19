@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Box, Container, Button } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
-import { aboutImageData } from "../../Data/AboutImageData";
+import { AboutImageData } from "../../Data/AboutImageData";
 
 const LandingSection = () => {
   /**
@@ -105,7 +105,7 @@ const LandingSection = () => {
             marginTop: "7rem",
           }}
         >
-          {aboutImageData.map((item) => (
+          {AboutImageData.map((item) => (
             <Box
               key={item.img}
               sx={{
