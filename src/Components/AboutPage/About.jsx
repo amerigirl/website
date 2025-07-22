@@ -4,6 +4,12 @@ import SectionTitle from "../SectionTitle";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 
+const textProps = {
+  textAlign: "justify",
+  fontSize: "20px",
+  textIndent: "2rem",
+};
+
 const About = () => {
   return (
     <>
@@ -69,15 +75,13 @@ const About = () => {
 
           <Box>
             <Typography
-              sx={{
-                textAlign: "justify",
-                fontSize: "20px",
-                textIndent: "2rem",
-              }}
+          {...textProps}
             >
-              Born and raised in Seattle, I have a passion for UX/UI Web Design!
-              I began my career in Education, using technology to engage
-              students and make learning more accessible.
+              Hailing from the Pacific NorthWest, I have a love of people,
+              diversity, and all things outdoors! I began my professional
+              journey with a career in Education, using technology to engage
+              students and make learning more interactive and accessible for
+              all.
               <br></br>
               <br></br>
             </Typography>
@@ -88,12 +92,22 @@ const About = () => {
                 textIndent: "2rem",
               }}
             >
-              Outside of building great applications, most weekends, you can
-              find me near water: kayaking (my new hobby!), or just endjoying a
-              walk around the lake. I also am a lifelong learner and lover of
-              all things Spanish! Professional certifications include
-              Microsoft&apos;s AZ-900 Cloud Computing Fundamentals. I am
-              currently completing my Bachelors in Applied Science for
+              In addition to building great applications with clients in mind,
+              most weekends, you can find me near water: kayaking (my new
+              hobby!), or just endjoying a walk around the lake. I also am a
+              lifelong learner and lover of all things Spanish! Professional
+              certifications include Microsoft&apos;s AZ-900 Cloud Computing
+              Fundamentals.
+            </Typography>
+            <br></br>
+            <Typography
+              sx={{
+                textAlign: "justify",
+                fontSize: "20px",
+                textIndent: "2rem",
+              }}
+            >
+              I am currently completing my Bachelors in Applied Science for
               Application Development at Renton Technical College.
             </Typography>
           </Box>
