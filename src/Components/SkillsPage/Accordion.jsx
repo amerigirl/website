@@ -20,36 +20,50 @@ export default function ControlledAccordions() {
       {SkillsData.map((skill, id) => (
         <Accordion
           key={id}
-          expanded={ skill.panel ? true : false }
+          expanded={skill.panel ? true : false}
           onChange={handleChange(skill.panel)}
         >
-          <Box
-            sx={{
-              display: "flex",
-              height: "55px",
-            }}
-          >
-            <img src={skill.img} alt="sample image" />
-          </Box>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1bh-content"
             id="panel1bh-header"
           >
-          
-               <Typography variant="h6" component="span" sx={{ flexShrink: 0 }}>
+            <Typography variant="h6" component="span" sx={{ flexShrink: 0 }}>
               {skill.title}
             </Typography>
-        
-           
           </AccordionSummary>
-          <AccordionDetails>
-          
-              <Typography>
-                <br></br>
-                <br></br>
+          <Box sx={{ display: "flex", ml:1 }}>
+            <Box
+              sx={{
+                display: "flex",
+                height: "55px",
+              }}
+            >
+              <img src={skill.img1} alt="sample image" />
+            </Box>
+            <AccordionDetails>
+              <Typography sx={{ fontSize: "17px" }}>
+                {skill.description1}
               </Typography>
-          </AccordionDetails>
+            </AccordionDetails>
+          </Box>
+
+          <Box sx={{ display: "flex", ml:1 }}>
+            <Box
+              sx={{
+                display: "flex",
+                height: "55px",
+              }}
+            >
+              <img src={skill.img2} alt="sample image" />
+            </Box>
+
+            <AccordionDetails>
+              <Typography sx={{ fontSize: "17px" }}>
+                {skill.description2}
+              </Typography>
+            </AccordionDetails>
+          </Box>
         </Accordion>
       ))}
       {/* <Accordion
