@@ -67,28 +67,19 @@ export default function ControlledAccordions() {
           <Box
             sx={{
               display: "flex",
-              justifyContent: "left",
-              ml: 2,
-              mt: 4,
+              justifyContent: "center",
+              mt: 2,
               mb: 5,
-              gap: 6,
+              gap: 3,
             }}
           >
             {skill.subSkill1 || skill.subSkill2 || skill.subSkill3 ? (
-              <Typography sx={{ fontSize: "22px", mr: 4 }}>
-                Learning Level:
-              </Typography>
+              <Typography sx={{ fontSize: "22px" }}>Learning Level:</Typography>
             ) : undefined}
 
-            <Typography sx={{ fontSize: "22px", ml: 3 }}>
-              {skill.subSkill1}
-            </Typography>
-            <Typography sx={{ fontSize: "22px", ml: 3 }}>
-              {skill.subSkill2}
-            </Typography>
-            <Typography sx={{ fontSize: "22px", ml: 3 }}>
-              {skill.subSkill3}
-            </Typography>
+            <Typography sx={{ fontSize: "22px" }}>{skill.subSkill1}</Typography>
+            <Typography sx={{ fontSize: "22px" }}>{skill.subSkill2}</Typography>
+            <Typography sx={{ fontSize: "22px" }}>{skill.subSkill3}</Typography>
           </Box>
         </Accordion>
       ))}
