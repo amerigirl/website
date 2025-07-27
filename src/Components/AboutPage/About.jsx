@@ -75,7 +75,7 @@ const About = () => {
 
           <Box>
             <Typography
-          {...textProps}
+              sx={textProps}
             >
               Hailing from the Pacific NorthWest, I have a love of people,
               diversity, and all things outdoors! I began my professional
@@ -86,11 +86,7 @@ const About = () => {
               <br></br>
             </Typography>
             <Typography
-              sx={{
-                textAlign: "justify",
-                fontSize: "20px",
-                textIndent: "2rem",
-              }}
+              sx={textProps}
             >
               In addition to building great applications with clients in mind,
               most weekends, you can find me near water: kayaking (my new
@@ -101,11 +97,7 @@ const About = () => {
             </Typography>
             <br></br>
             <Typography
-              sx={{
-                textAlign: "justify",
-                fontSize: "20px",
-                textIndent: "2rem",
-              }}
+              sx={textProps}
             >
               I am currently completing my Bachelors in Applied Science for
               Application Development at Renton Technical College.

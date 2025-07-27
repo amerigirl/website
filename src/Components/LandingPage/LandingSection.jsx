@@ -60,12 +60,12 @@ const LandingSection = () => {
             A Full-Stack Developer who enjoys building clear and responsive
             front-end applications using React and connecting them to reliable
             back-end systems using the .NET framework. In my last role, I worked
-            closely with designers to build reusable UI components for data
+            closely with designers using Figma and FluentUI to build reusable UI components for data
             visualization. I&apos;ve also had the pleasure of leading the design
             and development of a micro UI that made troubleshooting production
             issues much smoother for my team.
             <br></br>
-            <br></br>Good documentation is just as important as good
+            <br></br>Good documentation is just as important as well-written 
             code! My background in Education helps me explain technical ideas in
             a way that&apos;s easy to understand, whether I&apos;m updating team
             wikis or supporting junior developers. I enjoy working with others
