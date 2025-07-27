@@ -36,7 +36,7 @@ export default function ControlledAccordions() {
             <Box
               sx={{
                 display: "flex",
-                height: "55px"
+                height: "55px",
               }}
             >
               <img src={skill.img1} alt="sample image" />
@@ -56,7 +56,6 @@ export default function ControlledAccordions() {
               }}
             >
               {skill.img2 && <img src={skill.img2} alt="sample image" />}
-              
             </Box>
 
             <AccordionDetails>
@@ -64,6 +63,21 @@ export default function ControlledAccordions() {
                 {skill.description2}
               </Typography>
             </AccordionDetails>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "left",
+              ml: 2,
+              mt: 4,
+              mb: 5,
+              gap: 6,
+            }}
+          >
+            <Typography sx={{ fontSize: "22px", mr:2 }}>Tested Levels:</Typography>
+            <Typography sx={{ fontSize: "22px", ml:3 }}>{skill.subSkill1}</Typography>
+            <Typography sx={{ fontSize: "22px", ml:3 }}>{skill.subSkill2}</Typography>
+            <Typography sx={{ fontSize: "22px", ml:3 }}>{skill.subSkill3}</Typography>
           </Box>
         </Accordion>
       ))}

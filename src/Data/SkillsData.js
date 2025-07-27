@@ -9,6 +9,9 @@ const SkillsData = [
       "As a junior engineer, I developed UI components and crafted user experiences using Angular, JavaScript, and Node.js. This role was a valuable introduction to building component-based applications and understanding frontend architecture.",
     description2:
       "Over the past year, I’ve focused on migrating legacy applications from Angular to React, utilizing the FluentUI component library to design dynamic, enterprise-level interfaces that enhance usability and performance.",
+    subSkill1: "React: 70%",
+    subSkill2: "HTML.....82%",
+    subSkill3: "CSS.......64%",
   },
   {
     id: 2,
