@@ -20,7 +20,7 @@ export default function ControlledAccordions() {
       {SkillsData.map((skill, id) => (
         <Accordion
           key={id}
-          expanded={skill.panel ? true : false}
+          isExpanded={skill.panel ? true : false}
           onChange={handleChange(skill.panel)}
         >
           <AccordionSummary
@@ -36,7 +36,7 @@ export default function ControlledAccordions() {
             <Box
               sx={{
                 display: "flex",
-                height: "55px",
+                height: "55px"
               }}
             >
               <img src={skill.img1} alt="sample image" />
@@ -55,7 +55,8 @@ export default function ControlledAccordions() {
                 height: "55px",
               }}
             >
-              <img src={skill.img2} alt="sample image" />
+              {skill.img2 && <img src={skill.img2} alt="sample image" />}
+              
             </Box>
 
             <AccordionDetails>
