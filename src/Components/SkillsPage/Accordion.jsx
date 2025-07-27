@@ -74,10 +74,21 @@ export default function ControlledAccordions() {
               gap: 6,
             }}
           >
-            <Typography sx={{ fontSize: "22px", mr:5 }}>Tested Levels:</Typography>
-            <Typography sx={{ fontSize: "22px", ml:3 }}>{skill.subSkill1}</Typography>
-            <Typography sx={{ fontSize: "22px", ml:3 }}>{skill.subSkill2}</Typography>
-            <Typography sx={{ fontSize: "22px", ml:3 }}>{skill.subSkill3}</Typography>
+            {skill.subSkill1 || skill.subSkill2 || skill.subSkill3 ? (
+              <Typography sx={{ fontSize: "22px", mr: 5 }}>
+                Tested Levels:
+              </Typography>
+            ) : undefined}
+
+            <Typography sx={{ fontSize: "22px", ml: 3 }}>
+              {skill.subSkill1}
+            </Typography>
+            <Typography sx={{ fontSize: "22px", ml: 3 }}>
+              {skill.subSkill2}
+            </Typography>
+            <Typography sx={{ fontSize: "22px", ml: 3 }}>
+              {skill.subSkill3}
+            </Typography>
           </Box>
         </Accordion>
       ))}
