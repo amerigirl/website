@@ -18,19 +18,19 @@ export default function ControlledAccordions() {
   return (
 
     <div>
-      {SkillsData.map((skill, id) => (
-        <Box>
-          
-</Box>
+      {SkillsData.map((skill, panel) => (
+        <Accordion key={panel} expanded={panel} onChange={handleChange(skill.panel)}>
+
+        </Accordion>
       ))}
-      <Accordion
+      {/* <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange({skill.panel})} //so this becomes dynamic? onchange={handleChange{SkillsData.panel}}
         sx={{ mb: 1 }}
       >
    
 
-      </Accordion>
+      </Accordion> */}
 
       
      {/* <AccordionSummary
