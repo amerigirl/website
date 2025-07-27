@@ -5,7 +5,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Box from "@mui/material/Box";
-
+import SkillsData from "../../Data/SkillsData";
 import { useState } from "react";
 
 export default function ControlledAccordions() {
@@ -16,19 +16,29 @@ export default function ControlledAccordions() {
   };
 
   return (
+
     <div>
+      {SkillsData.map((skill, id) => (
+        <Box>
+          
+</Box>
+      ))}
       <Accordion
         expanded={expanded === "panel1"}
-        onChange={handleChange("panel1")} //so this becomes dynamic? onchange={handleChange{SkillsData.panel}}
+        onChange={handleChange({skill.panel})} //so this becomes dynamic? onchange={handleChange{SkillsData.panel}}
         sx={{ mb: 1 }}
       >
-        <AccordionSummary
+   
+
+      </Accordion>
+
+      
+     {/* <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
           <Typography variant="h6" component="span" sx={{ flexShrink: 0 }}>
-            Front End Development
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -42,9 +52,7 @@ export default function ControlledAccordions() {
               <img src="./angular.webp" alt="sample image" />
             </Box>
             <Typography>
-              As I junior engineer, I created UI components and facilitated
-              great user experiences using Angular, JavaScript, and Node.js. A
-              great introduction to creating component-based applications!
+          
               <br></br>
               <br></br>
             </Typography>
@@ -59,13 +67,11 @@ export default function ControlledAccordions() {
           >
             <img src="./react.webp" alt="second" />
             <Typography>
-              For the past year, I&apos;ve worked to migrate legacy applications from Angular to React using the FluentUI component library, creating dynamic frontend user experiences for enterprise-level applications.
             </Typography>
           </Box>
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion
+        </AccordionDetails> */}
+      
+      {/* <Accordion
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
         sx={{ mb: 1 }}
@@ -106,7 +112,7 @@ export default function ControlledAccordions() {
             sit amet egestas eros, vitae egestas augue. Duis vel est augue.
           </Typography>
         </AccordionDetails>
-      </Accordion>
+      </Accordion> */}
     </div>
   );
 }
