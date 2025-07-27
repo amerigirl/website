@@ -75,8 +75,8 @@ export default function ControlledAccordions() {
             }}
           >
             {skill.subSkill1 || skill.subSkill2 || skill.subSkill3 ? (
-              <Typography sx={{ fontSize: "22px", mr: 5 }}>
-                Tested Levels:
+              <Typography sx={{ fontSize: "22px", mr: 4 }}>
+                Learning Level:
               </Typography>
             ) : undefined}
 
