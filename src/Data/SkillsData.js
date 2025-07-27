@@ -6,24 +6,30 @@ const SkillsData = [
     img1: "../angular.webp",
     img2: "../react.webp",
     description1:
-      "As I junior engineer, I created UI components and facilitated great user experiences using Angular, JavaScript, and Node.js. A great introduction to creating component-based applications!",
+      "As a junior engineer, I developed UI components and crafted user experiences using Angular, JavaScript, and Node.js. This role was a valuable introduction to building component-based applications and understanding frontend architecture.",
     description2:
-      "For the past year, I've worked to migrate legacy applications from Angular to React using the FluentUI component library, creating dynamic frontend user experiences for enterprise-level applications.",
-  }, 
+      "Over the past year, I’ve focused on migrating legacy applications from Angular to React, utilizing the FluentUI component library to design dynamic, enterprise-level interfaces that enhance usability and performance.",
+  },
   {
     id: 2,
     panel: "panel2",
     title: "Design",
-    img1: "../figmaName.png", 
+    img1: "../figmaName.png",
     img2: "",
-    description1: "Figma is the industry standard for cross-functional team collaboration and it has enabled me to have conversations with designers, program managers, and contributors as we work to build quality applications for clients."
-  }, 
+    description1:
+      "Figma is the industry-standard tool for cross-functional collaboration, enabling me to effectively communicate and align with designers, program managers, and stakeholders. It helps our teams build polished, user-centered applications by streamlining the design and feedback process.",
+  },
   {
-    id: 3, 
-    panel: "panel3", 
+    id: 3,
+    panel: "panel3",
     title: "Middleware and Backend Learning",
-    img1: ""
-  }
+    img1: "../netFramework.jpg",
+    img2: "../cSharpLogo.png",
+    description1:
+      "The .NET Framework has introduced me to the foundations of scalable, reliable backend services and middleware. While I’m still developing my skill on this platform, each project deepens my understanding of server-side architecture and maintainable code.",
+    description2:
+      "C# is a versatile, object-oriented language that I continue to explore through real-world projects and hands-on learning. I’m actively strengthening my skills in C#, always seeking new challenges that help me grow into a more confident and effective full-stack developer.",
+  },
 ];
 
 export default SkillsData;
