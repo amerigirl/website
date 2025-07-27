@@ -53,6 +53,7 @@ const About = () => {
               sx={{
                 float: "left",
                 marginRight: "2rem",
+                marginTop: "1.5rem",
                 border: "1px solid black",
                 borderRadius: "30px",
                 overflow: "hidden",
@@ -99,8 +100,8 @@ const About = () => {
             <Typography
               sx={textProps}
             >
-              I am currently completing my Bachelors in Applied Science for
-              Application Development at Renton Technical College.
+              I am currently completing my Bachelors degree in 
+              Application Development at Renton Technical College (May 2026).
             </Typography>
           </Box>
         </Box>
@@ -120,7 +121,7 @@ const About = () => {
             display: "flex",
             marginLeft: "auto",
             marginRight: "auto",
-            right: "7%",
+            right: "9%",
             padding: ".5rem",
           }}
         >
