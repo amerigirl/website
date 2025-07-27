@@ -16,11 +16,40 @@ export default function ControlledAccordions() {
   };
 
   return (
-
     <div>
       {SkillsData.map((skill, panel) => (
-        <Accordion key={panel} expanded={panel} onChange={handleChange(skill.panel)}>
-
+        <Accordion
+          key={panel}
+          expanded={expanded === { panel }}
+          onChange={handleChange(skill.panel)}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              height: "55px",
+            }}
+          >
+            <img src={skill.img} alt="sample image" />
+          </Box>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1bh-content"
+            id="panel1bh-header"
+          >
+          
+               <Typography variant="h6" component="span" sx={{ flexShrink: 0 }}>
+              {skill.title}
+            </Typography>
+        
+           
+          </AccordionSummary>
+          <AccordionDetails>
+          
+              <Typography>
+                <br></br>
+                <br></br>
+              </Typography>
+          </AccordionDetails>
         </Accordion>
       ))}
       {/* <Accordion
@@ -32,8 +61,7 @@ export default function ControlledAccordions() {
 
       </Accordion> */}
 
-      
-     {/* <AccordionSummary
+      {/* <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1bh-content"
           id="panel1bh-header"
@@ -70,7 +98,7 @@ export default function ControlledAccordions() {
             </Typography>
           </Box>
         </AccordionDetails> */}
-      
+
       {/* <Accordion
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
