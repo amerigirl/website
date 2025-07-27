@@ -10,8 +10,8 @@ const SkillsData = [
     description2:
       "Over the past year, I’ve focused on migrating legacy applications from Angular to React, utilizing the FluentUI component library to design dynamic, enterprise-level interfaces that enhance usability and performance.",
     subSkill1: "React: 70%",
-    subSkill2: "HTML.....82%",
-    subSkill3: "CSS.......64%",
+    subSkill2: "HTML: 82%",
+    subSkill3: "CSS: 64%",
   },
   {
     id: 2,
