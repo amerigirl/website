@@ -17,10 +17,10 @@ export default function ControlledAccordions() {
 
   return (
     <div>
-      {SkillsData.map((skill, panel) => (
+      {SkillsData.map((skill, id) => (
         <Accordion
-          key={panel}
-          expanded={expanded === { panel }}
+          key={id}
+          expanded={ skill.panel ? true : false }
           onChange={handleChange(skill.panel)}
         >
           <Box

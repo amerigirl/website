@@ -1,6 +1,6 @@
 const SkillsData = [
   {
-  
+    id:  1,
     //expanded: "panel1",
     panel: "panel1",
     title: "Front End Development",
@@ -9,7 +9,7 @@ const SkillsData = [
       "As I junior engineer, I created UI components and facilitated great user experiences using Angular, JavaScript, and Node.js. A great introduction to creating component-based applications!",
   },
   {
-
+    id: 2,
     //expanded: "panel2",
     panel: "panel2",
     title: "",
