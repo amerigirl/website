@@ -12,14 +12,14 @@ const SocialMediaContact = () => {
         <Box>
           <Box display={"flex"} gap={"2rem"} alignItems={"center"}>
             <EmailOutlinedIcon sx={{ fontSize: 40, color: "primary.main" }} />
-            <Typography variant="h4" component={"div"} fontSize={"2rem"}>
+            <Typography variant="h4" component={"div"} fontSize={"1.9rem"}>
               Email
             </Typography>
           </Box>
           <Typography
             variant="h5"
             component={"div"}
-            fontSize={"1.7rem"}
+            fontSize={"1.6rem"}
             marginLeft={"4.5rem"}
             color="grey"
           >
@@ -30,7 +30,7 @@ const SocialMediaContact = () => {
         <Box>
           <Box display={"flex"} gap={"2rem"} alignItems={"center"}>
             <PhoneOutlinedIcon sx={{ fontSize: 40, color: "primary.main" }} />
-            <Typography variant="h4" component={"div"} fontSize={"2rem"}>
+            <Typography variant="h4" component={"div"} fontSize={"1.9rem"}>
               Phone
             </Typography>
           </Box>
@@ -38,7 +38,7 @@ const SocialMediaContact = () => {
             <Typography
               variant="h5"
               component={"div"}
-              fontSize={"1.7rem"}
+              fontSize={"1.6rem"}
               marginLeft={"4.5rem"}
               color="grey"
             >
@@ -52,7 +52,7 @@ const SocialMediaContact = () => {
             <LocationOnOutlinedIcon
               sx={{ fontSize: 40, color: "primary.main" }}
             />
-            <Typography variant="h4" component={"div"} fontSize={"2rem"}>
+            <Typography variant="h4" component={"div"} fontSize={"1.9rem"}>
               Location
             </Typography>
           </Box>
@@ -60,7 +60,7 @@ const SocialMediaContact = () => {
             <Typography
               variant="h5"
               component={"div"}
-              fontSize={"1.7rem"}
+              fontSize={"1.6rem"}
               marginLeft={"4.5rem"}
               color="grey"
             >
