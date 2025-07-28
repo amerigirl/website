@@ -64,18 +64,20 @@ export default function ControlledAccordions() {
               </Typography>
             </AccordionDetails>
           </Box>
+
           <Box
             sx={{
               display: "flex",
               justifyContent: "center",
-              margin: "20px 50px 60px 115px",
+              margin: "20px 50px 35px  115px",
               gap: 4, 
-              outline: 1,
-              borderRadius: 10,
               paddingTop: 1.5,
               paddingBottom: 1.5, 
               width: "72.5%",
+              ...(skill.subSkill1 || skill.subSkill2 || skill.subSkill3 ? {outline: 1,
+              borderRadius: 10} : {} )
             }}
+            
           >
             {skill.subSkill1 || skill.subSkill2 || skill.subSkill3 ? (
               <Typography sx={{ fontSize: "22px" }}>Learning Level:</Typography>
