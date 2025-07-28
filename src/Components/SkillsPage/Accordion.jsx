@@ -65,19 +65,35 @@ export default function ControlledAccordions() {
             </AccordionDetails>
           </Box>
 
+          <Box sx={{ display: "flex", ml: 1 }}>
+            <Box
+              sx={{
+                display: "flex",
+                height: "55px",
+              }}
+            >
+              {skill.img3 && <img src={skill.img3} alt={skill.altImg3} />}
+            </Box>
+
+            <AccordionDetails>
+              <Typography sx={{ fontSize: "17px" }}>
+                {skill.description3}
+              </Typography>
+            </AccordionDetails>
+          </Box>
           <Box
             sx={{
               display: "flex",
               justifyContent: "center",
               margin: "20px 50px 35px  115px",
-              gap: 4, 
+              gap: 4,
               paddingTop: 1,
-              paddingBottom: 1, 
+              paddingBottom: 1,
               width: "72.5%",
-              ...(skill.subSkill1 || skill.subSkill2 || skill.subSkill3 ? {outline: 1,
-              borderRadius: 10} : {} )
+              ...(skill.subSkill1 || skill.subSkill2 || skill.subSkill3
+                ? { outline: 1, borderRadius: 10 }
+                : {}),
             }}
-            
           >
             {skill.subSkill1 || skill.subSkill2 || skill.subSkill3 ? (
               <Typography sx={{ fontSize: "22px" }}>Learning Level:</Typography>

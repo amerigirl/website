@@ -4,9 +4,11 @@ const SkillsData = [
     panel: "panel1",
     title: "Front End Development",
     img1: "../angular.webp",
-    altImg1: "Angular",
+    altImg1: "Angular Logo",
     img2: "../react.webp",
-    altImg2: "React",  
+    altImg2: "React Logo",
+    img3: "",
+    altImg3: "",
     description1:
       "As a junior engineer, I developed UI components and crafted user experiences using Angular, JavaScript, and Node.js. This role was a valuable introduction to building component-based applications and understanding frontend architecture.",
     description2:
@@ -20,9 +22,16 @@ const SkillsData = [
     panel: "panel2",
     title: "Design",
     img1: "../figmaName.png",
-    img2: "../FluentUI.png",
+    altImg1: "Figma Logo",
+    img2: "../fluentUI.png",
+    altImg2: "FluentUI Logo",
+    img3: "../materialUI1.png",
+    altImg3: "Material UI Logo",
+
     description1:
       "Figma is the industry-standard tool for cross-functional collaboration, enabling me to effectively communicate and align with designers, program managers, and stakeholders. It helps our teams build polished, user-centered applications by streamlining the design and feedback process.",
+    description2: " slkdjsalkd;sk s ldkasf skdj f",
+    description3: "Lorem ip sum dksldk sldksk sd ld fwesfwef",
   },
   {
     id: 3,
