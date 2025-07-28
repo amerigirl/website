@@ -39,7 +39,7 @@ export default function ControlledAccordions() {
                 height: "55px",
               }}
             >
-              <img src={skill.img1} alt="sample image" />
+              <img src={skill.img1} alt={skill.altImg1} />
             </Box>
             <AccordionDetails>
               <Typography sx={{ fontSize: "17px" }}>
@@ -55,7 +55,7 @@ export default function ControlledAccordions() {
                 height: "55px",
               }}
             >
-              {skill.img2 && <img src={skill.img2} alt="sample image" />}
+              {skill.img2 && <img src={skill.img2} alt={skill.altImg2} />}
             </Box>
 
             <AccordionDetails>
@@ -71,8 +71,8 @@ export default function ControlledAccordions() {
               justifyContent: "center",
               margin: "20px 50px 35px  115px",
               gap: 4, 
-              paddingTop: 1.5,
-              paddingBottom: 1.5, 
+              paddingTop: 1,
+              paddingBottom: 1, 
               width: "72.5%",
               ...(skill.subSkill1 || skill.subSkill2 || skill.subSkill3 ? {outline: 1,
               borderRadius: 10} : {} )
