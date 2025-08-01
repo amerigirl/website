@@ -34,6 +34,9 @@ const SkillsData = [
       "FluentUI is one of my favorite tools for building user interfaces! It makes designing apps that look great and feel consistent easy to do, especially when working alongside design and content teams. Having used FluentUI on two enterprise-level teams, it's one of my favorite open-source tools!",
     description3:
       "Material UI is another open-source gem I’ve really enjoyed working with—it was actually my introduction to component libraries in React. As I learned more about React, I found Material UI’s features easy to pick up and really appreciated how much it sped up building polished, interactive apps. ",
+    subSkill1: "Figma: 78%",
+    subSkill2: "FluentUI: 75%",
+    subSkill3: "MUI: 80%",
   },
   {
     id: 3,
@@ -45,6 +48,9 @@ const SkillsData = [
       "The .NET Framework has introduced me to the foundations of scalable, reliable backend services and middleware. While I’m still developing my skill on this platform, each project deepens my understanding of server-side architecture and maintainable code.",
     description2:
       "C# is a versatile, object-oriented language that I continue to explore through real-world projects and hands-on learning. I’m actively strengthening my skills in C#, always seeking new challenges that help me grow into a more confident and effective full-stack developer.",
+    subSkill1: ".Net: 70%",
+    subSkill2: "C#: 70%",
+  
   },
 ];
 
