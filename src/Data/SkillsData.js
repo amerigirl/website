@@ -30,7 +30,7 @@ const SkillsData = [
 
     description1:
       "Figma is the industry-standard tool for cross-functional collaboration, enabling me to effectively communicate and align with designers, program managers, and stakeholders. It helps our teams build polished, user-centered applications by streamlining the design and feedback process.",
-    description2: " slkdjsalkd;sk s ldkasf skdj f",
+    description2: "FluentUI is a powerful open-source library that I've enjoyed using to build aesthetically pleasing user interfaces.  I've had the opportunity to use this library in conjunction with React on more than one team with great results for clients.",
     description3: "Lorem ip sum dksldk sldksk sd ld fwesfwef",
   },
   {
