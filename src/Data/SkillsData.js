@@ -32,7 +32,8 @@ const SkillsData = [
       "Figma is the industry-standard tool for cross-functional collaboration, enabling me to effectively communicate and align with designers, program managers, and stakeholders. It helps our teams build polished, user-centered applications by streamlining the design and feedback process.",
     description2:
       "FluentUI is one of my favorite tools for building user interfaces! It makes designing apps that look great and feel consistent easy to do, especially when working alongside design and content teams. Having used FluentUI on two enterprise-level teams, it's one of my favorite open-source tools!",
-    description3: "Lorem ip sum dksldk sldksk sd ld fwesfwef",
+    description3:
+      "Material UI is another open-source gem I’ve really enjoyed working with—it was actually my introduction to component libraries in React. As I learned more about React, I found Material UI’s features easy to pick up and really appreciated how much it sped up building polished, interactive apps. ",
   },
   {
     id: 3,
