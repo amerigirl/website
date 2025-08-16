@@ -24,6 +24,23 @@ const GithubLandingPage = () => {
           style={{ borderRadius: "16px" }}
         />
       </Box>
+      <Box>
+        <a
+          href="https://github.com/amerigirl"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Box
+            component="img"
+            sx={{
+              height: 45,
+              width: 45,
+            }}
+            alt="Github Icon"
+            src="../../github.png"
+          />
+        </a>
+      </Box>
       <Box
         sx={{
           maxWidth: "800px",
@@ -39,6 +56,7 @@ const GithubLandingPage = () => {
           profile is also a few solid, complete jewels that I'd love to share!
         </Typography>
       </Box>
+
       <Box
         sx={{
           display: "flex",
