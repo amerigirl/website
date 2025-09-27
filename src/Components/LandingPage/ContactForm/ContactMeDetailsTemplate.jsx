@@ -8,7 +8,8 @@ import propTypes from "prop-types";
 
 const ContactMeDetailsTemplate = (props) => {
   return (
-    <Box display={"grid"} gap={"2.5rem"}>
+      <Box display={"grid"} gap={"2.5rem"}>
+          
       <Box>
         <EmailOutlinedIcon sx={{ fontSize: 40, color: "primary.main" }} />
         <Typography variant="h4" component={"div"} fontSize={"1.9rem"}>
