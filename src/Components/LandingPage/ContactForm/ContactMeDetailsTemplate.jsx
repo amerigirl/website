@@ -4,6 +4,7 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import theme from "../../../theme";
+import propTypes from "prop-types";
 
 const ContactMeDetailsTemplate = (props) => {
   return (
@@ -11,7 +12,7 @@ const ContactMeDetailsTemplate = (props) => {
       <Box>
         <EmailOutlinedIcon sx={{ fontSize: 40, color: "primary.main" }} />
         <Typography variant="h4" component={"div"} fontSize={"1.9rem"}>
-          {}
+          {props.email}
         </Typography>
         <Typography
           variant="h5"
@@ -20,10 +21,16 @@ const ContactMeDetailsTemplate = (props) => {
           marginLeft={"4.5rem"}
           color="grey"
         >
-          {}
+          {props.emailText}
         </Typography>
       </Box>
     </Box>
   );
 };
+
+ContactMeDetailsTemplate.propTypes = {
+  email: propTypes.string,
+  emailText: propTypes.string,
+};
+
 export default ContactMeDetailsTemplate;
