@@ -70,6 +70,7 @@ const GithubLandingPage = () => {
           flexWrap: "wrap",
           justifyContent: "space-evenly",
           p: 3,
+          
         }}
       >
         {GithubData.map((data, index) => {

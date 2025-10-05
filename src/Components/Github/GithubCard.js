@@ -10,13 +10,13 @@ import Box from "@mui/material/Box";
 
 export default function GithubCard({ info }) {
   return (
-    <Card sx={{ maxWidth: 345, marginBottom: 5 }}>
-      <CardMedia sx={{ height: 140 }} />
+    <Card sx={{ width: "20%", marginBottom: 5, boxShadow: 4 }}>
+      <CardMedia sx={{ height: 100 }} />
       <CardContent>
-        <Box>
-          <img src={info.img} alt={info.title} style={{ width: "100%" }} />
+        <Box sx={{ mb: 2 }}>
+          <img src={info.img} alt={info.title} style={{ width: "100%"}} />
         </Box>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography  gutterBottom variant="h5" component="div">
           {info.title}
         </Typography>
         <Typography variant="body2" sx={{ color: "text.secondary" }}>
