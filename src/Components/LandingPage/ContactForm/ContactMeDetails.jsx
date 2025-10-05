@@ -6,6 +6,7 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import theme from "../../../theme";
 import ContactMeDetailsTemplate from "./ContactMeDetailsTemplate";
 
+
 const SocialMediaContact = () => {
   return (
     <>
