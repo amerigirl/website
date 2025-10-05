@@ -10,7 +10,7 @@ import Box from "@mui/material/Box";
 
 export default function GithubCard({ info }) {
   return (
-    <Card sx={{ width: "20%", marginBottom: 5, boxShadow: 4 }}>
+    <Card sx={{ width: "20%", marginBottom: 10, mt: 5, boxShadow: 4 }}>
       <CardMedia sx={{ height: 100 }} />
       <CardContent>
         <Box sx={{ mb: 2 }}>
