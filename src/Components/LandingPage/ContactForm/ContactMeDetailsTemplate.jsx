@@ -9,20 +9,24 @@ import ContactMeDetailsTemplateData from "../../../Data/ContactMeDetailsTemplate
 
 const ContactMeDetailsTemplate = ({ info }) => {
   return (
-    <Box>
-      <EmailOutlinedIcon sx={{ fontSize: 40, color: "primary.main" }} />
-      <Typography variant="h4" component={"div"} fontSize={"1.9rem"}>
-        {info.iconText}
-      </Typography>
-      <Typography
-        variant="h5"
-        component={"div"}
-        fontSize={"1.6rem"}
-        marginLeft={"4.5rem"}
-        color="grey"
-      >
-        {info.iconSubLine}
-      </Typography>
+    <Box marginBottom={"2rem"}>
+      <Box sx={{ display: "flex", alignItems: "center", gap: 4 }}>
+        {info.icon}
+        <Typography variant="h4" component={"div"} fontSize={"1.9rem"}>
+          {info.iconText}
+        </Typography>
+      </Box>
+      <Box>
+        <Typography
+          variant="h5"
+          component={"div"}
+          fontSize={"1.6rem"}
+          marginLeft={"3.5rem"}
+          color="grey"
+        >
+          {info.iconSubLine}
+        </Typography>
+      </Box>
     </Box>
   );
 };

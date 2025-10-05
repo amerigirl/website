@@ -1,23 +1,23 @@
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
-import react from "react";
+import React from "react";
 
 const ContactMeDetailsTemplateData = [
   {
-    icon: {},
+    icon: <EmailOutlinedIcon/>,
     iconText: "Email",
     iconSubLine: "amerigirl29@gmail.com",
   },
 
     {
-    icon: {},
+    icon: <PhoneOutlinedIcon/>,
     iconText: "Phone",
     iconSubLine: "(816) 718-5080",
   },
 
     {
-    icon: {},
+    icon: <LocationOnOutlinedIcon/>,
     iconText: "Location",
     iconSubLine: "Seattle, WA",
   },
