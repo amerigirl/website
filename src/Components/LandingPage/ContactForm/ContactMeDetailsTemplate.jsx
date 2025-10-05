@@ -7,20 +7,17 @@ import theme from "../../../theme";
 import propTypes from "prop-types";
 import ContactMeDetailsTemplateData from "../../../Data/ContactMeDetailsTemplateData";
 
+
 const ContactMeDetailsTemplate = (props) => {
   return (
-      <Box display={"grid"} gap={"2.5rem"}>
-      { ContactMeDetailsTemplateData.map((item, index) => (
-        <Box key={index} display={"grid"} alignItems={"center"} gap={"1rem"}>
-          {item.iconText === "Email" && (
-            <EmailOutlinedIcon sx={{ fontSize: 40, color: "primary.main" }} />
-          )}    
+    <Box display={"grid"} gap={"2.5rem"}>
      
     </Box>
   );
 };
 
- {/* <Box>
+{
+  /* <Box>
         <EmailOutlinedIcon sx={{ fontSize: 40, color: "primary.main" }} />
         <Typography variant="h4" component={"div"} fontSize={"1.9rem"}>
           {props.email}
@@ -34,7 +31,8 @@ const ContactMeDetailsTemplate = (props) => {
         >
           {props.emailText}
         </Typography>
-      </Box> */}
+      </Box> */
+}
 
 ContactMeDetailsTemplate.propTypes = {
   email: propTypes.string,

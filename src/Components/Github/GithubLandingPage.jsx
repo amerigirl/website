@@ -24,7 +24,14 @@ const GithubLandingPage = () => {
           style={{ borderRadius: "16px" }}
         />
       </Box>
-      <Box sx={{ display: "flex", justifyContent: "right", marginRight:"12rem", marginTop:"-1rem" }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "right",
+          marginRight: "12rem",
+          marginTop: "-1rem",
+        }}
+      >
         <a
           href="https://github.com/amerigirl"
           target="_blank"
@@ -45,8 +52,8 @@ const GithubLandingPage = () => {
         sx={{
           maxWidth: "800px",
           margin: "0 auto 4rem",
-          textAlign: "center", 
-          mt: 3
+          textAlign: "center",
+          mt: 3,
         }}
       >
         <Typography style={{ fontSize: "1.2rem" }}>

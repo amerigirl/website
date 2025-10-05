@@ -5,12 +5,20 @@ import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import theme from "../../../theme";
 import ContactMeDetailsTemplate from "./ContactMeDetailsTemplate";
-
+import ContactMeDetailsTemplateData from "../../../Data/ContactMeDetailsTemplateData";
 
 const SocialMediaContact = () => {
   return (
     <>
-      <ContactMeDetailsTemplate  />
+      <Box>
+          {
+          ContactMeDetailsTemplateData.map((data, index) => {
+            console.log(data);
+            return <ContactMeDetailsTemplate key={index} info={data} />;
+          })
+        } 
+      </Box>
+ 
 
       <a
         href="https://www.linkedin.com/in/be-asia/"
