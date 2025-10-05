@@ -7,34 +7,31 @@ import theme from "../../../theme";
 import propTypes from "prop-types";
 import ContactMeDetailsTemplateData from "../../../Data/ContactMeDetailsTemplateData";
 
-
-const ContactMeDetailsTemplate = (props) => {
+const ContactMeDetailsTemplate = ({ info }) => {
   return (
-    <Box display={"grid"} gap={"2.5rem"}>
-     
+    <Box>
+      <EmailOutlinedIcon sx={{ fontSize: 40, color: "primary.main" }} />
+      <Typography variant="h4" component={"div"} fontSize={"1.9rem"}>
+        {info.iconText}
+      </Typography>
+      <Typography
+        variant="h5"
+        component={"div"}
+        fontSize={"1.6rem"}
+        marginLeft={"4.5rem"}
+        color="grey"
+      >
+        {info.iconSubLine}
+      </Typography>
     </Box>
   );
 };
 
 {
-  /* <Box>
-        <EmailOutlinedIcon sx={{ fontSize: 40, color: "primary.main" }} />
-        <Typography variant="h4" component={"div"} fontSize={"1.9rem"}>
-          {props.email}
-        </Typography>
-        <Typography
-          variant="h5"
-          component={"div"}
-          fontSize={"1.6rem"}
-          marginLeft={"4.5rem"}
-          color="grey"
-        >
-          {props.emailText}
-        </Typography>
-      </Box> */
 }
 
 ContactMeDetailsTemplate.propTypes = {
+  info: propTypes.object,
   email: propTypes.string,
   emailText: propTypes.string,
 };
